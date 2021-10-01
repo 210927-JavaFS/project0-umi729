@@ -1,5 +1,6 @@
 package com.revature;
 
+import java.time.LocalDate;
 import java.util.Scanner;
 
 public class BankMS {
@@ -35,6 +36,7 @@ public class BankMS {
 					if ((option <1) ) {
 						System.out.println("Select a positive number");
 						continue;
+						
 					}
 					else if ((option > 4) ) {
 						System.out.println("Select between 1 to 4");
@@ -49,8 +51,21 @@ public class BankMS {
 				
 			} while (option != 4);
 		}
-		
+		String input = "1234567890";
+		 
+		String number = input.replaceFirst("(\\d{3})(\\d{3})(\\d+)", "($1) $2-$3");
+		 
+		System.out.println(number);
+		System.out.println(isValid(number));
+	    
+
 
 	}
+	private static boolean isValid(String s) {
+        String regex = "(\\d{3})(\\d{3})(\\d+)"; 
+        return s.matches(regex);
+    }
+
+        
 
 }
