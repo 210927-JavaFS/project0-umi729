@@ -50,6 +50,16 @@ int ssn;
  * 
  * Matcher m = p.matcher(str); return m.matches(); }
  */
-boolean typeOfAccount;
+String typeOfAccount;
+
+void createAccount() {}
+
+boolean modifyAccount() {
+	
+	
+	return true;
+	}
+//admin
+void disableAccount() {}
 
 }

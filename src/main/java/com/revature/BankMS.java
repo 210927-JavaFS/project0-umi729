@@ -51,20 +51,10 @@ public class BankMS {
 				
 			} while (option != 4);
 		}
-		String input = "1234567890";
-		 
-		String number = input.replaceFirst("(\\d{3})(\\d{3})(\\d+)", "($1) $2-$3");
-		 
-		System.out.println(number);
-		System.out.println(isValid(number));
-	    
-
+		
 
 	}
-	private static boolean isValid(String s) {
-        String regex = "(\\d{3})(\\d{3})(\\d+)"; 
-        return s.matches(regex);
-    }
+	
 
         
 
