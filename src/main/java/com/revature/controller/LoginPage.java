@@ -19,10 +19,10 @@ public class LoginPage {
 		
 		Scanner input=new Scanner(System.in);
 		int option=0;
-		String user;
-		String pass;
-		String email;
-		int zipCode;
+		String user=null;
+		String pass=null;
+		String email=null;
+		int zipCode=0;
 		boolean validation = false;
 		do {
 			System.out.println("1: Enter user credentials ");
@@ -60,12 +60,24 @@ public class LoginPage {
 				
 					switch(option) {
 						case 1:		System.out.println("Please enter your username");
-									user= input.nextLine();
+									if (input.hasNext()) {
+										user= input.next();
+									}
 									System.out.println("Please enter your password");
-									pass= input.nextLine();
-									um.userLogin(user, pass);
-					break;
-					case 2:			System.out.println("Please enter your email registered with your account");
+									if (input.hasNext()) {
+										
+										// not stopping here for user input
+										pass= input.next();
+										
+									}
+										if(user!=null )	{
+											if( ! (pass == null) ){//even password is null but it is continue going in block{
+												um.userLogin(user, pass);
+											}
+										}
+									
+						break;
+						case 2:		System.out.println("Please enter your email registered with your account");
 									
 									while(!(vc.isValid(email= input.next()))) {
 										System.out.println("Please enter a valid email");
@@ -74,14 +86,25 @@ public class LoginPage {
 									while (!(vc.zipUS(String.valueOf(zipCode= input.nextInt())) )) {
 										System.out.println("5 digit Zip Code is required");
 									}
-									
-					um.getMyUserName(email, zipCode);
-					break;
-					case 3:;
-					break;
-					case 4:;
-					break;
-					default : continue;
+// call getmyusername method from usermanagement Class
+									System.out.println(um.getMyUserName(email, zipCode));
+						break;
+						case 3:		System.out.println("Please enter your User name");
+									user= input.next();
+									System.out.println("Please enter your email registered with your account");
+									while(!(vc.isValid(email= input.next()))) {
+										System.out.println("Please enter a valid email");
+									}
+									System.out.println("Please enter your zipCode");
+									while (!(vc.zipUS(String.valueOf(zipCode= input.nextInt())) )) {
+										System.out.println("5 digit Zip Code is required");
+									}
+//call reset User name method from usermanagement Class
+						um.resetPassword(user, email, zipCode);
+						break;
+						case 4:;
+						break;
+						default : System.out.println("It was not valid entry. ");;
 					}
 						
 		}while (!(option == 4));

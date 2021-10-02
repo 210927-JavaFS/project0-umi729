@@ -4,14 +4,17 @@ import java.io.IOException;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
+import com.revature.service.ValidationClass;
+
 public class Welcome {
 
 	public void drive() {
+		ValidationClass vc;
 		System.out.println("Please select from following options:");
 		try (Scanner input = new Scanner(System.in)) {
 			int option = 0;
 			boolean validation=false;
-			
+			vc=new ValidationClass();
 			// taking input from user
 			do {
 			System.out.println("1: Open an Account");
@@ -34,17 +37,11 @@ public class Welcome {
 							 input.next();
 							 continue;
 						}
-					if ((option <1) ) {
-						System.out.println("Select a positive number");
-						continue;
-						
-					}
-					else if ((option > 4) ) {
-						System.out.println("Select between 1 to 4");
-						continue;
+					if(vc.validateIntInput(option, 1, 4)) {
+						validation = true;
 					}
 					else {
-					validation = true;
+					continue;
 					}
 				} while(validation== false);
 			

@@ -1,6 +1,7 @@
 package com.revature.service;
 
 import java.security.SecureRandom;
+import java.util.ArrayList;
 
 public class Customer extends Account{
 	private String userName;
@@ -41,6 +42,20 @@ public class Customer extends Account{
 		// Generate random integers in range 0 to 999
 		SecureRandom rand = new SecureRandom();
 	    int accountNumber = rand.nextInt(1000000);
+		
+		System.out.println("Account submitted for approval");
+}
+	public void createAccount(ArrayList<String> jNames) {
+		System.out.println(getFirstName());
+		System.out.println(getLastName());
+		System.out.println(getEmail());
+		System.out.println(getZipCode());
+		 
+		// Generate random integers in range 0 to 999
+		SecureRandom rand = new SecureRandom();
+	    int accountNumber = rand.nextInt(1000000);
+	    
+	    
 		
 		System.out.println("Account submitted for approval");
 }
