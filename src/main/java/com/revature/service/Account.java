@@ -3,15 +3,11 @@ package com.revature.service;
 public class Account {
 	private String firstName;
 	private String lastName;
-	// private String dateOfBirth;
-	// private String address1;
-	// private String city;
-	// private String state;
+	
 	private int zipCode;
-//	private String country;
-	// private int phoneNumber;
+
 	private String email;
-	private int ssn;
+	
 	private String typeOfAccount;
 
 	// getter and setter
@@ -19,7 +15,7 @@ public class Account {
 		return firstName;
 	}
 
-	public void setFirstname(String firstName) {
+	public void setFirstName(String firstName) {
 		this.firstName = firstName;
 	}
 
@@ -31,17 +27,7 @@ public class Account {
 		this.lastName = lastName;
 	}
 
-	/*
-	 * public String getDateOfBirth() { return dateOfBirth; } public void
-	 * setDateOfBirth(String dateOfBirth) { this.dateOfBirth = dateOfBirth; } public
-	 * String getAddress1() { return address1; } public void setAddress1(String
-	 * address1) { this.address1 = address1; }
-	 * 
-	 * 
-	 * public String getCity() { return city; } public void setCity(String city) {
-	 * this.city = city; } public String getState() { return state; } public void
-	 * setState(String state) { this.state = state; }
-	 */
+	
 	public int getZipCode() {
 		return zipCode;
 	}
@@ -50,16 +36,6 @@ public class Account {
 		this.zipCode = zipCode;
 	}
 
-	/*
-	 * public String getCountry() { return country; } public void setCountry(String
-	 * country) { this.country = country; }
-	 */
-	/*
-	 * public int getPhoneNumber() { return phoneNumber; }
-	 * 
-	 * public void setPhoneNumber(int phoneNumber) { this.phoneNumber = phoneNumber;
-	 * }
-	 */
 
 	public String getEmail() {
 		return email;
@@ -69,14 +45,7 @@ public class Account {
 		this.email = email;
 	}
 
-	public int getSsn() {
-		return ssn;
-	}
-
-	public void setSsn(int ssn) {
-		this.ssn = ssn;
-	}
-
+	
 	public String getTypeOfAccount() {
 		return typeOfAccount;
 	}
@@ -87,7 +56,7 @@ public class Account {
 
 	// constructor
 	public Account() {
-
+		super();
 	}
 
 	public Account(String firstName,  String lastName, int zipCode, String email,
@@ -95,27 +64,20 @@ public class Account {
 
 		this.firstName = firstName;
 		this.lastName = lastName;
-		/*
-		 * this.dateOfBirth = dateOfBirth; this.address1 = address1; this.address2 =
-		 * address2; this.city = city; this.state = state;
-		 */
 		this.zipCode = zipCode;
-		/*
-		 * this.country = country; this.phoneNumber = phoneNumber;
-		 */
 		this.email = email;
-		this.ssn = ssn;
 		this.typeOfAccount = typeOfAccount;
 
 	}
 
-	void createAccount() {
-
+	public void createAccount() {
+			System.out.println(getFirstName());
+			System.out.println(getLastName());
+			System.out.println(getEmail());
+			System.out.println(getZipCode());
 	}
 
-	void resetAccount() {
-
-	}
+	
 
 	void displayProfile(int ssn, int zipCode) {
 
@@ -129,12 +91,7 @@ public class Account {
 
 	}
 
-	/*
-	 * boolean modifyAccount() {
-	 * 
-	 * 
-	 * return true; }
-	 */
+	
 }
 
 /*
@@ -143,7 +100,7 @@ public class Account {
  * 
  */
 /*
- * public static boolean zipUS( String z ) { return z.matches( "\\d{5}" ); }
+ * 
  */
 
 /*
@@ -157,11 +114,9 @@ public class Account {
  * "\\d{3}-\\d{3}-\\d{4}"; // XXX-XXX-XXXX return s.matches(regex); }
  */
 
-/*
- * static boolean isValid(String email) { String regex =
- * "^[\\w-_\\.+]*[\\w-_\\.]\\@([\\w]+\\.)+[\\w]+[\\w]$"; return
- * email.matches(regex);
- */
+
+ 
+ 
 
 /*
  * public static boolean isValidSSN(String str) {
