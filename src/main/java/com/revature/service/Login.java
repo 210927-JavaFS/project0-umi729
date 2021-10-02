@@ -1,14 +1,16 @@
 package com.revature.service;
 
-import com.revature.controller.NewProfile;
+import java.io.IOException;
+import java.util.InputMismatchException;
 
 public enum Login {
 	INSTANCE;
 	String userName;
 	int accountNumber;
-	public void show() {
+	public void show() throws InputMismatchException, IOException {
 		System.out.println();
-		NewProfile np=new NewProfile();
+		CustomerPortal cp= new CustomerPortal(userName, accountNumber);
+		cp.viewCP();
 		
 	}
 }

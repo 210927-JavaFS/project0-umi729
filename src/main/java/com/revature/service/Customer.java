@@ -1,5 +1,7 @@
 package com.revature.service;
 
+import java.security.SecureRandom;
+
 public class Customer extends Account{
 	private String userName;
 	private String password;
@@ -35,6 +37,10 @@ public class Customer extends Account{
 		System.out.println(getLastName());
 		System.out.println(getEmail());
 		System.out.println(getZipCode());
+		 
+		// Generate random integers in range 0 to 999
+		SecureRandom rand = new SecureRandom();
+	    int accountNumber = rand.nextInt(1000000);
 		
 		System.out.println("Account submitted for approval");
 }

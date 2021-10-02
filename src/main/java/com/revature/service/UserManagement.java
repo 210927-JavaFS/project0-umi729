@@ -1,8 +1,11 @@
 package com.revature.service;
 
+import java.io.IOException;
+import java.util.InputMismatchException;
+
 public class UserManagement {
 
-	public void userLogin(String userName, String password) {
+	public void userLogin(String userName, String password) throws InputMismatchException, IOException {
 		//username found in database
 		// password matched to username
 		//check account approved
