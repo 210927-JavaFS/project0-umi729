@@ -50,8 +50,11 @@ public class Welcome {
 			
 				if(option==1) {
 					NewProfile np=new NewProfile();
-					
 					np.createProfile();
+				}
+				else if(option==2) {
+					LoginPage lp=new LoginPage();
+					lp.loginInfo();
 				}
 			
 				
