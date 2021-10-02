@@ -55,9 +55,13 @@ public class Customer extends Account{
 		SecureRandom rand = new SecureRandom();
 	    int accountNumber = rand.nextInt(1000000);
 	    
+	    for (String string : jNames) {
+			System.out.println(string);
+		}
+	    
 	    
 		
-		System.out.println("Account submitted for approval");
+		System.out.println("Joint Account submitted for approval");
 }
 
 	public void resetPassword() {

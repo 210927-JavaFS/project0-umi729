@@ -1,6 +1,7 @@
 package com.revature.controller;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
@@ -92,16 +93,17 @@ public class NewProfile {
 			ac.setUserName(scan.next());
 			System.out.println("Enter your password");
 			ac.setUserName(scan.next());
-			System.out.println("Is this individual account of Joint? Please select from following option");
+			System.out.println("Is this individual account of Joint?  Please press 1 fro individual and 2 for joint account");
 			int option=0;
 			validation =false;
+			ArrayList<String> jn=new ArrayList<>();
 			do {
 				if(scan.hasNextInt()== true) {
 					   option= scan.nextInt();
 					}
 					else
 					{
-						 System.out.println("Please enter number from (1-4)");
+						 System.out.println("Please enter number from (1-2)");
 						 scan.next();
 						 continue;
 					}
@@ -110,7 +112,15 @@ public class NewProfile {
 					case 1: ac.createAccount();
 					break;
 					case 2: 
-							
+							System.out.println("How many people you wanna add");
+							int numberOfHolder=scan.nextInt();
+							for(int i=1; i<=numberOfHolder; i++ ) {
+								System.out.printf("Please enter number %d account holder name: ", i);
+								jn.add(scan.next());
+							}
+							ac.createAccount(jn);
+							break;
+						
 					}
 					validation = true;
 				}
