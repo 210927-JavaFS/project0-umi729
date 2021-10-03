@@ -36,7 +36,7 @@ public class Portal {
 		// get from database
 		return 0.0;
 	}
-	protected void updateAccount() {
+	protected void updateAccount(String userName, int uid) {
 		// get from database
 		
 	}
