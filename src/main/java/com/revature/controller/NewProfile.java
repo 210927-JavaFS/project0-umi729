@@ -18,51 +18,100 @@ public class NewProfile {
 		System.out.println("=============================================");
 		System.out.println();
 		System.out.println();
-		System.out.println("Please provide the following information");
+		System.out.println("Please provide the following information\n");
 		
+		// input obj
 		Scanner scan = new Scanner(System.in);
 			boolean validation=false;
+			// customer class is where we are creating profile;
 			Customer ac=new Customer();
+			
+			// variables
+			ArrayList<String> fName=new ArrayList<>();
+			ArrayList<String> lName=new ArrayList<>();
+			ArrayList<String> email=new ArrayList<>();
+			ArrayList<Integer> zipCode=new ArrayList<>();
+			ArrayList<String> uName=new ArrayList<>();
+			ArrayList<String> pass=new ArrayList<>();
+			int option=0;
+			
+			
+			// validation class 
 			ValidationClass vc=new ValidationClass();
-			int zipCode=0;
 			
-			System.out.println("Enter your First Name: ");
-			ac.setFirstName(scan.next());
-			System.out.println("Enter your Last Name: ");
-			ac.setLastName(scan.next());
-			System.out.println("Enter your Email Address: ");
-			String email;
-			while(!(vc.isValid(email=scan.next()))) {
-				System.out.println("Please enter a valid email");
-			}
-			ac.setEmail(email);
-			System.out.println("Enter your ZipCode: ");
 			
-			validation = false;
+			
+			System.out.println("Enter number of Account Holder(Max 10):");
+			
+			
 			do {
 				if(scan.hasNextInt()== true) {
-					zipCode= scan.nextInt();
+					   option= scan.nextInt();
 					}
 					else
 					{
-						 System.out.println("Please enter 5 digit Zip Code");
+						 System.out.println("Please enter number from (1-10)");
 						 scan.next();
 						 continue;
 					}
-				if ((zipCode <1) ) {
-					System.out.println("Select a positive number");
-					continue;
+				
+				// if validation is true then start taking data
+				if(vc.validateIntInput(option, 1, 10)) {
+					for(int i=1; i<=option; i++) {
+						System.out.printf("Person Number: %d%n%n%n", i);
+						System.out.println("Enter First Name: ");
+						fName.add(scan.next());
+						System.out.println("Enter Last Name: ");
+						lName.add(scan.next());
+						System.out.println("Enter Email Address: ");
+						String eemail;
+						while(!(vc.isValid(eemail=scan.next()))) {
+							System.out.println("Please enter a valid email");
+						}
+						email.add(eemail);
+						System.out.println("Enter your ZipCode: ");
+						int pzipCode=0;
+						validation = false;
+						do {
+							if(scan.hasNextInt()== true) {
+								pzipCode= scan.nextInt();
+								}
+								else
+								{
+									 System.out.println("Please enter 5 digit Zip Code");
+									 scan.next();
+									 continue;
+								}
+							if ((pzipCode <1) ) {
+								System.out.println("Select a positive number");
+								continue;
+								
+							}
+							else if (!(vc.zipUS(String.valueOf(pzipCode)) )) {
+								System.out.println("5 digit Zip Code is required");
+								continue;
+							}
+							else {
+							zipCode.add(pzipCode);
+							validation = true;
+							}
+						} while(validation== false);
+						System.out.println("Create User Name ");
+						uName.add(scan.next());
+						System.out.println("Create password");
+						pass.add(scan.next());
+						System.out.println("\n\n");
+					}
 					
-				}
-				else if (!(vc.zipUS(String.valueOf(zipCode)) )) {
-					System.out.println("5 digit Zip Code is required");
-					continue;
+					ac.createAccount(fName, lName, email, zipCode, option, uName, pass);
+					validation = true;
 				}
 				else {
-				ac.setZipCode(zipCode);
-				validation = true;
+				continue;
 				}
 			} while(validation== false);
+			
+			// Taking initial Balance 
 			System.out.println("Enter the amount you want as initial deposit (100.00-500.00) \n please use decimal number1 ");
 			
 			double bal=0.0;
@@ -89,45 +138,8 @@ public class NewProfile {
 				
 			} while(validation== false);
 			
-			System.out.println("Enter your User Name for future login ");
-			ac.setUserName(scan.next());
-			System.out.println("Enter your password");
-			ac.setUserName(scan.next());
-			System.out.println("Is this individual account of Joint?  Please press 1 fro individual and 2 for joint account");
-			int option=0;
-			validation =false;
-			ArrayList<String> jn=new ArrayList<>();
-			do {
-				if(scan.hasNextInt()== true) {
-					   option= scan.nextInt();
-					}
-					else
-					{
-						 System.out.println("Please enter number from (1-2)");
-						 scan.next();
-						 continue;
-					}
-				if(vc.validateIntInput(option, 1, 2)) {
-					switch(option) {
-					case 1: ac.createAccount();
-					break;
-					case 2: 
-							System.out.println("How many people you wanna add");
-							int numberOfHolder=scan.nextInt();
-							for(int i=1; i<=numberOfHolder; i++ ) {
-								System.out.printf("Please enter number %d account holder name: ", i);
-								jn.add(scan.next());
-							}
-							ac.createAccount(jn);
-							break;
-						
-					}
-					validation = true;
-				}
-				else {
-				continue;
-				}
-			} while(validation== false);
+			
+			
 		
 			
 			
