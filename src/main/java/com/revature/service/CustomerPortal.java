@@ -4,19 +4,17 @@ import java.io.IOException;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class CustomerPortal {
-	private String userName;
-	private int acc;
+public class CustomerPortal extends Portal {
+	
 	
 	protected CustomerPortal(String userName, int acc) {
-		this.userName=userName;
-		this.acc=acc;
+		super(userName, acc);
 	}
 	protected double checkBal() {
 		// get from database
 		return 0.0;
 	}
-	protected void withdrawCash(int amount) {
+	protected final void withdrawCash(int amount) {
 		// get from database
 		System.out.println(checkBal());
 		
@@ -42,7 +40,7 @@ public class CustomerPortal {
 		int option=1;
 		Scanner input = new Scanner(System.in);
 		do {
-			System.out.println("1: Check your balance");
+			System.out.println("1: Check balance");
 			System.out.println("2: Withraw Money");
 			System.out.println("3: Deposit Money");
 			System.out.println("4: Transfer Money");
@@ -98,7 +96,7 @@ public class CustomerPortal {
 				
 			} while (option != 6);
 		
-		
+		input.close();
 	}
 
 }

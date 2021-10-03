@@ -14,8 +14,9 @@ public class UserManagement {
 		if(true) {
 			Login lg=Login.INSTANCE;
 			lg.userName = userName;
-			lg.accountNumber = 1235;// came from database
-			
+			lg.uid = 1235;// came from database
+			lg.status="Approved";// getting from table 
+			lg.type="Employee"	;	// getting from table
 			lg.show();
 			
 		}

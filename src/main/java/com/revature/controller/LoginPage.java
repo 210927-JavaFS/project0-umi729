@@ -12,7 +12,9 @@ public class LoginPage {
 	
 	public void loginInfo() throws InputMismatchException, IOException {
 		ValidationClass vc=new ValidationClass();
+		// 
 		UserManagement um=new UserManagement();
+		
 		System.out.println("Please logon to system");
 		System.out.println();
 		System.out.println("Please select from following options");
@@ -57,7 +59,7 @@ public class LoginPage {
 						validation = true;
 						}
 					} while(validation== false);
-				
+//Condition testing where the code should go
 					switch(option) {
 						case 1:		System.out.println("Please enter your username");
 									if (input.hasNext()) {
@@ -72,11 +74,13 @@ public class LoginPage {
 									}
 										if(user!=null )	{
 											if( ! (pass == null) ){//even password is null but it is continue going in block{
+												// call userManagement Class
 												um.userLogin(user, pass);
 											}
 										}
 									
-						break;
+										break;
+// trying to find username by using email and zip code						
 						case 2:		System.out.println("Please enter your email registered with your account");
 									
 									while(!(vc.isValid(email= input.next()))) {
@@ -86,9 +90,11 @@ public class LoginPage {
 									while (!(vc.zipUS(String.valueOf(zipCode= input.nextInt())) )) {
 										System.out.println("5 digit Zip Code is required");
 									}
-// call getmyusername method from usermanagement Class
+// calling getmyusername method from usermanagement Class
 									System.out.println(um.getMyUserName(email, zipCode));
-						break;
+									break;
+									
+// resetting password after verifying username email and password
 						case 3:		System.out.println("Please enter your User name");
 									user= input.next();
 									System.out.println("Please enter your email registered with your account");
@@ -101,9 +107,9 @@ public class LoginPage {
 									}
 //call reset User name method from usermanagement Class
 						um.resetPassword(user, email, zipCode);
-						break;
+									break;
 						case 4:;
-						break;
+									break;
 						default : System.out.println("It was not valid entry. ");;
 					}
 						

@@ -6,10 +6,12 @@ import java.util.InputMismatchException;
 public enum Login {
 	INSTANCE;
 	String userName;
-	int accountNumber;
+	int uid;
+	String status;
+	String type;
 	public void show() throws InputMismatchException, IOException {
 		System.out.println();
-		CustomerPortal cp= new CustomerPortal(userName, accountNumber);
+		CustomerPortal cp= new CustomerPortal(userName, uid);
 		cp.viewCP();
 		
 	}

@@ -7,7 +7,18 @@ public class Customer{
 	private String userName;
 	private String password;
 	private double balence;
+	private String typeOfAccount;
 	
+	public String getTypeOfAccount() {
+		return typeOfAccount;
+	}
+
+
+	public void setTypeOfAccount() {
+		this.typeOfAccount = "Customer";
+	}
+
+
 	public Customer() {
 		super();
 	}
@@ -47,9 +58,9 @@ public class Customer{
 		// Generate random integers in range 0 to 999
 		SecureRandom rand = new SecureRandom();
 	    int accountNumber = rand.nextInt(1000000);
-	    
+	    // type of accout == "customer"
 	    for (int i=0; i< TotalAcctHolder; i++) {
-			System.out.printf("%5s%5s%5s%5d%5s%5s\n\n",  fName.get(i),lName.get(i),email.get(i),zipCode.get(i),uName.get(i),pass.get(i));
+			System.out.printf("%d%5s%5s%5s%5d%5s%5s\n\n", accountNumber, fName.get(i),lName.get(i),email.get(i),zipCode.get(i),uName.get(i),pass.get(i));
 			
 		}
 	    
