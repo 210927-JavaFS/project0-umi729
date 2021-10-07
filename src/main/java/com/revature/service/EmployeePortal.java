@@ -12,9 +12,6 @@ public class EmployeePortal extends Portal {
 	protected void updateStatus() {
 		// get from database
 		
-		
-		
-		
 		Scanner scan=new Scanner(System.in);
 		System.out.println("Press a for approval or any key for deny");
 		String option=scan.next();
