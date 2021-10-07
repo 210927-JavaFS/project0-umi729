@@ -1,4 +1,6 @@
 package com.revature.controller;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
 import java.util.InputMismatchException;
@@ -7,10 +9,13 @@ import java.util.Scanner;
 import com.revature.service.UserManagement;
 import com.revature.service.ValidationClass;
 
+import jdk.internal.org.jline.utils.Log;
+
 public class LoginPage {
 	
-	
+	private static Logger Log=LoggerFactory.getLogger(LoginPage.class);
 	public void loginInfo() throws InputMismatchException, IOException {
+		Log.info("In controller: login input ");
 		ValidationClass vc=new ValidationClass();
 		// 
 		UserManagement um=new UserManagement();
@@ -32,9 +37,6 @@ public class LoginPage {
 			System.out.println("3: Forget password ");
 			System.out.println("4: Exit ");
 			
-			
-				
-				
 				// validate the input
 					do {
 						if(input.hasNextInt()== true) {
@@ -75,6 +77,7 @@ public class LoginPage {
 										if(user!=null )	{
 											if( ! (pass == null) ){//even password is null but it is continue going in block{
 												// call userManagement Class
+												Log.debug("Username and password has taken by user");
 												um.userLogin(user, pass);
 											}
 										}
@@ -91,6 +94,7 @@ public class LoginPage {
 										System.out.println("5 digit Zip Code is required");
 									}
 // calling getmyusername method from usermanagement Class
+									Log.debug("Email and zip code has taken by user in case (2) switch statement");
 									System.out.println(um.getMyUserName(email, zipCode));
 									break;
 									
@@ -106,6 +110,7 @@ public class LoginPage {
 										System.out.println("5 digit Zip Code is required");
 									}
 //call reset User name method from usermanagement Class
+									Log.debug("User, Email and zip code has taken by user in case (2) switch statement");
 						um.resetPassword(user, email, zipCode);
 									break;
 						case 4:;

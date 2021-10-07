@@ -1,0 +1,1 @@
+12:06:00.200 [] [main] INFO  com.revature.controller.LoginPage - In controller: login input 

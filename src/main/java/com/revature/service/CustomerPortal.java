@@ -96,7 +96,7 @@ public class CustomerPortal extends Portal {
 				
 			} while (option != 6);
 		
-		input.close();
+		
 	}
 
 }

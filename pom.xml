@@ -50,7 +50,12 @@
 
 <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-maven-plugin -->
 
-
+<dependency>
+    <groupId>ch.qos.logback</groupId>
+    <artifactId>logback-classic</artifactId>
+    <version>1.2.6</version>
+   
+</dependency>
 </dependencies>
 
 <build>
