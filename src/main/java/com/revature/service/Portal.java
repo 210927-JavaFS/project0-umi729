@@ -34,7 +34,7 @@ package com.revature.service;
 //-------------------------------------------------
 	
 	// Methods
-	protected abstract double checkBal(int acc) ;
+	protected abstract void checkBal(int acc) ;
 	protected  void updateAccount(String userName, int uid) {
 		
 	};

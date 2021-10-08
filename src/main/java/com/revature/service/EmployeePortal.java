@@ -2,8 +2,14 @@ package com.revature.service;
 
 import java.util.Scanner;
 
+import com.revature.dao.BalanceDAO;
+import com.revature.dao.BalanceDAOImpl;
+import com.revature.models.AccBalance;
+
 public class EmployeePortal extends Portal {
 	
+	
+	private BalanceDAO balDAO= new BalanceDAOImpl();
 	//Constructor 
 	protected EmployeePortal(String userName, int acc) {
 		super(userName, acc);
@@ -44,8 +50,10 @@ public class EmployeePortal extends Portal {
 	protected void deny() {
 			
 	}
-	protected double checkBal(int acc) {
-		return 0.0;
+	protected void checkBal(int acc) {
+		
+		AccBalance bal= balDAO.findByAccNumber(acc);
+		System.out.println(bal.getBalance());
 	}
 
 }

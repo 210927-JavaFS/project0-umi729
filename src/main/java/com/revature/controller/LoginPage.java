@@ -24,22 +24,22 @@ public class LoginPage {
 		System.out.println("Please select from following options");
 		
 		Scanner input=new Scanner(System.in);
-		int option=0;
+		String option;
 		String user=null;
 		String pass=null;
 		String email=null;
 		int zipCode=0;
 		boolean validation = false;
 		do {
-			System.out.println("1: Enter user credentials ");
-			System.out.println("2: Forget User Name ");
-			System.out.println("3: Forget password ");
-			System.out.println("4: Exit ");
+			System.out.println("1: Enter user credentials "
+					+ "2: Forget User Name "
+					+ "3: Forget password ""4: Exit ");
 			
 				// validate the input
 					do {
-						if(input.hasNextInt()== true) {
-							   option= input.nextInt();
+						if(input.hasNext()== true) {
+							   option= input.nextLine();
+							   validation = true;
 							}
 							else
 							{
