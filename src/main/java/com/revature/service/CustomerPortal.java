@@ -10,6 +10,11 @@ public class CustomerPortal extends Portal {
 	protected CustomerPortal(String userName, int acc) {
 		super(userName, acc);
 	}
+	@Override
+	protected double checkBal(int acc) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
 	protected double checkBal() {
 		// get from database
 		return 0.0;
@@ -29,6 +34,10 @@ public class CustomerPortal extends Portal {
 		System.out.println(checkBal());
 		
 	}
+	protected void viewCustomerAccount(int AccNo) {
+		
+	}
+	
 	
 	//update profile
 	protected void viewCP() throws InputMismatchException, IOException{
@@ -98,5 +107,7 @@ public class CustomerPortal extends Portal {
 		
 		
 	}
+	
+	
 
 }

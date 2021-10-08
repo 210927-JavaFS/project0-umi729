@@ -1,50 +1,44 @@
 package com.revature.service;
 
-public class Portal {
+ abstract class Portal {
 
 	private String userName;
-	public String getUserName() {
-		return userName;
-	}
-
-
-	public void setUserName(String userName) {
-		this.userName = userName;
-	}
-
-
-	public int getAcc() {
-		return acc;
-	}
-
-
-	public void setAcc(int acc) {
-		this.acc = acc;
-	}
-
-
 	private int acc;
 	//constructor
+	
 	protected Portal(String userName, int acc) {
 		this.userName=userName;
 		this.acc=acc;
 	}
 	
+	// getter setter
+	protected String getUserName() {
+		return userName;
+	}
+
+
+	protected void setUserName(String userName) {
+		this.userName = userName;
+	}
+
+
+	protected int getAcc() {
+		return acc;
+	}
+
+
+	protected void setAcc(int acc) {
+		this.acc = acc;
+	}
+
+//-------------------------------------------------
 	
-	//
-	protected double checkBal(int acc) {
-		// get from database
-		return 0.0;
-	}
-	protected void updateAccount(String userName, int uid) {
-		// get from database
+	// Methods
+	protected abstract double checkBal(int acc) ;
+	protected  void updateAccount(String userName, int uid) {
 		
-	}
-	protected void viewAccount() {
-		// get from database
-		
-	}
-	
+	};
+	protected abstract void viewCustomerAccount(int AccNo) ;
 	
 	
 	

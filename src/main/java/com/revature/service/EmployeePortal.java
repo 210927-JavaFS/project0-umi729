@@ -9,6 +9,7 @@ public class EmployeePortal extends Portal {
 		super(userName, acc);
 	}
 	
+	
 	protected void updateStatus() {
 		// get from database
 		
@@ -23,6 +24,8 @@ public class EmployeePortal extends Portal {
 		}
 		scan.close();
 	}
+	
+	
 	protected void viewCustomerAccount(int AccNo) {
 		// get from database
 		
@@ -40,6 +43,9 @@ public class EmployeePortal extends Portal {
 	}
 	protected void deny() {
 			
+	}
+	protected double checkBal(int acc) {
+		return 0.0;
 	}
 
 }

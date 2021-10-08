@@ -1,0 +1,7 @@
+22:22:32.883 [] [main] INFO  com.revature.controller.LoginPage - In controller: login input 
+22:22:42.823 [] [main] DEBUG com.revature.controller.LoginPage - Username and password has taken by user
+23:29:28.589 [] [main] INFO  c.r.service.TestValidationClass - In setValidationClass
+23:29:28.608 [] [main] INFO  c.r.service.TestValidationClass - In setInts
+23:29:28.612 [] [main] INFO  c.r.service.TestValidationClass - In testAdd
+23:29:28.619 [] [main] INFO  c.r.service.TestValidationClass - In clearResult
+23:29:28.630 [] [main] INFO  c.r.service.TestValidationClass - in clearMathUtil

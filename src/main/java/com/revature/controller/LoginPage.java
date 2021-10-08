@@ -9,7 +9,6 @@ import java.util.Scanner;
 import com.revature.service.UserManagement;
 import com.revature.service.ValidationClass;
 
-import jdk.internal.org.jline.utils.Log;
 
 public class LoginPage {
 	
