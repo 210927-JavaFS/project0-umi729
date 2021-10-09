@@ -2129,3 +2129,280 @@
 14:36:47.774 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb getTranType 
 14:36:47.774 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb getUid 
 14:36:47.774 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb getAmount 
+14:38:06.363 [] [main] INFO  com.revature.controller.LoginPage - In controller: login input 
+14:38:09.693 [] [main] DEBUG com.revature.controller.LoginPage - Username and password has taken by user
+14:38:09.693 [] [main] INFO  com.revature.service.UserManagement - login Successfully 
+14:38:09.698 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb cunstructor 
+14:38:21.015 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb setTranType 
+14:38:21.015 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb setAmount 
+14:38:21.015 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb setuid 
+14:38:21.680 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb getDate 
+14:38:21.681 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb getTranType 
+14:38:21.681 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb getUid 
+14:38:21.681 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb getAmount 
+14:38:22.492 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb setTranType 
+14:38:22.493 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb setAmount 
+14:38:23.161 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb getDate 
+14:38:23.161 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb getTranType 
+14:38:23.161 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb getUid 
+14:38:23.162 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb getAmount 
+14:40:56.008 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb cunstructor 
+14:40:56.009 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb setTid 
+14:40:56.013 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb setDate 
+14:40:56.014 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb setTranType 
+14:40:56.014 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb setuid 
+14:40:56.014 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb setAmount 
+14:40:56.014 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb cunstructor 
+14:40:56.015 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb setTid 
+14:40:56.015 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb setDate 
+14:40:56.015 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb setTranType 
+14:40:56.015 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb setuid 
+14:40:56.015 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb setAmount 
+14:40:56.016 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb cunstructor 
+14:40:56.016 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb setTid 
+14:40:56.016 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb setDate 
+14:40:56.016 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb setTranType 
+14:40:56.016 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb setuid 
+14:40:56.016 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb setAmount 
+14:40:56.017 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb cunstructor 
+14:40:56.017 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb setTid 
+14:40:56.017 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb setDate 
+14:40:56.017 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb setTranType 
+14:40:56.017 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb setuid 
+14:40:56.017 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb setAmount 
+14:40:56.018 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb cunstructor 
+14:40:56.018 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb setTid 
+14:40:56.018 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb setDate 
+14:40:56.018 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb setTranType 
+14:40:56.018 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb setuid 
+14:40:56.019 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb setAmount 
+14:40:56.019 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb cunstructor 
+14:40:56.019 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb setTid 
+14:40:56.019 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb setDate 
+14:40:56.020 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb setTranType 
+14:40:56.020 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb setuid 
+14:40:56.020 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb setAmount 
+14:40:56.020 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb cunstructor 
+14:40:56.020 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb setTid 
+14:40:56.021 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb setDate 
+14:40:56.021 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb setTranType 
+14:40:56.021 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb setuid 
+14:40:56.021 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb setAmount 
+14:40:56.021 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb cunstructor 
+14:40:56.022 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb setTid 
+14:40:56.022 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb setDate 
+14:40:56.022 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb setTranType 
+14:40:56.022 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb setuid 
+14:40:56.023 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb setAmount 
+14:40:56.023 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb cunstructor 
+14:40:56.023 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb setTid 
+14:40:56.023 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb setDate 
+14:40:56.023 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb setTranType 
+14:40:56.024 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb setuid 
+14:40:56.024 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb setAmount 
+14:40:56.024 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb cunstructor 
+14:40:56.024 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb setTid 
+14:40:56.024 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb setDate 
+14:40:56.025 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb setTranType 
+14:40:56.025 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb setuid 
+14:40:56.025 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb setAmount 
+14:40:56.025 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb cunstructor 
+14:40:56.025 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb setTid 
+14:40:56.026 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb setDate 
+14:40:56.026 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb setTranType 
+14:40:56.026 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb setuid 
+14:40:56.026 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb setAmount 
+14:40:56.027 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb cunstructor 
+14:40:56.027 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb setTid 
+14:40:56.028 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb setDate 
+14:40:56.028 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb setTranType 
+14:40:56.028 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb setuid 
+14:40:56.028 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb setAmount 
+14:40:56.028 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb cunstructor 
+14:40:56.028 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb setTid 
+14:40:56.029 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb setDate 
+14:40:56.029 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb setTranType 
+14:40:56.029 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb setuid 
+14:40:56.029 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb setAmount 
+14:40:56.030 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb cunstructor 
+14:40:56.030 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb setTid 
+14:40:56.031 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb setDate 
+14:40:56.031 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb setTranType 
+14:40:56.031 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb setuid 
+14:40:56.031 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb setAmount 
+14:40:56.031 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb cunstructor 
+14:40:56.031 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb setTid 
+14:40:56.032 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb setDate 
+14:40:56.032 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb setTranType 
+14:40:56.032 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb setuid 
+14:40:56.032 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb setAmount 
+14:40:56.032 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb cunstructor 
+14:40:56.032 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb setTid 
+14:40:56.032 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb setDate 
+14:40:56.032 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb setTranType 
+14:40:56.032 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb setuid 
+14:40:56.032 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb setAmount 
+14:40:56.032 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb cunstructor 
+14:40:56.032 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb setTid 
+14:40:56.033 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb setDate 
+14:40:56.033 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb setTranType 
+14:40:56.033 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb setuid 
+14:40:56.033 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb setAmount 
+14:40:56.033 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb cunstructor 
+14:40:56.033 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb setTid 
+14:40:56.033 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb setDate 
+14:40:56.033 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb setTranType 
+14:40:56.033 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb setuid 
+14:40:56.033 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb setAmount 
+14:40:56.033 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb cunstructor 
+14:40:56.033 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb setTid 
+14:40:56.033 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb setDate 
+14:40:56.033 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb setTranType 
+14:40:56.033 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb setuid 
+14:40:56.033 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb setAmount 
+14:40:56.038 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb getDate 
+14:40:56.039 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb getAmount 
+14:40:56.039 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb getTranType 
+14:40:56.039 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb getUid 
+14:40:56.040 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb getDate 
+14:40:56.040 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb getAmount 
+14:40:56.040 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb getTranType 
+14:40:56.040 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb getUid 
+14:40:56.040 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb getDate 
+14:40:56.041 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb getAmount 
+14:40:56.041 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb getTranType 
+14:40:56.041 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb getUid 
+14:40:56.041 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb getDate 
+14:40:56.042 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb getAmount 
+14:40:56.042 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb getTranType 
+14:40:56.042 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb getUid 
+14:40:56.042 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb getDate 
+14:40:56.043 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb getAmount 
+14:40:56.043 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb getTranType 
+14:40:56.043 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb getUid 
+14:40:56.043 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb getDate 
+14:40:56.044 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb getAmount 
+14:40:56.044 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb getTranType 
+14:40:56.044 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb getUid 
+14:40:56.044 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb getDate 
+14:40:56.044 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb getAmount 
+14:40:56.044 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb getTranType 
+14:40:56.044 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb getUid 
+14:40:56.045 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb getDate 
+14:40:56.045 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb getAmount 
+14:40:56.045 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb getTranType 
+14:40:56.045 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb getUid 
+14:40:56.046 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb getDate 
+14:40:56.046 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb getAmount 
+14:40:56.046 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb getTranType 
+14:40:56.046 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb getUid 
+14:40:56.046 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb getDate 
+14:40:56.047 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb getAmount 
+14:40:56.047 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb getTranType 
+14:40:56.047 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb getUid 
+14:40:56.047 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb getDate 
+14:40:56.047 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb getAmount 
+14:40:56.047 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb getTranType 
+14:40:56.047 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb getUid 
+14:40:56.048 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb getDate 
+14:40:56.048 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb getAmount 
+14:40:56.048 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb getTranType 
+14:40:56.048 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb getUid 
+14:40:56.049 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb getDate 
+14:40:56.049 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb getAmount 
+14:40:56.049 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb getTranType 
+14:40:56.049 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb getUid 
+14:40:56.050 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb getDate 
+14:40:56.050 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb getAmount 
+14:40:56.050 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb getTranType 
+14:40:56.050 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb getUid 
+14:40:56.050 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb getDate 
+14:40:56.050 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb getAmount 
+14:40:56.050 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb getTranType 
+14:40:56.050 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb getUid 
+14:40:56.051 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb getDate 
+14:40:56.051 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb getAmount 
+14:40:56.051 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb getTranType 
+14:40:56.051 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb getUid 
+14:40:56.052 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb getDate 
+14:40:56.052 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb getAmount 
+14:40:56.052 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb getTranType 
+14:40:56.052 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb getUid 
+14:40:56.053 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb getDate 
+14:40:56.053 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb getAmount 
+14:40:56.053 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb getTranType 
+14:40:56.053 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb getUid 
+14:40:56.053 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb getDate 
+14:40:56.053 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb getAmount 
+14:40:56.054 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb getTranType 
+14:40:56.054 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb getUid 
+15:35:49.030 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB cunstructor without id 
+15:35:50.401 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getUserName method  
+15:35:50.401 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getPwd method  
+15:35:50.401 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getStatus method  
+15:35:50.401 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getaType method  
+15:35:50.401 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getAid method  
+15:37:12.961 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB cunstructor without id 
+15:37:14.179 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getUserName method  
+15:37:14.179 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getPwd method  
+15:37:14.179 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getStatus method  
+15:37:14.179 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getaType method  
+15:37:14.179 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getAid method  
+15:37:33.882 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB cunstructor without id 
+15:37:35.124 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getUserName method  
+15:37:35.124 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getPwd method  
+15:37:35.124 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getStatus method  
+15:37:35.124 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getaType method  
+15:37:35.124 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getAid method  
+16:09:20.206 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB cunstructor without parameters 
+16:09:20.208 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setUid method  
+16:09:20.208 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setUserName method  
+16:09:20.208 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setPwd method  
+16:09:20.208 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setStatus method  
+16:09:20.208 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setaType method  
+16:09:20.208 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setAid method  
+16:09:20.210 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB toString method  
+16:10:28.270 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB cunstructor without parameters 
+16:10:28.271 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setUid method  
+16:10:28.272 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setUserName method  
+16:10:28.272 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setPwd method  
+16:10:28.272 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setStatus method  
+16:10:28.272 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setaType method  
+16:10:28.272 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setAid method  
+16:10:28.273 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB toString method  
+16:10:28.274 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getPwd method  
+16:20:39.471 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB cunstructor without parameters 
+16:20:39.472 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setUid method  
+16:20:39.473 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setUserName method  
+16:20:39.473 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setPwd method  
+16:20:39.473 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setStatus method  
+16:20:39.473 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setaType method  
+16:20:39.473 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setAid method  
+16:20:39.473 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB cunstructor without parameters 
+16:20:39.473 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setUid method  
+16:20:39.473 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setUserName method  
+16:20:39.473 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setPwd method  
+16:20:39.473 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setStatus method  
+16:20:39.473 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setaType method  
+16:20:39.473 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setAid method  
+16:20:39.473 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB cunstructor without parameters 
+16:20:39.473 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setUid method  
+16:20:39.473 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setUserName method  
+16:20:39.473 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setPwd method  
+16:20:39.473 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setStatus method  
+16:20:39.473 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setaType method  
+16:20:39.473 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setAid method  
+16:20:39.473 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB cunstructor without parameters 
+16:20:39.473 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setUid method  
+16:20:39.473 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setUserName method  
+16:20:39.473 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setPwd method  
+16:20:39.473 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setStatus method  
+16:20:39.473 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setaType method  
+16:20:39.473 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setAid method  
+16:20:39.473 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB cunstructor without parameters 
+16:20:39.474 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setUid method  
+16:20:39.474 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setUserName method  
+16:20:39.474 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setPwd method  
+16:20:39.474 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setStatus method  
+16:20:39.474 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setaType method  
+16:20:39.474 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setAid method  

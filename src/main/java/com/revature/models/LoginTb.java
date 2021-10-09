@@ -1,12 +1,10 @@
 package com.revature.models;
 
-import javax.crypto.spec.SecretKeySpec;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 public class LoginTb {
-	
+	private static AES256 ae= new  AES256();
 	private static Logger Log=LoggerFactory.getLogger(LoginTb.class);
 	private int uid;
 	private String userName;
@@ -14,29 +12,30 @@ public class LoginTb {
 	private String status;
 	private String aType;
 	private int aid;
-	private SecretKeySpec psk;
 	
-	public LoginTb(int uid, String userName, String pwd, String status, String aType, int aid, SecretKeySpec psk) {
+	
+	public LoginTb(int uid, String userName, String pwd, String status, String aType, int aid) {
 		super();
 		this.uid = uid;
 		this.userName = userName;
-		this.pwd = pwd;
+		this.pwd = ae.encrypt(pwd);
 		this.status = status;
 		this.aType = aType;
 		this.aid = aid;
-		this.psk = psk;
+		
 		Log.debug("In LoginTB cunstructor with id ");
 	}
-	public LoginTb(String userName, String pwd, String status, String aType, int aid, SecretKeySpec psk) {
+	public LoginTb(String userName, String pwd, String status, String aType, int aid) {
 		super();
 		this.userName = userName;
-		this.pwd = pwd;
+		this.pwd = ae.encrypt(pwd) ;
 		this.status = status;
 		this.aType = aType;
 		this.aid = aid;
-		this.psk = psk;
+		
 		Log.debug("In LoginTB cunstructor without id ");
 	}
+	
 	public LoginTb() {
 		super();
 		Log.debug("In LoginTB cunstructor without parameters ");
@@ -59,11 +58,11 @@ public class LoginTb {
 	}
 	public String getPwd() {
 		Log.debug("In LoginTB getPwd method  ");
-		return pwd;
+		return ae.decrypt(pwd);
 	}
 	public void setPwd(String pwd) {
 		Log.debug("In LoginTB setPwd method  ");
-		this.pwd = pwd;
+		this.pwd = ae.encrypt(pwd);
 	}
 	public String getStatus() {
 		Log.debug("In LoginTB getStatus method  ");
@@ -89,22 +88,12 @@ public class LoginTb {
 		Log.debug("In LoginTB setAid method  ");
 		this.aid = aid;
 	}
-	public SecretKeySpec getPsk() {
-		Log.debug("In LoginTB getPsk method  ");
-		return psk;
-	}
-	public void setPsk(SecretKeySpec psk) {
-		Log.debug("In LoginTB setPsk method  ");
-		this.psk = psk;
-	}
 	@Override
 	public int hashCode() {
-		Log.debug("In LoginTB hashCode method  ");
 		final int prime = 31;
 		int result = 1;
 		result = prime * result + ((aType == null) ? 0 : aType.hashCode());
 		result = prime * result + aid;
-		result = prime * result + ((psk == null) ? 0 : psk.hashCode());
 		result = prime * result + ((pwd == null) ? 0 : pwd.hashCode());
 		result = prime * result + ((status == null) ? 0 : status.hashCode());
 		result = prime * result + uid;
@@ -113,7 +102,6 @@ public class LoginTb {
 	}
 	@Override
 	public boolean equals(Object obj) {
-		Log.debug("In LoginTB equals method  ");
 		if (this == obj)
 			return true;
 		if (obj == null)
@@ -127,11 +115,6 @@ public class LoginTb {
 		} else if (!aType.equals(other.aType))
 			return false;
 		if (aid != other.aid)
-			return false;
-		if (psk == null) {
-			if (other.psk != null)
-				return false;
-		} else if (!psk.equals(other.psk))
 			return false;
 		if (pwd == null) {
 			if (other.pwd != null)
@@ -154,10 +137,11 @@ public class LoginTb {
 	}
 	@Override
 	public String toString() {
-		Log.debug("In LoginTB toString method  ");
 		return "LoginTb [uid=" + uid + ", userName=" + userName + ", pwd=" + pwd + ", status=" + status + ", aType="
-				+ aType + ", aid=" + aid + ", psk=" + psk + "]";
+				+ aType + ", aid=" + aid + "]";
 	}
+
+
 	
 	
 }
