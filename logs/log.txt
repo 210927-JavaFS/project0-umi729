@@ -46,3 +46,6 @@
 15:19:52.212 [] [main] INFO  com.revature.controller.LoginPage - In controller: login input 
 15:19:59.183 [] [main] DEBUG com.revature.controller.LoginPage - Username and password has taken by user
 15:19:59.184 [] [main] INFO  com.revature.service.UserManagement - login Successfully 
+15:23:31.133 [] [main] INFO  com.revature.controller.LoginPage - In controller: login input 
+15:23:36.186 [] [main] DEBUG com.revature.controller.LoginPage - Username and password has taken by user
+15:23:36.186 [] [main] INFO  com.revature.service.UserManagement - login Successfully 
