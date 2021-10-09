@@ -31,24 +31,25 @@ public class LoggedIn {
 			System.out.println();
 			System.out.println("How can i help you. Please select from following options: ");
 			boolean validation = false;
-			int option=1;
+			String option="6";
 			Scanner input = new Scanner(System.in);
 			do {
-				System.out.println("1: Check balance");
-				System.out.println("2: Withraw Money");
-				System.out.println("3: Deposit Money");
-				System.out.println("4: Transfer Money");
-				System.out.println("5: Update Account");
-				System.out.println("6: Logout");
+				System.out.println("1: Check balance\n"
+						+ "2: Withraw Money\n"
+						+ "3: Deposit Money\n"
+						+ "4: Transfer Money\n"
+						+ "5: Update Account\n"
+						+ "6: Logout");
 				System.out.println();
 				
-				System.out.print("Press 1-6: ");
+				System.out.print("Press select options from 1-6: ");
 				
 				
 				// validate the input
 					do {
 						if(input.hasNextInt()== true) {
-							   option= input.nextInt();
+							   option= input.nextLine();
+							   validation = true;
 							}
 							else
 							{
@@ -56,36 +57,33 @@ public class LoggedIn {
 								 input.next();
 								 continue;
 							}
-						if ((option <1) ) {
-							System.out.println("Select a positive number");
-							continue;
-							
-						}
-						else if ((option > 6) ) {
-							System.out.println("Select between 1 to 6");
-							continue;
-						}
-						else {
-						validation = true;
-						}
+						
 					} while(validation== false);
 				
 					switch(option) {
-					case 1	: cp.checkBal(1);
-					break;
-					case 2	: //withdrawCash(100);// update cash
-					break;
-					case 3	: //Deposit(100);// update case
-					break;
-					case 4	: // transfer(100);//update)
-					break;
-					case 5	: //
-					break;
-					case 6	: ;
-					break;
-					}
 					
-				} while (option != 6);
+						case "1"	: 
+							//------------------------ user id selection  
+							
+						System.out.println("The current balence your account is: ");
+						cp.checkBal(1);
+						System.out.println("Press any key to continue");
+						input.nextLine();
+						break;
+						
+						case "2"	: //withdrawCash(100);// update cash
+						break;
+						case "3"	: //Deposit(100);// update case
+						break;
+						case "4"	: // transfer(100);//update)
+						break;
+						case "5"	: //
+						break;
+						case "6"	: ;
+						break;
+						}
+					
+				} while (!(option.equals("6")));
 			
 			
 		}

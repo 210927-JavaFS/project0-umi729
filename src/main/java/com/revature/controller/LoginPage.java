@@ -13,27 +13,31 @@ import com.revature.service.ValidationClass;
 public class LoginPage {
 	
 	private static Logger Log=LoggerFactory.getLogger(LoginPage.class);
+	
 	public void loginInfo() throws InputMismatchException, IOException {
+	
 		Log.info("In controller: login input ");
+		
 		ValidationClass vc=new ValidationClass();
 		// 
+		
 		UserManagement um=new UserManagement();
 		
 		System.out.println("Please logon to system");
 		System.out.println();
 		System.out.println("Please select from following options");
-		
 		Scanner input=new Scanner(System.in);
-		String option;
+		String option="4";
 		String user=null;
 		String pass=null;
 		String email=null;
 		int zipCode=0;
 		boolean validation = false;
 		do {
-			System.out.println("1: Enter user credentials "
-					+ "2: Forget User Name "
-					+ "3: Forget password ""4: Exit ");
+			System.out.println("1: Enter user credentials \n"
+					+ "2: Forget User Name \n"
+					+ "3: Forget password \n"
+					+ "4: Exit ");
 			
 				// validate the input
 					do {
@@ -47,25 +51,17 @@ public class LoginPage {
 								 input.next();
 								 continue;
 							}
-						if ((option <1) ) {
-							System.out.println("Select a positive number");
-							continue;
-							
-						}
-						else if ((option > 4) ) {
-							System.out.println("Select between 1 to 4");
-							continue;
-						}
-						else {
-						validation = true;
-						}
+						
 					} while(validation== false);
+					
 //Condition testing where the code should go
 					switch(option) {
-						case 1:		System.out.println("Please enter your username");
+					
+						case "1":	System.out.println("Please enter your username");
 									if (input.hasNext()) {
 										user= input.next();
 									}
+									
 									System.out.println("Please enter your password");
 									if (input.hasNext()) {
 										
@@ -73,6 +69,7 @@ public class LoginPage {
 										pass= input.next();
 										
 									}
+									
 										if(user!=null )	{
 											if( ! (pass == null) ){//even password is null but it is continue going in block{
 												// call userManagement Class
@@ -83,12 +80,13 @@ public class LoginPage {
 									
 										break;
 // trying to find username by using email and zip code						
-						case 2:		System.out.println("Please enter your email registered with your account");
+						case "2":	System.out.println("Please enter your email registered with your account");
 									
 									while(!(vc.isValid(email= input.next()))) {
 										System.out.println("Please enter a valid email");
 									}
 									System.out.println("Please enter your zipCode");
+									
 									while (!(vc.zipUS(String.valueOf(zipCode= input.nextInt())) )) {
 										System.out.println("5 digit Zip Code is required");
 									}
@@ -98,26 +96,30 @@ public class LoginPage {
 									break;
 									
 // resetting password after verifying username email and password
-						case 3:		System.out.println("Please enter your User name");
+						case "3":	System.out.println("Please enter your User name");
 									user= input.next();
 									System.out.println("Please enter your email registered with your account");
+									
 									while(!(vc.isValid(email= input.next()))) {
 										System.out.println("Please enter a valid email");
 									}
+									
 									System.out.println("Please enter your zipCode");
+									
 									while (!(vc.zipUS(String.valueOf(zipCode= input.nextInt())) )) {
 										System.out.println("5 digit Zip Code is required");
 									}
 //call reset User name method from usermanagement Class
 									Log.debug("User, Email and zip code has taken by user in case (2) switch statement");
-						um.resetPassword(user, email, zipCode);
+									um.resetPassword(user, email, zipCode);
 									break;
-						case 4:;
+						case "4":;
 									break;
+						
 						default : System.out.println("It was not valid entry. ");;
 					}
 						
-		}while (!(option == 4));
+		}while (!(option.equals("4")));
 	}
 
 }
