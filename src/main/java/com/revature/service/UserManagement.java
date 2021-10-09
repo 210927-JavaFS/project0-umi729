@@ -19,9 +19,9 @@ public class UserManagement {
 		if(true) {
 			Log.info("login Successfully ");
 			Login lg=Login.INSTANCE;
-			lg.userName = userName;
-			lg.uid = 11;// select uid
-			lg.status= "ss";// select active
+			lg.userName = "Umer1";
+			lg.uid = 1;// select uid
+			lg.status= "active";// select active
 			lg.type="Employee"	;	//select type
 			lg.show();
 			

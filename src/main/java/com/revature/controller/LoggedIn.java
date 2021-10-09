@@ -1,6 +1,7 @@
 package com.revature.controller;
 
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
@@ -38,7 +39,7 @@ public class LoggedIn {
 						+ "2: Withraw Money\n"
 						+ "3: Deposit Money\n"
 						+ "4: Transfer Money\n"
-						+ "5: Update Account\n"
+						+ "5: Print your transactions \n"
 						+ "6: Logout");
 				System.out.println();
 				
@@ -66,20 +67,56 @@ public class LoggedIn {
 							//------------------------ user id selection  
 							
 						System.out.println("The current balence your account is: ");
-						cp.checkBal(1);
+						cp.checkBal(uid);
 						System.out.println("Press any key to continue");
 						input.nextLine();
 						break;
 						
-						case "2"	: //withdrawCash(100);// update cash
+						case "2"	: System.out.println("How much money you want to withdraw?");
+									String str =input.nextLine();
+									double dnum = Double.parseDouble(str);	
+									BigDecimal bd= new BigDecimal(dnum);
+									if(cp.withdrawCash(bd)) {
+										System.out.println("You withdraw the money successfully\n");
+										System.out.println("The current balence your account is now: ");
+										cp.checkBal(uid);
+										System.out.println("Press any key to continue");
+										input.nextLine();
+									}
+									
+									
+									
 						break;
-						case "3"	: //Deposit(100);// update case
+						case "3"	: 	System.out.println("How much money you want to deposit?");
+										String str1 =input.nextLine();								
+										double dep = Double.parseDouble(str1);	
+										BigDecimal bd2= new BigDecimal(dep);
+										if(cp.Deposit(bd2)) {
+										System.out.println("You deposit the money successfully\n");
+										System.out.println("The current balence your account is now: ");
+										cp.checkBal(uid);
+										System.out.println("Press any key to continue");
+										input.nextLine();
+										}
 						break;
-						case "4"	: // transfer(100);//update)
+						case "4"	: 	System.out.println("How much money you want to Transfer?");
+										String str3 =input.nextLine();
+										double amo = Double.parseDouble(str3);	
+										System.out.println("Please provide the account number where you want to transfer:");
+										String str4 =input.nextLine();
+										int otherAcc = Integer.parseInt(str4);	
+										BigDecimal bd3= new BigDecimal(amo);
+										if(cp.transfer(bd3, otherAcc)) {
+										System.out.println("Transfer the money successfully\n");
+										System.out.println("The current balence your account is now: ");
+										cp.checkBal(uid);
+										System.out.println("Press any key to continue");
+										input.nextLine();
+										}
+										
 						break;
-						case "5"	: //
-						break;
-						case "6"	: ;
+						
+						case "5"	: cp.viewCustomerAccount(uid);;
 						break;
 						}
 					

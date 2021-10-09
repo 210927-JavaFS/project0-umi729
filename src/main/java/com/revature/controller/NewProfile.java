@@ -41,12 +41,15 @@ public class NewProfile {
 			
 			
 			
-			System.out.println("Enter number of Account Holder(Max 10):");
+			System.out.println("Enter number of Account Holder(Max 10) Or 0 for Exit:");
 			
 			
 			do {
 				if(scan.hasNextInt()== true) {
 					   option= scan.nextInt();
+					   if(option==0) {
+						  break; 
+					   }
 					}
 					else
 					{

@@ -32,7 +32,7 @@ public class EmployeePortal extends Portal {
 	}
 	
 	
-	protected void viewCustomerAccount(int AccNo) {
+	public void viewCustomerAccount(int AccNo) {
 		// get from database
 		
 	}
@@ -50,7 +50,7 @@ public class EmployeePortal extends Portal {
 	protected void deny() {
 			
 	}
-	protected void checkBal(int acc) {
+	public void checkBal(int acc) {
 		
 		AccBalance bal= balDAO.findByAccNumber(acc);
 		System.out.println(bal.getBalance());

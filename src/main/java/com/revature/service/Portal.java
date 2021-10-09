@@ -6,39 +6,39 @@ package com.revature.service;
 	private int acc;
 	//constructor
 	
-	protected Portal(String userName, int acc) {
+	public Portal(String userName, int acc) {
 		this.userName=userName;
 		this.acc=acc;
 	}
 	
 	// getter setter
-	protected String getUserName() {
+	public String getUserName() {
 		return userName;
 	}
 
 
-	protected void setUserName(String userName) {
+	public void setUserName(String userName) {
 		this.userName = userName;
 	}
 
 
-	protected int getAcc() {
+	public int getAcc() {
 		return acc;
 	}
 
 
-	protected void setAcc(int acc) {
+	public void setAcc(int acc) {
 		this.acc = acc;
 	}
 
 //-------------------------------------------------
 	
 	// Methods
-	protected abstract void checkBal(int acc) ;
-	protected  void updateAccount(String userName, int uid) {
+	public abstract void checkBal(int acc) ;
+	public  void updateAccount(String userName, int uid) {
 		
 	};
-	protected abstract void viewCustomerAccount(int AccNo) ;
+	public abstract void viewCustomerAccount(int AccNo) ;
 	
 	
 	
