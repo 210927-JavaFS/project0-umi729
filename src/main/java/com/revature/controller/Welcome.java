@@ -12,50 +12,43 @@ public class Welcome {
 		ValidationClass vc;
 		System.out.println("Please select from following options:");
 		try (Scanner input = new Scanner(System.in)) {
-			int option = 0;
+			String option="3";
 			boolean validation=false;
 			vc=new ValidationClass();
 			// taking input from user
 			do {
-			System.out.println("1: Open an Account");
-			System.out.println("2: Login to Account");
-			System.out.println("3: Check Balance");
-			System.out.println("4: Exit");
-			System.out.println();
-			
-			System.out.print("Press 1-4: ");
+			System.out.println("1: Open an Account\n"
+					+ "2: Login to Account\n"
+					+ "3: Exit");
 			
 			
-			// validate the input
-				do {
-					if(input.hasNextInt()== true) {
-						   option= input.nextInt();
-						}
-						else
-						{
-							 System.out.println("Please enter number from (1-4)");
-							 input.next();
-							 continue;
-						}
-					if(vc.validateIntInput(option, 1, 4)) {
-						validation = true;
-					}
-					else {
-					continue;
-					}
-				} while(validation== false);
+			System.out.print("Press 1-3: ");
 			
-				if(option==1) {
-					NewProfile np=new NewProfile();
-					np.createProfile();
+			
+				if(input.hasNext()== true) {
+				   option= input.nextLine();
 				}
-				else if(option==2) {
-					LoginPage lp=new LoginPage();
-					lp.loginInfo();
+				else
+				{
+					 System.out.println("Please enter number from (1-3)");
+					 input.next();
+					 continue;
 				}
-			
+
+				switch(option) {
+				case "1" : NewProfile np=new NewProfile();
+							np.createProfile();
+							break;
+				case "2" :LoginPage lp=new LoginPage();
+						lp.loginInfo();
+						break;
+				default : System.out.println("Something went wrong");
+				break;
 				
-			} while (option != 4);
+				}
+
+				
+			} while (option.equals("3"));
 		}catch(InputMismatchException e) {
 			e.printStackTrace();
 		}

@@ -11,7 +11,7 @@ public interface AccountDAO {
 	public List<AccountTb> findAll();
 	public  List<AccountTb>  findByAccNumber(int acc);
 	public  List<AccountTb>  findByUserID(int uid);
-	public boolean profile(AccountTb tb);
+	public int profile(AccountTb tb);
 	public ListIterator<AccountTb> ListIterator(int uid);
 
 }

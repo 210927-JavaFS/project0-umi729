@@ -15,12 +15,12 @@ public class ValidationClass {
 	 public boolean validateDoubleInput(double bal, double minVal, double maxVal) {
 		 boolean check=true;
 		 if ((bal <minVal) ) {
-			 System.out.printf("please enter between %d - %d", minVal, maxVal);
+			 System.out.println("Not a valid Entry");
 				check = false;
 				
 			}
 			else if (bal > maxVal) {
-				System.out.printf("Maximum number you can enter is: %d", maxVal);
+				System.out.println("Not a valid Entry please check max and min");
 				check = false;
 			}
 		 return check;
@@ -29,12 +29,12 @@ public class ValidationClass {
 	 public boolean validateIntInput(int bal, int minVal, int maxVal) {
 		 boolean check=true;
 		 if ((bal <minVal) ) {
-				System.out.printf("please enter between %d - %d", minVal, maxVal);
+				System.out.println("Not valid entry");
 				check = false;
 				
 			}
 			else if (bal > maxVal) {
-				System.out.printf("Maximum number you can enter is: %d", maxVal);
+				System.out.println("Not a valid Entry please check max and min");
 				check = false;
 			}
 		 return check;

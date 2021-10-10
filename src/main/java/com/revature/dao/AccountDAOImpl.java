@@ -4,11 +4,11 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
 import com.revature.models.AccountTb;
-import com.revature.models.LoginTb;
 import com.revature.util.ConnectionUtil;
 
 public class AccountDAOImpl implements AccountDAO{
@@ -114,16 +114,15 @@ public class AccountDAOImpl implements AccountDAO{
 	}
 
 	@Override
-	public boolean profile(AccountTb tb) {
+	public int profile(AccountTb tb) {
 		try(Connection conn = ConnectionUtil.getConnection()){
 			
 			String sql = "INSERT INTO account (first_name, last_name, email, zipcode, acc_no) "
 					+ "VALUES (?, ?, ?, ?, ?)";
 			
-			
 			int count = 0;
 			
-			PreparedStatement statement = conn.prepareStatement(sql);
+			PreparedStatement statement = conn.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
 			
 			statement.setString(++count, tb.getfName());
 			statement.setString(++count, tb.getlName());
@@ -132,13 +131,15 @@ public class AccountDAOImpl implements AccountDAO{
 			statement.setInt(++count, tb.getAccNo());
 			
 			statement.execute();
+			ResultSet keys = statement.getGeneratedKeys();
+			int id = keys.getInt(1);
 			
-			return true;
+			return id;
 
 		}catch(SQLException e) {
 			e.printStackTrace();
 		}
-		return false;
+		return 0;
 
 	}
 
