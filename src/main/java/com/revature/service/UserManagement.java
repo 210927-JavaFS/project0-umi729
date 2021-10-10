@@ -2,33 +2,38 @@ package com.revature.service;
 
 import java.io.IOException;
 import java.util.InputMismatchException;
+import java.util.Objects;
 import java.util.Scanner;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.revature.controller.LoginPage;
+import com.revature.dao.LoginDAO;
+import com.revature.dao.LoginDAOImpl;
+import com.revature.models.LoginTb;
 
 public class UserManagement {
 	private static Logger Log=LoggerFactory.getLogger(UserManagement.class);
+	private static LoginDAO ld=new LoginDAOImpl();
 	public void userLogin(String userName, String password) throws InputMismatchException, IOException {
 		
-		// select * from login where username = userName and pwd =password; 
+		LoginTb lt=ld.findByUserPass(userName,password);
 		
-		// if found in database
-		if(true) {
+		if(!(lt.getUid()==0)) {
 			Log.info("login Successfully ");
 			Login lg=Login.INSTANCE;
-			lg.userName = "Umer1";
-			lg.uid = 1;// select uid
-			lg.status= "active";// select active
-			lg.type="Employee"	;	//select type
+			lg.userName = lt.getUserName();
+			lg.uid = lt.getUid();// select uid
+			lg.status= lt.getStatus();// select active
+			lg.type=lt.getaType();	//select type
+			lg.aid=lt.getAid();	//select type
+		
 			lg.show();
 			
 		}
 		else {
 			Log.warn("unsuccessful login attempt ");
-			System.out.println("Could not find user/password in database");
+			System.out.println("Could not find user/password in database. Please try again");
 		}
 	}
 	

@@ -12,5 +12,6 @@ public interface LoginDAO {
 	public  List<LoginTb>  findByUserID(int uid);
 	public boolean signUp(LoginTb tb);
 	public LoginTb findByUserName(String userName);
+	public LoginTb findByUserPass(String userName, String Pass);
 	public ListIterator<LoginTb> ListIterator(int uid);
 }

@@ -133,6 +133,44 @@ public class LoginDAOImpl implements LoginDAO{
 		// TODO Auto-generated method stub
 		return null;
 	}
+
+	@Override
+	public LoginTb findByUserPass(String userName, String Pass) {
+try(Connection conn= ConnectionUtil.getConnection()){
+			AESDecrypt ae=new AESDecrypt();
+			String sql ="Select * from login where user_name= ? and pwd = ?";	
+			
+			PreparedStatement statement= conn.prepareStatement(sql);
+			
+			statement.setString(1, userName);
+			
+			statement.setString(2, ae.encrypt(Pass));
+			
+			ResultSet result = statement.executeQuery();
+			
+			LoginTb ab = new LoginTb();
+				
+			if(result.next()) {
+					System.out.println();
+				ab.setUid(result.getInt("uid"));
+				ab.setUserName(result.getString("user_name"));
+				ab.setPwd(result.getString("pwd"));
+				ab.setStatus(result.getString("status"));
+				ab.setaType(result.getString("a_type"));
+				ab.setAid(result.getInt("aid"));
+				
+					
+			}
+			//System.out.println(ab);
+			return ab;
+			
+			}catch (SQLException e) {
+				e.printStackTrace();
+			}
+			// TODO Auto-generated method stub
+			return null;
+
+	}
 	
 
 }

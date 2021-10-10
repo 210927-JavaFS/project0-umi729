@@ -1,9 +1,7 @@
 package com.revature.dao;
 
-import com.revature.models.LoginTb;
-
 public class test {
-	static AES256 ae=new AES256();
+	
 	static LoginDAO bd= new LoginDAOImpl();
 	public static void main(String[] args) {
 		

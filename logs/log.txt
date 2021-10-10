@@ -2406,3 +2406,149 @@
 16:20:39.474 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setStatus method  
 16:20:39.474 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setaType method  
 16:20:39.474 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setAid method  
+16:52:44.938 [] [main] INFO  com.revature.controller.LoginPage - In controller: login input 
+16:53:07.930 [] [main] DEBUG com.revature.controller.LoginPage - Username and password has taken by user
+16:53:09.254 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB cunstructor without parameters 
+16:53:09.258 [] [main] INFO  com.revature.service.UserManagement - login Successfully 
+16:53:09.259 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getUserName method  
+16:53:09.259 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getUid method  
+16:53:09.259 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getStatus method  
+16:53:09.259 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getaType method  
+16:53:09.259 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getAid method  
+16:53:09.268 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb cunstructor 
+16:53:59.672 [] [main] INFO  com.revature.controller.LoginPage - In controller: login input 
+16:54:08.557 [] [main] DEBUG com.revature.controller.LoginPage - Username and password has taken by user
+16:54:09.963 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB cunstructor without parameters 
+16:54:09.967 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getUid method  
+16:54:09.967 [] [main] INFO  com.revature.service.UserManagement - login Successfully 
+16:54:09.968 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getUserName method  
+16:54:09.968 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getUid method  
+16:54:09.968 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getStatus method  
+16:54:09.968 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getaType method  
+16:54:09.968 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getAid method  
+16:54:09.974 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb cunstructor 
+16:57:09.885 [] [main] INFO  com.revature.controller.LoginPage - In controller: login input 
+16:57:15.157 [] [main] DEBUG com.revature.controller.LoginPage - Username and password has taken by user
+16:57:16.494 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB cunstructor without parameters 
+16:57:16.499 [] [main] INFO  com.revature.service.UserManagement - login Successfully 
+16:57:16.501 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getUserName method  
+16:57:16.501 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getUid method  
+16:57:16.501 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getStatus method  
+16:57:16.501 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getaType method  
+16:57:16.501 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getAid method  
+16:57:16.506 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb cunstructor 
+16:57:55.917 [] [main] INFO  com.revature.controller.LoginPage - In controller: login input 
+16:58:05.238 [] [main] DEBUG com.revature.controller.LoginPage - Username and password has taken by user
+16:58:06.571 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB cunstructor without parameters 
+16:58:06.572 [] [main] INFO  com.revature.service.UserManagement - login Successfully 
+16:58:06.573 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getUserName method  
+16:58:06.573 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getUid method  
+16:58:06.573 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getStatus method  
+16:58:06.573 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getaType method  
+16:58:06.573 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getAid method  
+16:58:06.579 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb cunstructor 
+16:59:16.661 [] [main] INFO  com.revature.controller.LoginPage - In controller: login input 
+16:59:21.945 [] [main] DEBUG com.revature.controller.LoginPage - Username and password has taken by user
+16:59:23.301 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB cunstructor without parameters 
+16:59:23.307 [] [main] INFO  com.revature.service.UserManagement - login Successfully 
+16:59:23.308 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getUserName method  
+16:59:23.308 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getUid method  
+16:59:23.308 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getStatus method  
+16:59:23.309 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getaType method  
+16:59:23.309 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getAid method  
+16:59:23.319 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb cunstructor 
+16:59:35.413 [] [main] INFO  com.revature.controller.LoginPage - In controller: login input 
+16:59:45.692 [] [main] DEBUG com.revature.controller.LoginPage - Username and password has taken by user
+16:59:47.169 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB cunstructor without parameters 
+16:59:47.171 [] [main] INFO  com.revature.service.UserManagement - login Successfully 
+16:59:47.172 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getUserName method  
+16:59:47.172 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getUid method  
+16:59:47.172 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getStatus method  
+16:59:47.172 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getaType method  
+16:59:47.172 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getAid method  
+16:59:47.177 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb cunstructor 
+17:01:10.300 [] [main] INFO  com.revature.controller.LoginPage - In controller: login input 
+17:01:19.404 [] [main] DEBUG com.revature.controller.LoginPage - Username and password has taken by user
+17:01:20.773 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB cunstructor without parameters 
+17:01:20.777 [] [main] INFO  com.revature.service.UserManagement - login Successfully 
+17:01:20.778 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getUserName method  
+17:01:20.778 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getUid method  
+17:01:20.779 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getStatus method  
+17:01:20.779 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getaType method  
+17:01:20.779 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getAid method  
+17:01:20.784 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb cunstructor 
+17:07:09.246 [] [main] INFO  com.revature.controller.LoginPage - In controller: login input 
+17:07:16.781 [] [main] DEBUG com.revature.controller.LoginPage - Username and password has taken by user
+17:07:18.354 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB cunstructor without parameters 
+17:07:18.355 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setUid method  
+17:07:18.355 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setUserName method  
+17:07:18.355 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setPwd method  
+17:07:18.455 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setStatus method  
+17:07:18.455 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setaType method  
+17:07:18.455 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setAid method  
+17:07:18.457 [] [main] INFO  com.revature.service.UserManagement - login Successfully 
+17:07:18.457 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getUserName method  
+17:07:18.457 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getUid method  
+17:07:18.457 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getStatus method  
+17:07:18.457 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getaType method  
+17:07:18.457 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getAid method  
+17:07:18.460 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb cunstructor 
+17:09:31.822 [] [main] INFO  com.revature.controller.LoginPage - In controller: login input 
+17:09:52.413 [] [main] DEBUG com.revature.controller.LoginPage - Username and password has taken by user
+17:09:53.896 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB cunstructor without parameters 
+17:09:53.896 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setUid method  
+17:09:53.896 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setUserName method  
+17:09:53.896 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setPwd method  
+17:09:53.983 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setStatus method  
+17:09:53.983 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setaType method  
+17:09:53.983 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setAid method  
+17:09:53.985 [] [main] INFO  com.revature.service.UserManagement - login Successfully 
+17:09:53.985 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getUserName method  
+17:09:53.985 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getUid method  
+17:09:53.985 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getStatus method  
+17:09:53.985 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getaType method  
+17:09:53.985 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getAid method  
+17:09:53.988 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb cunstructor 
+17:10:08.179 [] [main] DEBUG com.revature.controller.LoginPage - Username and password has taken by user
+17:10:08.998 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB cunstructor without parameters 
+17:10:08.998 [] [main] INFO  com.revature.service.UserManagement - login Successfully 
+17:10:08.998 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getUserName method  
+17:10:08.998 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getUid method  
+17:10:08.998 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getStatus method  
+17:10:08.998 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getaType method  
+17:10:08.998 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getAid method  
+17:12:25.109 [] [main] INFO  com.revature.controller.LoginPage - In controller: login input 
+17:12:28.176 [] [main] DEBUG com.revature.controller.LoginPage - Username and password has taken by user
+17:12:29.670 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB cunstructor without parameters 
+17:12:29.672 [] [main] INFO  com.revature.service.UserManagement - login Successfully 
+17:12:29.673 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getUserName method  
+17:12:29.673 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getUid method  
+17:12:29.673 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getStatus method  
+17:12:29.673 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getaType method  
+17:12:29.673 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getAid method  
+17:12:29.676 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb cunstructor 
+17:13:27.603 [] [main] INFO  com.revature.controller.LoginPage - In controller: login input 
+17:13:31.744 [] [main] DEBUG com.revature.controller.LoginPage - Username and password has taken by user
+17:13:33.650 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB cunstructor without parameters 
+17:13:33.653 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getUid method  
+17:13:33.653 [] [main] WARN  com.revature.service.UserManagement - unsuccessful login attempt 
+17:14:11.022 [] [main] DEBUG com.revature.controller.LoginPage - Username and password has taken by user
+17:14:11.919 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB cunstructor without parameters 
+17:14:11.921 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getUid method  
+17:14:11.921 [] [main] WARN  com.revature.service.UserManagement - unsuccessful login attempt 
+17:14:21.625 [] [main] DEBUG com.revature.controller.LoginPage - Username and password has taken by user
+17:14:22.485 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB cunstructor without parameters 
+17:14:22.486 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setUid method  
+17:14:22.486 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setUserName method  
+17:14:22.486 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setPwd method  
+17:14:22.591 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setStatus method  
+17:14:22.591 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setaType method  
+17:14:22.591 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setAid method  
+17:14:22.592 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getUid method  
+17:14:22.592 [] [main] INFO  com.revature.service.UserManagement - login Successfully 
+17:14:22.592 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getUserName method  
+17:14:22.593 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getUid method  
+17:14:22.593 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getStatus method  
+17:14:22.593 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getaType method  
+17:14:22.593 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getAid method  
+17:14:22.595 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb cunstructor 

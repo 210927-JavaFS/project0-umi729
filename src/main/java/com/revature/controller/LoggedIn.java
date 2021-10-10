@@ -27,9 +27,8 @@ public class LoggedIn {
 
 	//update profile
 	public void viewCP() throws InputMismatchException, IOException{
-			System.out.println("welcome Name ");
-			System.out.println("");// display information of user
-			System.out.println();
+			System.out.println("Welcome to Our Bank ");
+			
 			System.out.println("How can i help you. Please select from following options: ");
 			boolean validation = false;
 			String option="6";

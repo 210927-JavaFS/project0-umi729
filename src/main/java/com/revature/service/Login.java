@@ -11,10 +11,13 @@ public enum Login {
 	int uid;
 	String status;
 	String type;
+	int aid;
 	public void show() throws InputMismatchException, IOException {
 		System.out.println();
 		LoggedIn cp= new LoggedIn(userName, uid);
-		cp.viewCP();
 		
+		if(type.equals("Cus")) {
+			cp.viewCP();
+		}
 	}
 }
