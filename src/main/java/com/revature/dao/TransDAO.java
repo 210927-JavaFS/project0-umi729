@@ -10,7 +10,10 @@ public interface TransDAO {
 	public  List<TransactionTb>  findByAccNumber(int acc);
 	public  List<TransactionTb>  findByUserID(int uid);
 	public boolean addTrans(TransactionTb tb);
+	
 	public ListIterator<TransactionTb> ListIterator(int uid);
+	public ListIterator<TransactionTb> ListIterat(int uid);
+	
 	
 	
 

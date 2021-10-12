@@ -120,13 +120,54 @@ public class TransDAOImpl implements TransDAO {
 
 	@Override
 	public List<TransactionTb> findByUserID(int uid) {
-try(Connection conn= ConnectionUtil.getConnection()){
+		try(Connection conn= ConnectionUtil.getConnection()){
 			
 			String sql ="Select * from transction_tb where uid =?";	
 			
 			PreparedStatement statement= conn.prepareStatement(sql);
 			statement.setInt(1, uid);
-			System.out.println(statement);
+			//System.out.println(statement);
+			ResultSet result = statement.executeQuery();
+			
+			List<TransactionTb> list = new ArrayList<>();
+			
+			
+				while(result.next()) {
+					
+					TransactionTb tb = new TransactionTb();
+					
+					tb.setTid(result.getInt("tid"));
+					tb.setDate(result.getDate("t_time"));
+					tb.setTranType(result.getString("t_type"));
+					tb.setUid(result.getInt("uid"));
+					tb.setAmount(result.getBigDecimal("amount"));
+					tb.setToAccount(result.getInt("to_accountno"));
+					tb.setAcc_no(result.getInt("acc_no"));
+					list.add(tb);
+				}
+				return list;
+			
+			}catch (SQLException e) {
+				e.printStackTrace();
+			}
+			// TODO Auto-generated method stub
+			return null;
+
+
+	}
+
+	public List<TransactionTb> findByAccNO(int acc_no) {
+		try(Connection conn= ConnectionUtil.getConnection()){
+			
+			String sql ="select tid, t_time, t_type, l.uid AS uid, amount, to_accountno , ab.acc_no AS acc_no from transction_tb t "
+					+ "JOIN login l ON t.uid = l.uid "
+					+ "JOIN account a ON a.aid =l.aid "
+					+ "JOIN acc_bal ab ON ab.acc_no = a.acc_no "
+					+ "WHERE ab.acc_no = ?;";	
+			
+			PreparedStatement statement= conn.prepareStatement(sql);
+			statement.setInt(1, acc_no);
+			//System.out.println(statement);
 			ResultSet result = statement.executeQuery();
 			
 			List<TransactionTb> list = new ArrayList<>();
@@ -157,11 +198,19 @@ try(Connection conn= ConnectionUtil.getConnection()){
 	}
 
 	@Override
-	public java.util.ListIterator<TransactionTb> ListIterator(int uid) {
+	public ListIterator<TransactionTb> ListIterator(int uid) {
 		List<TransactionTb> td= findByUserID(uid);
 	
 		ListIterator<TransactionTb> arItr = td.listIterator();
 		return arItr;
 	}
+	@Override
+	public ListIterator<TransactionTb> ListIterat(int acc_no) {
+		List<TransactionTb> td= findByAccNO(acc_no);
+	
+		ListIterator<TransactionTb> arItr = td.listIterator();
+		return arItr;
+	}
 
+	
 }

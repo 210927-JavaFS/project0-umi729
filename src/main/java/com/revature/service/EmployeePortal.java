@@ -1,59 +1,97 @@
 package com.revature.service;
 
-import java.util.Scanner;
+import java.util.ListIterator;
 
 import com.revature.dao.BalanceDAO;
 import com.revature.dao.BalanceDAOImpl;
+import com.revature.dao.LoginDAO;
+import com.revature.dao.LoginDAOImpl;
+import com.revature.dao.TransDAO;
+import com.revature.dao.TransDAOImpl;
 import com.revature.models.AccBalance;
+import com.revature.models.ApPen;
+import com.revature.models.TransactionTb;
 
 public class EmployeePortal extends Portal {
-	
-	
-	private BalanceDAO balDAO= new BalanceDAOImpl();
-	//Constructor 
-	 public EmployeePortal(String userName, int acc) {
+
+	private BalanceDAO balDAO = new BalanceDAOImpl();
+	private LoginDAO logDAO = new LoginDAOImpl();
+
+	// Constructor
+	public EmployeePortal(String userName, int acc) {
 		super(userName, acc);
 	}
-	
-	
-	protected void updateStatus() {
-		// get from database
-		
-		Scanner scan=new Scanner(System.in);
-		System.out.println("Press a for approval or any key for deny");
-		String option=scan.next();
-		if(option.equals("a")) {
-			approve();
+
+	public void activate(int acc) {
+		if(logDAO.activate(acc)) {
+			System.out.println("Account Activated");
 		}
-		else {
-			deny();
-		}
-		scan.close();
-	}
-	
-	
-	public void viewCustomerAccount(int AccNo) {
-		// get from database
-		
-	}
-	protected void viewCustomerAccount(String userName) {
-		// get from database
-		
-	}
-	protected void viewCustomerAccount(String fName, String lName, int zipCode) {
-		// get from database
-		
-	}
-	protected void approve() {
-		
-	}
-	protected void deny() {
-			
-	}
-	public void checkBal(int acc) {
-		
-		AccBalance bal= balDAO.findByAccNumber(acc);
-		System.out.println(bal.getBalance());
 	}
 
+	public void deactivate(int acc) {
+		if(logDAO.deactivate(acc)) {
+			System.out.println("Account Deactivated");
+		}
+	}
+
+	public void checkBal(int acc) {
+
+		AccBalance bal = balDAO.findByAcc(acc);
+		if (!(bal.getBalance() == null)) {
+			System.out.println("Account No: " + bal.getBalance());
+		} else
+			System.out.println("Couldn't find account");
+	}
+
+	public void checkBalByUser(String user) {
+
+		AccBalance bal = balDAO.findByUserName(user);
+		if (!(bal.getBalance() == null)) {
+			System.out.println("Account No: " + bal.getId());
+			System.out.println("Balance: " + bal.getBalance());
+		} else
+			System.out.println("Couldn't find account");
+
+	}
+
+	@Override
+	public void viewCustomerAccount(int AccNo) {
+		TransDAO td = new TransDAOImpl();
+		ListIterator<TransactionTb> lst = td.ListIterat(AccNo);
+
+		System.out.printf("Transaction Date: Amount: Type of Trans: UserID: ToAccount No: FromAccount%n");
+
+		while (lst.hasNext()) {
+			TransactionTb rec = lst.next();
+			System.out.print(rec.getDate());
+			System.out.print("         ");
+			System.out.print(rec.getAmount());
+			System.out.printf("  %8s  %8d %15d %10d %n", rec.getTranType(), rec.getUid(), rec.getToAccount(),
+					rec.getAcc_no());
+
+		}
+
+	}
+
+	public void viewPendApp() {
+		
+		ListIterator<ApPen> lst = logDAO.ListIterator();
+
+		//System.out.printf("Transaction Date: Amount: Type of Trans: UserID: ToAccount No: FromAccount%n");
+
+		while (lst.hasNext()) {
+			ApPen rec = lst.next();
+			System.out.println(rec.toString());
+			
+		}
+	}
+
+		public void viewProfile(int acc) {
+		
+		System.out.println(logDAO.proFileReport(acc));
+
+		//System.out.printf("Transaction Date: Amount: Type of Trans: UserID: ToAccount No: FromAccount%n");
+
+		
+	}
 }

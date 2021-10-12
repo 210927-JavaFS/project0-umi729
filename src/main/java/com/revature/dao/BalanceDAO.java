@@ -13,6 +13,10 @@ public interface BalanceDAO {
 	public boolean addBalance(AccBalance ab);
 	public boolean withdraw( BigDecimal i, int uid);
 	public boolean transfer(BigDecimal amount, int oa, int acc);
+	public AccBalance findByAcc(int acc);
+	public boolean deposit(int acc_no, BigDecimal amount);
+	public boolean withdraw(int acc_no, BigDecimal amount);
+	public AccBalance findByUserName(String user);
 	
 
 }

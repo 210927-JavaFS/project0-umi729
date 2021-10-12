@@ -1,13 +1,12 @@
 package com.revature.controller;
 
 import java.io.IOException;
-import java.math.BigDecimal;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
 import com.revature.service.EmployeePortal;
 
-public class Employee {
+public class Employee  {
 
 	private String userName;
 	private int uid;
@@ -20,16 +19,21 @@ public class Employee {
 	}
 
 	public void viewCP() throws InputMismatchException, IOException {
-		System.out.println("Welcome to Our Bank ");
+		System.out.println("Employee Management Service ");
 		System.out.println(" Please select from following options: ");
 		boolean validation = false;
 		String option = "6";
 		Scanner input = new Scanner(System.in);
 		do {
-			System.out.println("1: Check Customer balance\n " + "2: Check Customer Profile\n "
-					+ "3: Print Customer transactions \n " + "4: Activate/deactivate Custormer Account\n"
-					+ "5: Logout");
-			System.out.print("Press select options from 1-5: ");
+			System.out.println("1: Check balance by Account Number \n"
+					+ "2: Check Balance by User Name \n"
+					+ "3: Pending applications for approval \n"
+					+ "4: Check Customer Profile \n"
+					+ "5: Activate Custormer Account \n"
+					+ "6: Deactivate Custormer Account \n"
+					+ "7: Print Customer transactions \n"
+					+ "8: Logout");
+			System.out.print("Press select options from 1-8: ");
 
 			// validate the input
 			do {
@@ -37,7 +41,7 @@ public class Employee {
 					option = input.nextLine();
 					validation = true;
 				} else {
-					System.out.println("Please enter number from (1-5)");
+					System.out.println("Please enter number from (1-8)");
 					input.next();
 					continue;
 				}
@@ -48,47 +52,59 @@ public class Employee {
 
 			case "1":
 				System.out.println("Please Enter Customer Account number: ");
-				System.out.println("The current balence your account is: ");
-				int acc= Integer.parseInt(input.next());
+				int acc = Integer.parseInt(input.next());
+				System.out.println("The balence of account is: ");
 				cp.checkBal(acc);
-				System.out.println("Press any key to continue");
-				input.nextLine();
+				System.out.println("=======================================================================");
+
 				break;
 
 			case "2":
-				System.out.println("How much money you want to withdraw?");
+				System.out.println("Please Enter Customer User Name: ");
 				String str = input.nextLine();
-				double dnum = Double.parseDouble(str);
-				BigDecimal bd = new BigDecimal(dnum);
-				
+				cp.checkBalByUser(str);
+				System.out.println("The balence of account is: ");
+				System.out.println("=======================================================================");
 
 				break;
 			case "3":
-				System.out.println("How much money you want to deposit?");
-				String str1 = input.nextLine();
-				double dep = Double.parseDouble(str1);
-				BigDecimal bd2 = new BigDecimal(dep);
-				
-				
+				System.out.println("Pending Accounts for approvals:\n");
+				cp.viewPendApp();
+				System.out.println("=======================================================================");
 				break;
 			case "4":
-				System.out.println("How much money you want to Transfer?");
-				String str3 = input.nextLine();
-				double amo = Double.parseDouble(str3);
-				System.out.println("Please provide the account number where you want to transfer:");
-				String str4 = input.nextLine();
-				int otherAcc = Integer.parseInt(str4);
-				BigDecimal bd3 = new BigDecimal(amo);
-				
+				System.out.println("Please Enter Customer Account Number: ");
+				int acc2 = Integer.parseInt(input.next());
+				cp.viewProfile(acc2);
+				System.out.println("=======================================================================");
 				break;
 
 			case "5":
-				
-				;
+				System.out.println("Please Enter Customer Account Number: ");
+				int acc3 = Integer.parseInt(input.next());
+				cp.activate(acc3);;
+				System.out.println("=======================================================================");
+				break;
+			case "6":
+				System.out.println("Please Enter Customer Account Number: ");
+				int acc4 = Integer.parseInt(input.next());
+				cp.deactivate(acc4);;
+				System.out.println("=======================================================================");
+				break;
+			
+			case "7":
+				System.out.println("Please enter the account number to print statement");
+				cp.viewCustomerAccount(Integer.parseInt(input.next()));
+				System.out.println("=======================================================================");
+				break;
+
+			default:
+				System.out.println("Something went wrong!!!");
+				System.out.println("=======================================================================");
 				break;
 			}
 
-		} while (!(option.equals("6")));
+		} while (!(option.equals("7")));
 
 	}
 

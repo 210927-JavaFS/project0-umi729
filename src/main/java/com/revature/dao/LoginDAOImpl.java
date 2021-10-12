@@ -8,7 +8,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.ListIterator;
 
+import com.revature.models.ApPen;
 import com.revature.models.LoginTb;
+import com.revature.models.TransactionTb;
 import com.revature.util.ConnectionUtil;
 
 public class LoginDAOImpl implements LoginDAO {
@@ -118,6 +120,58 @@ public class LoginDAOImpl implements LoginDAO {
 
 	}
 
+	/*
+	 * UPDATE login SET status = 'Active' WHERE uid = ( SELECT uid FROM login l JOIN
+	 * account a ON l.aid =a.aid JOIN acc_bal ab ON ab.acc_no = a.acc_no WHERE
+	 * ab.acc_no = 888888 );
+	 */
+	public boolean activate(int acc) {
+
+		try (Connection conn = ConnectionUtil.getConnection()) {
+
+			String sql = "UPDATE login SET status = 'Active' WHERE uid = ("
+					+ "SELECT uid FROM login l JOIN account a ON l.aid =a.aid "
+					+ "JOIN acc_bal ab ON ab.acc_no = a.acc_no WHERE ab.acc_no = ?" + "); ";
+
+			PreparedStatement statement = conn.prepareStatement(sql);
+
+			statement.setInt(1, acc);
+
+			statement.executeUpdate();
+
+			return true;
+
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+
+		return false;
+
+	}
+	public boolean deactivate(int acc) {
+
+		try (Connection conn = ConnectionUtil.getConnection()) {
+
+			String sql = "UPDATE login SET status = 'Active' WHERE uid = ("
+					+ "SELECT uid FROM login l JOIN account a ON l.aid =a.aid "
+					+ "JOIN acc_bal ab ON ab.acc_no = a.acc_no WHERE ab.acc_no = ?" + "); ";
+
+			PreparedStatement statement = conn.prepareStatement(sql);
+
+			statement.setInt(1, acc);
+
+			statement.executeUpdate();
+
+			return true;
+
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+
+		return false;
+
+	}
+
 	@Override
 	public boolean signUp(LoginTb tb) {
 		if (!(findByUser(tb.getUserName()))) {
@@ -164,11 +218,12 @@ public class LoginDAOImpl implements LoginDAO {
 		return null;
 	}
 
+// User verifications
 	@Override
 	public LoginTb findByUserPass(String userName, String Pass) {
 		try (Connection conn = ConnectionUtil.getConnection()) {
 			AESDecrypt ae = new AESDecrypt();
-			String sql = "Select * from login where user_name= ? and pwd = ?";
+			String sql = "Select * from login where user_name= ? and pwd = ? and status = 'Active'";
 
 			PreparedStatement statement = conn.prepareStatement(sql);
 
@@ -199,6 +254,84 @@ public class LoginDAOImpl implements LoginDAO {
 		// TODO Auto-generated method stub
 		return null;
 
+	}
+
+	public List<ApPen> applications() {
+		try (Connection conn = ConnectionUtil.getConnection()) {
+
+			String sql = "SELECT ab.acc_no AS acc_no, bal, first_name , last_name, email, zipCode, user_name, a_type, status "
+					+ " FROM acc_bal ab  JOIN account a ON ab.acc_no =a.acc_no \r\n" + "JOIN login l ON a.aid = l.aid "
+					+ " WHERE status='disable';";
+
+			PreparedStatement statement = conn.prepareStatement(sql);
+//System.out.println(statement);
+			ResultSet result = statement.executeQuery();
+//System.out.println(statement);
+			List<ApPen> tb = new ArrayList<>();
+			while (result.next()) {
+				ApPen ab = new ApPen();
+
+				ab.setAcc_no(result.getInt("acc_no"));
+				ab.setBal(result.getDouble("acc_no"));
+				ab.setFName(result.getString("first_name"));
+				ab.setlName(result.getString("last_name"));
+				ab.setZipCode(result.getInt("zipCode"));
+				ab.setEmail(result.getString("email"));
+				ab.setUser_name(result.getString("user_name"));
+				ab.setStatus(result.getString("status"));
+				ab.setAtype(result.getString("a_type"));
+
+				tb.add(ab);
+
+			}
+			return tb;
+
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		// TODO Auto-generated method stub
+		return null;
+
+	}
+
+	public ApPen proFileReport(int acc) {
+		try (Connection conn = ConnectionUtil.getConnection()) {
+
+			String sql = "SELECT ab.acc_no AS acc_no, bal, first_name , last_name, email, zipCode, user_name, a_type, status \r\n"
+					+ "FROM acc_bal ab \r\n" + "JOIN account a ON ab.acc_no =a.acc_no \r\n"
+					+ "JOIN login l ON a.aid = l.aid \r\n" + "WHERE ab.acc_no = ?;";
+
+			PreparedStatement statement = conn.prepareStatement(sql);
+			statement.setInt(1, acc);
+			ResultSet result = statement.executeQuery();
+//System.out.println(statement);
+			ApPen ab = new ApPen();
+			if (result.next()) {
+				ab.setAcc_no(result.getInt("acc_no"));
+				ab.setBal(result.getDouble("acc_no"));
+				ab.setFName(result.getString("first_name"));
+				ab.setlName(result.getString("last_name"));
+				ab.setZipCode(result.getInt("zipCode"));
+				ab.setEmail(result.getString("email"));
+				ab.setUser_name(result.getString("user_name"));
+				ab.setStatus(result.getString("status"));
+				ab.setAtype(result.getString("a_type"));
+			}
+			return ab;
+
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		// TODO Auto-generated method stub
+		return null;
+
+	}
+
+	public ListIterator<ApPen> ListIterator() {
+		List<ApPen> td = applications();
+
+		ListIterator<ApPen> arItr = td.listIterator();
+		return arItr;
 	}
 
 }
