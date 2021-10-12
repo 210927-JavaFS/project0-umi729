@@ -11,23 +11,22 @@ import java.util.ListIterator;
 import com.revature.models.LoginTb;
 import com.revature.util.ConnectionUtil;
 
-public class LoginDAOImpl implements LoginDAO{
+public class LoginDAOImpl implements LoginDAO {
 
 	@Override
 	public List<LoginTb> findAll() {
-		try(Connection conn= ConnectionUtil.getConnection()){
-			
-			String sql ="Select * from login";	
-			
-			PreparedStatement statement= conn.prepareStatement(sql);
-			
+		try (Connection conn = ConnectionUtil.getConnection()) {
+
+			String sql = "Select * from login";
+
+			PreparedStatement statement = conn.prepareStatement(sql);
+
 			ResultSet result = statement.executeQuery();
-			
-			
-			List<LoginTb> tb=new ArrayList<>();
-			while(result.next()) {
+
+			List<LoginTb> tb = new ArrayList<>();
+			while (result.next()) {
 				LoginTb ab = new LoginTb();
-				
+
 				ab.setUid(result.getInt("uid"));
 				ab.setUserName(result.getString("user_name"));
 				ab.setPwd(result.getString("pwd"));
@@ -35,15 +34,15 @@ public class LoginDAOImpl implements LoginDAO{
 				ab.setaType(result.getString("a_type"));
 				ab.setAid(result.getInt("aid"));
 				tb.add(ab);
-					
+
 			}
 			return tb;
-			
-			}catch (SQLException e) {
-				e.printStackTrace();
-			}
-			// TODO Auto-generated method stub
-			return null;
+
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		// TODO Auto-generated method stub
+		return null;
 
 	}
 
@@ -53,72 +52,103 @@ public class LoginDAOImpl implements LoginDAO{
 		return null;
 	}
 
-	
 	public LoginTb findByUserName(String userName) {
-			try(Connection conn= ConnectionUtil.getConnection()){
-			
-			String sql ="Select * from login where user_name= ?";	
-			
-			PreparedStatement statement= conn.prepareStatement(sql);
-			
+		try (Connection conn = ConnectionUtil.getConnection()) {
+
+			String sql = "Select * from login where user_name= ?";
+
+			PreparedStatement statement = conn.prepareStatement(sql);
+
 			statement.setString(1, userName);
-			
+
 			ResultSet result = statement.executeQuery();
-			
+
 			LoginTb ab = new LoginTb();
-				
-			if(result.next()) {
-					
-				
+
+			if (result.next()) {
+
 				ab.setUid(result.getInt("uid"));
 				ab.setUserName(result.getString("user_name"));
 				ab.setPwd(result.getString("pwd"));
 				ab.setStatus(result.getString("status"));
 				ab.setaType(result.getString("a_type"));
 				ab.setAid(result.getInt("aid"));
-				
-					
+
 			}
 			return ab;
-			
-			}catch (SQLException e) {
-				e.printStackTrace();
+
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		// TODO Auto-generated method stub
+		return null;
+
+	}
+
+	public boolean findByUser(String userName) {
+		try (Connection conn = ConnectionUtil.getConnection()) {
+
+			String sql = "Select * from login where user_name= ?";
+
+			PreparedStatement statement = conn.prepareStatement(sql);
+
+			statement.setString(1, userName);
+
+			ResultSet result = statement.executeQuery();
+
+			LoginTb ab = new LoginTb();
+
+			if (result.next()) {
+
+				ab.setUid(result.getInt("uid"));
+				ab.setUserName(result.getString("user_name"));
+				ab.setPwd(result.getString("pwd"));
+				ab.setStatus(result.getString("status"));
+				ab.setaType(result.getString("a_type"));
+				ab.setAid(result.getInt("aid"));
+
 			}
-			// TODO Auto-generated method stub
-			return null;
+			return true;
+
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		// TODO Auto-generated method stub
+		return false;
 
 	}
 
 	@Override
 	public boolean signUp(LoginTb tb) {
-		try(Connection conn = ConnectionUtil.getConnection()){
-			
-			//String sql = "INSERT INTO account (first_name, last_name, email, zipcode) "
-			//		+ "VALUES (?, ?, ?, ?)";
-			String sql = "INSERT INTO login (user_name, pwd, status, a_type, aid) "
-					+ "VALUES (?, ?, ?,?, ?)";
-			
-			int count = 0;
-			
-			PreparedStatement statement = conn.prepareStatement(sql);
-			
-			statement.setString(++count, tb.getUserName());
-			statement.setString(++count, tb.getPwd());
-			statement.setString(++count, tb.getStatus());
-			statement.setString(++count, tb.getaType());
-			statement.setInt(++count, tb.getAid());
-			//statement.setString(++count, tb.getPsk());
-			
-			statement.execute();
-			
-			return true;
+		if (!(findByUser(tb.getUserName()))) {
 
-		}catch(SQLException e) {
-			e.printStackTrace();
-		}
+			try (Connection conn = ConnectionUtil.getConnection()) {
+
+				// String sql = "INSERT INTO account (first_name, last_name, email, zipcode) "
+				// + "VALUES (?, ?, ?, ?)";
+				String sql = "INSERT INTO login (user_name, pwd, status, a_type, aid) " + "VALUES (?, ?, ?,?, ?)";
+
+				int count = 0;
+
+				PreparedStatement statement = conn.prepareStatement(sql);
+
+				statement.setString(++count, tb.getUserName());
+				statement.setString(++count, tb.getPwd());
+				statement.setString(++count, tb.getStatus());
+				statement.setString(++count, tb.getaType());
+				statement.setInt(++count, tb.getAid());
+				// statement.setString(++count, tb.getPsk());
+
+				statement.execute();
+
+				return true;
+
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+		} else
+			System.out.println("This user is already taken. ");
 		return false;
-
-
 
 	}
 
@@ -136,41 +166,39 @@ public class LoginDAOImpl implements LoginDAO{
 
 	@Override
 	public LoginTb findByUserPass(String userName, String Pass) {
-try(Connection conn= ConnectionUtil.getConnection()){
-			AESDecrypt ae=new AESDecrypt();
-			String sql ="Select * from login where user_name= ? and pwd = ?";	
-			
-			PreparedStatement statement= conn.prepareStatement(sql);
-			
+		try (Connection conn = ConnectionUtil.getConnection()) {
+			AESDecrypt ae = new AESDecrypt();
+			String sql = "Select * from login where user_name= ? and pwd = ?";
+
+			PreparedStatement statement = conn.prepareStatement(sql);
+
 			statement.setString(1, userName);
-			
+
 			statement.setString(2, ae.encrypt(Pass));
-			
+
 			ResultSet result = statement.executeQuery();
-			
+
 			LoginTb ab = new LoginTb();
-				
-			if(result.next()) {
-					System.out.println();
+
+			if (result.next()) {
+				System.out.println();
 				ab.setUid(result.getInt("uid"));
 				ab.setUserName(result.getString("user_name"));
 				ab.setPwd(result.getString("pwd"));
 				ab.setStatus(result.getString("status"));
 				ab.setaType(result.getString("a_type"));
 				ab.setAid(result.getInt("aid"));
-				
-					
+
 			}
-			//System.out.println(ab);
+			// System.out.println(ab);
 			return ab;
-			
-			}catch (SQLException e) {
-				e.printStackTrace();
-			}
-			// TODO Auto-generated method stub
-			return null;
+
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		// TODO Auto-generated method stub
+		return null;
 
 	}
-	
 
 }

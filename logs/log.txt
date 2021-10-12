@@ -2859,3 +2859,1265 @@
 23:56:38.367 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setStatus method  
 23:56:38.367 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setaType method  
 23:56:41.088 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb cunstructor 
+00:12:43.506 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb cunstructor without parameters 
+00:12:43.509 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB cunstructor without parameters 
+00:12:46.488 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+00:12:47.840 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+00:12:58.120 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+00:13:01.096 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+00:13:04.056 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setUserName method  
+00:13:05.809 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setPwd method  
+00:13:06.033 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setStatus method  
+00:13:06.033 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setaType method  
+00:13:09.603 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb cunstructor 
+00:13:10.886 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+00:13:11.583 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+00:13:11.584 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+00:13:11.584 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+00:13:11.584 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+00:13:11.585 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+00:26:03.223 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb cunstructor without id 
+00:26:04.717 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+00:26:04.717 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+00:26:04.717 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+00:26:04.717 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+00:26:04.718 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+00:26:32.854 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb cunstructor without id 
+00:26:34.118 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+00:26:34.118 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+00:26:34.118 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+00:26:34.118 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+00:26:34.119 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+00:28:39.490 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb cunstructor without id 
+00:28:40.905 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+00:28:40.905 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+00:28:40.905 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+00:28:40.905 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+00:28:40.906 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+00:29:59.623 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb cunstructor without id 
+00:30:00.901 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+00:30:00.902 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+00:30:00.902 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+00:30:00.902 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+00:30:00.902 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+00:31:47.324 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb cunstructor without parameters 
+00:31:47.327 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB cunstructor without parameters 
+00:31:53.526 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+00:31:55.174 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+00:31:59.353 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+00:32:02.999 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+00:32:04.879 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setUserName method  
+00:32:06.056 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setPwd method  
+00:32:06.297 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setStatus method  
+00:32:06.297 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setaType method  
+00:32:09.712 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+00:32:12.148 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+00:32:16.217 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+00:32:19.141 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+00:32:20.706 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setUserName method  
+00:32:21.661 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setPwd method  
+00:32:21.747 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setStatus method  
+00:32:21.747 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setaType method  
+00:32:25.184 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb cunstructor 
+00:32:26.500 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+00:32:27.210 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+00:32:27.210 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+00:32:27.210 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+00:32:27.211 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+00:32:27.211 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+00:32:27.325 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setAid method  
+00:32:28.004 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getUserName method  
+00:32:28.004 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getPwd method  
+00:32:28.118 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getStatus method  
+00:32:28.118 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getaType method  
+00:32:28.118 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getAid method  
+00:35:41.918 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb cunstructor without parameters 
+00:35:41.921 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB cunstructor without parameters 
+00:38:16.649 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb cunstructor without parameters 
+00:38:16.652 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB cunstructor without parameters 
+00:38:25.878 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+00:38:27.958 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+00:38:35.117 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+00:38:41.486 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+00:38:45.744 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setUserName method  
+00:38:46.885 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setPwd method  
+00:38:47.100 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setStatus method  
+00:38:47.100 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setaType method  
+00:38:51.914 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+00:38:53.776 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+00:38:58.159 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+00:39:03.549 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+00:39:06.914 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setUserName method  
+00:39:08.227 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setPwd method  
+00:39:08.325 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setStatus method  
+00:39:08.325 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setaType method  
+00:39:11.683 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb cunstructor 
+00:39:12.845 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+00:39:13.567 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+00:39:13.567 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+00:39:13.567 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+00:39:13.567 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+00:39:13.567 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+00:39:13.658 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setAid method  
+00:39:14.338 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getUserName method  
+00:39:14.339 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getPwd method  
+00:39:14.441 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getStatus method  
+00:39:14.441 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getaType method  
+00:39:14.441 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getAid method  
+00:42:06.643 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb cunstructor without parameters 
+00:42:06.646 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB cunstructor without parameters 
+00:42:11.519 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+00:42:12.229 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+00:42:18.406 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+00:42:23.728 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+00:42:25.054 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setUserName method  
+00:42:25.719 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setPwd method  
+00:42:25.954 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setStatus method  
+00:42:25.954 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setaType method  
+00:42:27.581 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+00:42:28.325 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+00:42:31.164 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+00:42:33.398 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+00:42:34.634 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setUserName method  
+00:42:35.705 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setPwd method  
+00:42:35.790 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setStatus method  
+00:42:35.790 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setaType method  
+00:42:38.428 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb cunstructor 
+00:42:38.430 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+00:42:38.430 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb toString method 
+00:47:24.818 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb cunstructor without parameters 
+00:47:24.821 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB cunstructor without parameters 
+00:47:27.609 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+00:47:28.305 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+00:47:30.997 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+00:47:36.875 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+00:47:37.952 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setUserName method  
+00:47:38.699 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setPwd method  
+00:47:38.934 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setStatus method  
+00:47:38.934 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setaType method  
+00:47:40.621 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+00:47:41.546 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+00:47:44.929 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+00:47:47.240 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+00:47:48.476 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setUserName method  
+00:47:49.510 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setPwd method  
+00:47:49.603 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setStatus method  
+00:47:49.603 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setaType method  
+00:47:51.704 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb cunstructor 
+00:47:51.705 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+00:47:51.705 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb toString method 
+00:50:56.923 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb cunstructor without parameters 
+00:50:56.926 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB cunstructor without parameters 
+00:51:00.394 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+00:51:01.131 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+00:51:11.294 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+00:51:13.592 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+00:51:15.041 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setUserName method  
+00:51:15.767 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setPwd method  
+00:51:16.022 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setStatus method  
+00:51:16.022 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setaType method  
+00:51:19.577 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+00:51:20.580 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+00:51:24.909 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+00:51:27.224 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+00:51:28.803 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setUserName method  
+00:51:29.739 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setPwd method  
+00:51:29.829 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setStatus method  
+00:51:29.829 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setaType method  
+00:51:32.802 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+00:51:32.802 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb toString method 
+00:51:32.890 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb cunstructor 
+00:51:32.891 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+00:51:32.891 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb toString method 
+00:53:17.959 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb cunstructor without parameters 
+00:53:17.962 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB cunstructor without parameters 
+00:53:20.321 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+00:53:21.026 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+00:53:25.316 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+00:53:27.676 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+00:53:29.024 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setUserName method  
+00:53:31.219 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setPwd method  
+00:53:31.468 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setStatus method  
+00:53:31.468 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setaType method  
+00:53:31.468 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+00:53:31.468 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb toString method 
+00:53:46.565 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+00:53:47.997 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+00:53:51.991 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+00:53:57.539 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+00:53:59.511 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setUserName method  
+00:54:00.335 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setPwd method  
+00:54:00.433 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setStatus method  
+00:54:00.433 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setaType method  
+00:54:00.433 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+00:54:00.433 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb toString method 
+00:54:05.113 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb cunstructor 
+00:54:05.114 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+00:54:05.114 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb toString method 
+00:54:05.114 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+00:54:05.114 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb toString method 
+00:55:57.118 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb cunstructor without parameters 
+00:55:57.121 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB cunstructor without parameters 
+00:56:05.623 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+00:56:06.887 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+00:56:11.715 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+00:56:13.811 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+00:56:14.976 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setUserName method  
+00:56:15.804 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setPwd method  
+00:56:16.028 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setStatus method  
+00:56:16.028 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setaType method  
+00:56:20.285 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+00:56:21.859 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+00:56:27.243 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+00:56:29.756 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+00:56:31.927 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setUserName method  
+00:56:32.729 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setPwd method  
+00:56:32.820 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setStatus method  
+00:56:32.820 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setaType method  
+00:56:35.057 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb cunstructor 
+00:56:36.355 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+00:56:37.047 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+00:56:37.048 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+00:56:37.048 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+00:56:37.048 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+00:56:37.049 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+00:56:37.141 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setAid method  
+00:56:38.101 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getUserName method  
+00:56:38.102 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getPwd method  
+00:56:38.229 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getStatus method  
+00:56:38.229 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getaType method  
+00:56:38.229 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getAid method  
+00:56:38.304 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+00:56:38.962 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+00:56:38.962 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+00:56:38.962 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+00:56:38.962 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+00:56:38.963 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+00:56:39.040 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setAid method  
+00:56:39.695 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getUserName method  
+00:56:39.695 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getPwd method  
+00:56:39.801 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getStatus method  
+00:56:39.801 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getaType method  
+00:56:39.801 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getAid method  
+00:57:21.737 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb cunstructor without parameters 
+00:57:21.740 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB cunstructor without parameters 
+00:57:25.188 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+00:57:31.801 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+00:57:37.512 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+00:57:40.192 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+00:57:42.762 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setUserName method  
+00:57:44.026 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setPwd method  
+00:57:44.262 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setStatus method  
+00:57:44.263 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setaType method  
+00:57:46.506 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+00:57:49.233 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+00:57:52.701 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+00:57:55.946 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+00:57:57.809 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setUserName method  
+00:58:00.050 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setPwd method  
+00:58:00.144 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setStatus method  
+00:58:00.144 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setaType method  
+00:58:09.247 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb cunstructor 
+00:58:10.431 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+00:58:11.064 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+00:58:11.064 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+00:58:11.064 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+00:58:11.064 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+00:58:11.064 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+00:58:11.149 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setAid method  
+00:58:11.812 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getUserName method  
+00:58:11.812 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getPwd method  
+00:58:11.971 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getStatus method  
+00:58:11.971 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getaType method  
+00:58:11.971 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getAid method  
+00:58:12.046 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+00:58:12.671 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+00:58:12.671 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+00:58:12.671 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+00:58:12.671 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+00:58:12.671 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+00:58:12.745 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setAid method  
+00:58:13.679 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getUserName method  
+00:58:13.679 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getPwd method  
+00:58:13.775 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getStatus method  
+00:58:13.775 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getaType method  
+00:58:13.775 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getAid method  
+02:49:23.743 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb cunstructor without parameters 
+02:49:23.746 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB cunstructor without parameters 
+02:49:30.301 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+02:49:31.084 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+02:49:35.511 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+02:49:41.679 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+02:49:43.135 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setUserName method  
+02:49:43.909 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setPwd method  
+02:49:44.115 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setStatus method  
+02:49:44.115 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setaType method  
+02:49:47.328 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+02:49:48.931 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+02:49:54.395 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+02:49:57.320 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+02:50:00.769 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setUserName method  
+02:50:02.816 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setPwd method  
+02:50:02.902 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setStatus method  
+02:50:02.902 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setaType method  
+02:50:05.403 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb cunstructor 
+02:50:06.662 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+02:50:07.359 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+02:50:07.360 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+02:50:07.360 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+02:50:07.360 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+02:50:07.360 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+02:50:07.446 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+02:50:08.119 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+02:50:08.119 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+02:50:08.119 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+02:50:08.119 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+02:50:08.120 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+02:52:53.691 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb cunstructor without parameters 
+02:52:53.694 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB cunstructor without parameters 
+02:52:56.340 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+02:52:57.047 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+02:53:00.264 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+02:53:02.649 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+02:53:03.744 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setUserName method  
+02:53:04.408 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setPwd method  
+02:53:04.638 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setStatus method  
+02:53:04.638 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setaType method  
+02:53:06.510 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+02:53:07.327 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+02:53:10.694 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+02:53:12.854 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+02:53:14.091 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setUserName method  
+02:53:15.256 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setPwd method  
+02:53:15.373 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setStatus method  
+02:53:15.373 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setaType method  
+02:53:18.880 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb cunstructor 
+02:53:20.068 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+02:53:21.084 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+02:53:21.085 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+02:53:21.085 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+02:53:21.085 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+02:53:21.085 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+02:53:21.175 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setAid method  
+02:53:21.820 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getUserName method  
+02:53:21.821 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getPwd method  
+02:53:22.044 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getStatus method  
+02:53:22.044 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getaType method  
+02:53:22.044 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getAid method  
+02:53:22.117 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+02:53:22.732 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+02:53:22.733 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+02:53:22.733 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+02:53:22.733 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+02:53:22.733 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+02:53:22.808 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setAid method  
+02:53:23.426 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getUserName method  
+02:53:23.426 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getPwd method  
+02:53:23.518 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getStatus method  
+02:53:23.518 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getaType method  
+02:53:23.518 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getAid method  
+02:55:52.420 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb cunstructor without parameters 
+02:55:52.423 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB cunstructor without parameters 
+02:55:56.645 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+02:55:59.375 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+02:56:04.113 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+02:56:07.033 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+02:56:11.156 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setUserName method  
+02:56:13.717 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setPwd method  
+02:56:13.987 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setStatus method  
+02:56:13.988 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setaType method  
+02:56:15.792 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+02:56:16.617 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+02:56:20.332 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+02:56:26.130 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+02:56:31.338 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setUserName method  
+02:56:33.713 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setPwd method  
+02:56:33.811 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setStatus method  
+02:56:33.811 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setaType method  
+02:56:36.633 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb cunstructor 
+02:56:37.727 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+02:56:38.410 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+02:56:38.410 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+02:56:38.410 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+02:56:38.410 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+02:56:38.410 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+02:56:38.490 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setAid method  
+02:56:39.115 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getUserName method  
+02:56:39.115 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getPwd method  
+02:56:39.265 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getStatus method  
+02:56:39.265 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getaType method  
+02:56:39.265 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getAid method  
+02:56:39.340 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+02:56:39.965 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+02:56:39.966 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+02:56:39.966 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+02:56:39.966 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+02:56:39.966 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+02:56:40.044 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setAid method  
+02:56:40.663 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getUserName method  
+02:56:40.663 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getPwd method  
+02:56:40.749 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getStatus method  
+02:56:40.749 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getaType method  
+02:56:40.749 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getAid method  
+02:59:11.449 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb cunstructor without parameters 
+02:59:11.452 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB cunstructor without parameters 
+02:59:15.841 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+02:59:16.593 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+02:59:19.428 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+02:59:23.004 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+02:59:24.032 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setUserName method  
+02:59:24.824 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setPwd method  
+02:59:25.049 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setStatus method  
+02:59:25.050 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setaType method  
+02:59:27.732 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+02:59:30.394 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+02:59:35.896 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+02:59:38.239 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+02:59:39.623 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setUserName method  
+02:59:41.040 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setPwd method  
+02:59:41.140 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setStatus method  
+02:59:41.140 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setaType method  
+02:59:44.557 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb cunstructor 
+02:59:45.767 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+02:59:46.389 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+02:59:46.389 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+02:59:46.389 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+02:59:46.389 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+02:59:46.389 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+02:59:46.480 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setAid method  
+02:59:47.109 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getUserName method  
+02:59:47.109 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getPwd method  
+02:59:47.215 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getStatus method  
+02:59:47.215 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getaType method  
+02:59:47.215 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getAid method  
+02:59:47.291 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+02:59:47.917 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+02:59:47.918 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+02:59:47.918 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+02:59:47.918 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+02:59:47.918 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+02:59:47.994 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setAid method  
+02:59:48.915 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getUserName method  
+02:59:48.915 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getPwd method  
+02:59:49.003 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getStatus method  
+02:59:49.003 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getaType method  
+02:59:49.003 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getAid method  
+03:01:15.334 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb cunstructor without parameters 
+03:01:15.338 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB cunstructor without parameters 
+03:01:18.897 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:01:19.830 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:01:22.915 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:01:25.186 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:01:26.241 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setUserName method  
+03:01:27.199 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setPwd method  
+03:01:27.478 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setStatus method  
+03:01:27.478 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setaType method  
+03:01:29.339 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:01:30.773 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:01:39.327 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:01:41.239 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:01:42.509 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setUserName method  
+03:01:43.810 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setPwd method  
+03:01:43.899 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setStatus method  
+03:01:43.899 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setaType method  
+03:01:45.944 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb cunstructor 
+03:01:47.092 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:01:47.734 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:01:47.734 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:01:47.734 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:01:47.735 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:01:47.735 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:01:47.831 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setAid method  
+03:01:48.471 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getUserName method  
+03:01:48.471 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getPwd method  
+03:01:48.594 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getStatus method  
+03:01:48.594 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getaType method  
+03:01:48.594 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getAid method  
+03:01:48.672 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:01:49.331 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:01:49.331 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:01:49.331 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:01:49.331 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:01:49.331 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:01:49.407 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setAid method  
+03:01:50.034 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getUserName method  
+03:01:50.034 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getPwd method  
+03:01:50.131 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getStatus method  
+03:01:50.131 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getaType method  
+03:01:50.131 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getAid method  
+03:02:40.797 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb cunstructor without parameters 
+03:02:40.800 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB cunstructor without parameters 
+03:02:45.119 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:02:45.963 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:02:50.124 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:02:58.542 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:02:59.738 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setUserName method  
+03:03:00.772 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setPwd method  
+03:03:01.056 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setStatus method  
+03:03:01.056 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setaType method  
+03:03:02.995 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:03:04.074 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:03:07.106 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:03:11.317 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:03:12.765 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setUserName method  
+03:03:13.624 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setPwd method  
+03:03:13.716 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setStatus method  
+03:03:13.716 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setaType method  
+03:03:15.926 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb cunstructor 
+03:03:17.134 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:03:17.792 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:03:17.792 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:03:17.792 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:03:17.792 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:03:17.792 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:03:17.875 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setAid method  
+03:03:18.500 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getUserName method  
+03:03:18.500 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getPwd method  
+03:03:18.615 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getStatus method  
+03:03:18.615 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getaType method  
+03:03:18.615 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getAid method  
+03:03:18.693 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:03:19.326 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:03:19.326 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:03:19.326 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:03:19.326 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:03:19.326 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:03:19.400 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setAid method  
+03:03:20.024 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getUserName method  
+03:03:20.024 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getPwd method  
+03:03:20.130 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getStatus method  
+03:03:20.130 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getaType method  
+03:03:20.130 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getAid method  
+03:08:53.171 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb cunstructor without parameters 
+03:08:53.174 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB cunstructor without parameters 
+03:08:56.622 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:08:57.258 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:09:02.551 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:09:04.701 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:09:07.085 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setUserName method  
+03:09:15.281 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setPwd method  
+03:09:15.544 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setStatus method  
+03:09:15.544 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setaType method  
+03:09:17.008 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:09:17.875 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:09:21.021 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:09:24.625 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:09:26.653 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setUserName method  
+03:09:29.098 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setPwd method  
+03:09:29.185 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setStatus method  
+03:09:29.185 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setaType method  
+03:09:31.996 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb cunstructor 
+03:09:33.286 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:09:33.987 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:09:33.988 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:09:33.988 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:09:33.988 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:09:33.988 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:09:34.083 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getUserName method  
+03:09:34.083 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setAid method  
+03:09:35.759 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getUserName method  
+03:09:35.759 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getPwd method  
+03:09:35.880 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getStatus method  
+03:09:35.881 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getaType method  
+03:09:35.881 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getAid method  
+03:09:35.958 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:09:36.617 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:09:36.617 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:09:36.617 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:09:36.617 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:09:36.617 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:09:36.697 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getUserName method  
+03:09:36.698 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setAid method  
+03:09:37.357 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getUserName method  
+03:09:37.357 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getPwd method  
+03:09:37.472 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getStatus method  
+03:09:37.472 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getaType method  
+03:09:37.472 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getAid method  
+03:13:42.185 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb cunstructor without parameters 
+03:13:42.188 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB cunstructor without parameters 
+03:13:46.931 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:13:48.297 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:13:54.198 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:13:56.901 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:13:58.309 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setUserName method  
+03:13:59.553 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setPwd method  
+03:13:59.751 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setStatus method  
+03:13:59.751 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setaType method  
+03:14:04.086 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:14:05.379 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:14:09.076 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:14:11.977 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:14:14.236 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setUserName method  
+03:14:15.072 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setPwd method  
+03:14:15.153 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setStatus method  
+03:14:15.153 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setaType method  
+03:14:17.931 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb cunstructor 
+03:14:19.358 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:14:20.007 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:14:20.007 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:14:20.007 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:14:20.007 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:14:20.007 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:14:20.095 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getUserName method  
+03:14:20.095 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setAid method  
+03:14:20.721 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getUserName method  
+03:14:20.722 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getPwd method  
+03:14:20.858 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getStatus method  
+03:14:20.858 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getaType method  
+03:14:20.858 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getAid method  
+03:14:20.937 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:14:21.565 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:14:21.565 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:14:21.565 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:14:21.566 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:14:21.566 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:14:21.638 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getUserName method  
+03:14:21.639 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setAid method  
+03:14:22.263 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getUserName method  
+03:14:22.263 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getPwd method  
+03:14:22.379 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getStatus method  
+03:14:22.379 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getaType method  
+03:14:22.379 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getAid method  
+03:22:42.288 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb cunstructor without parameters 
+03:22:42.291 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB cunstructor without parameters 
+03:22:47.286 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:22:48.598 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:22:53.242 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:22:56.844 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:22:58.316 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setUserName method  
+03:22:59.382 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setPwd method  
+03:22:59.632 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setStatus method  
+03:22:59.632 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setaType method  
+03:23:01.606 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:23:03.409 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:23:08.307 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:23:10.637 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:23:13.794 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setUserName method  
+03:23:15.392 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setPwd method  
+03:23:15.479 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setStatus method  
+03:23:15.479 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setaType method  
+03:23:19.901 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb cunstructor 
+03:23:21.062 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:23:21.729 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:23:21.729 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:23:21.729 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:23:21.729 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:23:21.729 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:23:21.807 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:23:22.432 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:23:22.432 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:23:22.432 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:23:22.432 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:23:22.432 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:23:22.508 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getUserName method  
+03:23:22.508 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setAid method  
+03:23:23.168 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getUserName method  
+03:23:23.169 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getPwd method  
+03:23:23.274 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getStatus method  
+03:23:23.274 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getaType method  
+03:23:23.274 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getAid method  
+03:23:23.349 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getUserName method  
+03:23:23.349 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setAid method  
+03:23:23.988 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getUserName method  
+03:23:23.988 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getPwd method  
+03:23:24.068 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getStatus method  
+03:23:24.068 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getaType method  
+03:23:24.069 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getAid method  
+03:25:58.406 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb cunstructor without parameters 
+03:25:58.409 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB cunstructor without parameters 
+03:26:02.014 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:26:02.638 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:26:05.436 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:26:07.420 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:26:08.977 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setUserName method  
+03:26:10.265 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setPwd method  
+03:26:10.527 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setStatus method  
+03:26:10.527 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setaType method  
+03:26:14.681 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:26:16.180 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:26:19.252 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:26:21.736 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:26:23.355 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setUserName method  
+03:26:24.743 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setPwd method  
+03:26:24.821 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setStatus method  
+03:26:24.821 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setaType method  
+03:26:27.566 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb cunstructor 
+03:26:28.819 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:26:29.491 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:26:29.491 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:26:29.491 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:26:29.491 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:26:29.491 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:26:29.576 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:26:30.218 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:26:30.218 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:26:30.218 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:26:30.218 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:26:30.218 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:26:30.297 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getUserName method  
+03:26:30.297 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setAid method  
+03:26:30.942 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getUserName method  
+03:26:30.942 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getPwd method  
+03:26:31.065 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getStatus method  
+03:26:31.065 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getaType method  
+03:26:31.065 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getAid method  
+03:26:31.143 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getUserName method  
+03:26:31.143 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setAid method  
+03:26:31.785 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getUserName method  
+03:26:31.785 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getPwd method  
+03:26:31.883 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getStatus method  
+03:26:31.883 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getaType method  
+03:26:31.883 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getAid method  
+03:30:23.341 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb cunstructor without parameters 
+03:30:23.344 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB cunstructor without parameters 
+03:30:26.042 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:30:26.991 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:30:30.239 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:30:34.422 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:30:35.640 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setUserName method  
+03:30:36.811 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setPwd method  
+03:30:37.109 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setStatus method  
+03:30:37.109 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setaType method  
+03:30:40.457 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:30:41.774 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:30:44.988 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:30:47.323 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:30:49.137 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setUserName method  
+03:30:50.789 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setPwd method  
+03:30:50.882 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setStatus method  
+03:30:50.882 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setaType method  
+03:30:53.388 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb cunstructor 
+03:30:54.581 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:30:55.259 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:30:55.260 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:30:55.260 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:30:55.260 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:30:55.260 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:30:55.356 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:30:56.026 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:30:56.026 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:30:56.026 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:30:56.026 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:30:56.026 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:30:56.103 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getUserName method  
+03:30:56.104 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setAid method  
+03:30:56.761 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getUserName method  
+03:30:56.761 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getPwd method  
+03:30:56.901 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getStatus method  
+03:30:56.901 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getaType method  
+03:30:56.901 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getAid method  
+03:30:56.978 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getUserName method  
+03:30:56.978 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setAid method  
+03:30:57.747 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getUserName method  
+03:30:57.748 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getPwd method  
+03:30:57.852 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getStatus method  
+03:30:57.853 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getaType method  
+03:30:57.853 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getAid method  
+03:32:28.262 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb cunstructor without parameters 
+03:32:28.265 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB cunstructor without parameters 
+03:32:33.067 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:32:34.000 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:32:37.602 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:32:42.739 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:32:43.705 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setUserName method  
+03:32:44.457 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setPwd method  
+03:32:44.936 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setStatus method  
+03:32:44.936 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setaType method  
+03:32:46.453 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:32:47.302 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:32:50.106 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:32:52.858 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:32:57.297 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setUserName method  
+03:32:59.898 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setPwd method  
+03:33:00.001 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setStatus method  
+03:33:00.001 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setaType method  
+03:33:02.308 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb cunstructor 
+03:33:03.516 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:33:04.288 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:33:04.288 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:33:04.288 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:33:04.288 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:33:04.288 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:33:04.374 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:33:05.011 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:33:05.011 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:33:05.011 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:33:05.011 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:33:05.011 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:39:54.151 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb cunstructor without parameters 
+03:39:54.155 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB cunstructor without parameters 
+03:39:57.011 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:39:57.864 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:40:01.500 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:40:04.315 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:40:06.228 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setUserName method  
+03:40:07.065 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setPwd method  
+03:40:07.341 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setStatus method  
+03:40:07.341 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setaType method  
+03:40:08.494 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:40:09.254 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:40:13.098 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:40:15.561 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:40:24.035 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setUserName method  
+03:40:24.956 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setPwd method  
+03:40:25.052 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setStatus method  
+03:40:25.052 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setaType method  
+03:40:27.501 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb cunstructor 
+03:40:29.222 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:40:29.897 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:40:29.897 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:40:29.898 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:40:29.898 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:40:29.898 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:40:29.987 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:40:30.616 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:40:30.616 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:40:30.616 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:40:30.616 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:40:30.616 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:43:03.158 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb cunstructor without parameters 
+03:43:03.161 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB cunstructor without parameters 
+03:43:11.912 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb cunstructor without parameters 
+03:43:11.916 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB cunstructor without parameters 
+03:43:14.454 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:43:15.164 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:43:17.863 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:43:20.776 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:43:22.250 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setUserName method  
+03:43:23.257 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setPwd method  
+03:43:23.601 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setStatus method  
+03:43:23.602 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setaType method  
+03:43:27.288 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:43:28.095 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:43:31.357 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:43:33.176 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:43:34.716 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setUserName method  
+03:43:35.982 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setPwd method  
+03:43:36.073 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setStatus method  
+03:43:36.073 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setaType method  
+03:45:34.660 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb cunstructor without parameters 
+03:45:34.664 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB cunstructor without parameters 
+03:45:39.060 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:45:40.155 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:45:43.298 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:45:46.836 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:45:48.047 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setUserName method  
+03:45:49.038 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setPwd method  
+03:45:49.277 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setStatus method  
+03:45:49.277 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setaType method  
+03:45:50.957 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:45:52.036 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:45:55.337 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:45:59.729 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:46:01.151 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setUserName method  
+03:46:02.244 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setPwd method  
+03:46:02.355 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setStatus method  
+03:46:02.356 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setaType method  
+03:48:46.899 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb cunstructor without parameters 
+03:48:46.905 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB cunstructor without parameters 
+03:48:48.997 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:48:49.685 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+03:48:52.885 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+04:00:12.320 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+04:00:13.826 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setUserName method  
+04:00:15.058 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setPwd method  
+04:00:15.444 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setStatus method  
+04:00:15.445 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setaType method  
+04:00:19.184 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+04:00:20.863 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+04:00:24.535 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+04:00:25.908 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+04:00:27.481 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setUserName method  
+04:00:28.741 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setPwd method  
+04:00:28.837 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setStatus method  
+04:00:28.837 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setaType method  
+04:04:39.193 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb cunstructor without parameters 
+04:04:39.197 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB cunstructor without parameters 
+04:04:42.778 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+04:04:43.449 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+04:04:46.076 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+04:04:50.648 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+04:04:52.367 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setUserName method  
+04:04:53.581 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setPwd method  
+04:04:53.864 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setStatus method  
+04:04:53.864 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setaType method  
+04:04:57.710 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+04:04:58.661 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+04:05:01.258 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+04:05:05.506 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+04:05:06.893 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setUserName method  
+04:05:08.077 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setPwd method  
+04:05:08.186 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setStatus method  
+04:05:08.186 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setaType method  
+04:07:20.683 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb cunstructor without parameters 
+04:07:20.687 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB cunstructor without parameters 
+04:07:24.221 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+04:07:25.349 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+04:07:28.571 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+04:07:30.839 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+04:07:31.979 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setUserName method  
+04:07:33.883 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setPwd method  
+04:07:34.517 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setStatus method  
+04:07:34.518 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setaType method  
+04:07:36.632 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+04:07:37.689 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+04:07:42.548 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+04:07:48.528 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+04:07:50.070 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setUserName method  
+04:07:50.947 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setPwd method  
+04:07:51.032 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setStatus method  
+04:07:51.032 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setaType method  
+04:09:54.018 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb cunstructor without parameters 
+04:09:54.026 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB cunstructor without parameters 
+04:09:57.499 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+04:09:58.298 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+04:10:03.427 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+04:10:05.507 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+04:10:06.815 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setUserName method  
+04:10:08.157 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setPwd method  
+04:10:08.415 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setStatus method  
+04:10:08.415 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setaType method  
+04:10:09.669 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+04:10:10.982 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+04:10:14.337 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+04:10:16.928 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+04:10:18.091 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setUserName method  
+04:10:18.852 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setPwd method  
+04:10:18.944 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setStatus method  
+04:10:18.944 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setaType method  
+04:16:07.038 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb cunstructor without parameters 
+04:16:07.042 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB cunstructor without parameters 
+04:17:55.224 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb cunstructor without parameters 
+04:17:55.227 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB cunstructor without parameters 
+04:17:59.017 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+04:17:59.903 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+04:18:03.432 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+04:18:08.175 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+04:18:09.733 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setUserName method  
+04:18:11.036 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setPwd method  
+04:18:11.269 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setStatus method  
+04:18:11.269 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setaType method  
+04:18:40.041 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+04:18:44.827 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+04:18:51.657 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+04:18:54.993 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+04:18:57.738 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setUserName method  
+04:18:59.236 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setPwd method  
+04:18:59.328 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setStatus method  
+04:18:59.328 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setaType method  
+04:27:08.580 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb cunstructor without parameters 
+04:27:08.583 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB cunstructor without parameters 
+04:27:11.447 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+04:27:12.248 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+04:27:18.243 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+04:27:20.754 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+04:27:21.958 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setUserName method  
+04:27:22.813 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setPwd method  
+04:27:23.039 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setStatus method  
+04:27:23.039 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setaType method  
+04:27:23.040 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+04:27:23.040 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb toString method 
+04:27:29.040 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+04:27:30.442 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+04:27:39.705 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+04:27:41.960 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+04:27:43.520 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setUserName method  
+04:27:44.422 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setPwd method  
+04:27:44.508 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setStatus method  
+04:27:44.508 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setaType method  
+04:27:44.508 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+04:27:44.508 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb toString method 
+04:27:44.508 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+04:27:44.508 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb toString method 
+04:31:04.829 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb cunstructor without parameters 
+04:31:04.832 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB cunstructor without parameters 
+04:31:08.424 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+04:31:09.199 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+04:31:12.078 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+04:31:14.767 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+04:31:15.859 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setUserName method  
+04:31:16.814 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setPwd method  
+04:31:17.028 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setStatus method  
+04:31:17.028 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setaType method  
+04:31:20.594 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+04:31:21.429 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+04:31:25.762 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+04:31:27.748 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+04:31:29.931 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setUserName method  
+04:31:31.048 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setPwd method  
+04:31:31.148 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setStatus method  
+04:31:31.148 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setaType method  
+04:31:33.377 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+04:31:33.377 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb toString method 
+04:33:05.271 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb cunstructor without parameters 
+04:33:05.275 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB cunstructor without parameters 
+04:33:09.139 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+04:33:10.296 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+04:33:15.063 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+04:33:16.527 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+04:33:17.925 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setUserName method  
+04:33:18.778 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setPwd method  
+04:33:19.001 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setStatus method  
+04:33:19.001 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setaType method  
+04:33:20.817 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+04:33:21.976 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+04:33:25.005 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+04:33:27.571 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+04:33:28.999 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setUserName method  
+04:33:31.778 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setPwd method  
+04:33:31.863 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setStatus method  
+04:33:31.863 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setaType method  
+04:33:35.442 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+04:33:35.442 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb toString method 
+04:33:35.442 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+04:33:35.442 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb toString method 
+04:36:04.521 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb cunstructor without parameters 
+04:36:04.524 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB cunstructor without parameters 
+04:36:05.705 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+04:36:06.750 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+04:36:09.571 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+04:36:14.003 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+04:36:15.455 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setUserName method  
+04:36:16.560 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setPwd method  
+04:36:16.777 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setStatus method  
+04:36:16.777 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setaType method  
+04:36:16.777 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb cunstructor without parameters 
+04:36:16.777 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB cunstructor without parameters 
+04:36:20.702 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+04:36:21.726 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+04:36:27.782 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+04:36:31.975 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+04:36:34.772 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setUserName method  
+04:36:36.010 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setPwd method  
+04:36:36.095 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setStatus method  
+04:36:36.095 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setaType method  
+04:36:38.256 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+04:36:38.256 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb toString method 
+04:36:38.256 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+04:36:38.256 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb toString method 
+04:37:07.486 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb cunstructor without parameters 
+04:37:07.490 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB cunstructor without parameters 
+04:37:11.125 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+04:37:12.665 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+04:37:16.230 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+04:37:18.970 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+04:37:24.610 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setUserName method  
+04:37:25.958 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setPwd method  
+04:37:26.200 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setStatus method  
+04:37:26.200 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setaType method  
+04:37:26.200 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb cunstructor without parameters 
+04:37:26.200 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB cunstructor without parameters 
+04:37:28.604 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+04:37:30.318 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+04:37:33.796 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+04:37:38.006 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+04:37:40.417 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setUserName method  
+04:37:42.304 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setPwd method  
+04:37:42.404 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setStatus method  
+04:37:42.404 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setaType method  
+04:37:44.463 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb cunstructor 
+04:37:45.786 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+04:37:46.559 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+04:37:46.560 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+04:37:46.561 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+04:37:46.561 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+04:37:46.561 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+04:37:46.656 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+04:37:47.313 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+04:37:47.313 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+04:37:47.313 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+04:37:47.313 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+04:37:47.313 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+04:37:47.390 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getUserName method  
+04:37:47.390 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setAid method  
+04:37:48.019 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getUserName method  
+04:37:48.019 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getPwd method  
+04:37:48.152 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getStatus method  
+04:37:48.152 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getaType method  
+04:37:48.152 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getAid method  
+04:37:48.227 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getUserName method  
+04:37:48.228 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setAid method  
+04:37:48.870 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getUserName method  
+04:37:48.870 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getPwd method  
+04:37:48.992 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getStatus method  
+04:37:48.992 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getaType method  
+04:37:48.992 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getAid method  
+04:39:52.228 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb cunstructor without parameters 
+04:39:52.232 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB cunstructor without parameters 
+04:39:56.691 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+04:39:59.169 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+04:40:04.984 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+04:40:08.245 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+04:40:14.834 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setUserName method  
+04:40:21.671 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setPwd method  
+04:40:21.889 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setStatus method  
+04:40:21.889 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setaType method  
+04:40:21.889 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb cunstructor without parameters 
+04:40:21.889 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB cunstructor without parameters 
+04:40:25.343 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+04:40:28.504 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+04:40:32.040 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+04:40:40.334 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+04:40:43.562 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setUserName method  
+04:40:46.429 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setPwd method  
+04:40:46.523 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setStatus method  
+04:40:46.523 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setaType method  
+04:40:49.461 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb cunstructor 
+04:40:50.657 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+04:40:51.619 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+04:40:51.619 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+04:40:51.619 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+04:40:51.619 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+04:40:51.619 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+04:40:51.700 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+04:40:52.338 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+04:40:52.338 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+04:40:52.338 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+04:40:52.338 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+04:40:52.338 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+04:40:52.413 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setAid method  
+04:40:53.048 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getUserName method  
+04:40:53.048 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getPwd method  
+04:40:53.175 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getStatus method  
+04:40:53.175 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getaType method  
+04:40:53.175 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getAid method  
+04:40:53.274 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setAid method  
+04:40:53.933 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getUserName method  
+04:40:53.933 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getPwd method  
+04:40:54.038 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getStatus method  
+04:40:54.038 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getaType method  
+04:40:54.038 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getAid method  
+04:43:37.020 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb cunstructor 
+04:43:52.909 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb cunstructor without parameters 
+04:43:52.913 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB cunstructor without parameters 
+04:43:53.987 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+04:43:55.066 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+04:43:58.207 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+04:44:03.563 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+04:44:04.987 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setUserName method  
+04:44:06.191 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setPwd method  
+04:44:06.444 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setStatus method  
+04:44:06.444 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setaType method  
+04:44:08.966 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb cunstructor 
+04:44:10.262 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+04:44:10.936 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+04:44:10.937 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+04:44:10.937 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+04:44:10.937 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+04:44:10.937 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+04:44:11.032 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setAid method  
+04:44:11.693 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getUserName method  
+04:44:11.693 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getPwd method  
+04:44:11.844 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getStatus method  
+04:44:11.844 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getaType method  
+04:44:11.844 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getAid method  
+04:44:36.334 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb cunstructor without parameters 
+04:44:36.337 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB cunstructor without parameters 
+04:44:37.955 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+04:44:38.787 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+04:44:42.082 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+04:44:45.299 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+04:44:47.742 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setUserName method  
+04:44:49.036 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setPwd method  
+04:44:49.254 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setStatus method  
+04:44:49.254 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setaType method  
+04:44:49.254 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb cunstructor without parameters 
+04:44:49.254 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB cunstructor without parameters 
+04:44:54.908 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+04:44:55.831 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+04:45:00.257 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+04:45:03.184 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+04:45:06.992 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setUserName method  
+04:45:08.850 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setPwd method  
+04:45:08.936 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setStatus method  
+04:45:08.936 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setaType method  
+04:45:11.284 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb cunstructor 
+04:45:12.458 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+04:45:13.137 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+04:45:13.138 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+04:45:13.138 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+04:45:13.138 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+04:45:13.138 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+04:45:13.233 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+04:45:13.883 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+04:45:13.883 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+04:45:13.883 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+04:45:13.883 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+04:45:13.884 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+04:45:13.960 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setAid method  
+04:45:14.619 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getUserName method  
+04:45:14.619 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getPwd method  
+04:45:14.743 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getStatus method  
+04:45:14.743 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getaType method  
+04:45:14.743 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getAid method  
+04:45:14.820 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setAid method  
+04:45:15.443 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getUserName method  
+04:45:15.443 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getPwd method  
+04:45:15.546 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getStatus method  
+04:45:15.546 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getaType method  
+04:45:15.546 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getAid method  
+05:00:46.590 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb cunstructor without parameters 
+05:00:46.593 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB cunstructor without parameters 
+05:00:48.351 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+05:00:50.136 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+05:00:57.018 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+05:01:00.153 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+05:01:01.872 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setUserName method  
+05:01:03.023 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setPwd method  
+05:01:03.257 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setStatus method  
+05:01:03.257 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setaType method  
+05:01:03.257 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb cunstructor without parameters 
+05:01:03.257 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB cunstructor without parameters 
+05:01:07.651 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+05:01:09.063 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+05:01:12.157 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+05:01:15.412 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+05:01:18.481 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setUserName method  
+05:01:21.871 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setPwd method  
+05:01:21.955 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setStatus method  
+05:01:21.955 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setaType method  
+05:01:25.375 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb cunstructor 
+05:01:29.004 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+05:01:29.701 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+05:01:29.702 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+05:01:29.702 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+05:01:29.702 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+05:01:29.702 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+05:01:29.789 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+05:01:30.470 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+05:01:30.470 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+05:01:30.470 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+05:01:30.470 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+05:01:30.470 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+05:01:30.545 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setAid method  
+05:01:30.546 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getUserName method  
+05:01:31.276 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB cunstructor without parameters 
+05:01:31.277 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setAid method  
+05:01:31.278 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getUserName method  
+05:01:32.011 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB cunstructor without parameters 
+05:01:46.597 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb cunstructor without parameters 
+05:01:46.600 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB cunstructor without parameters 
+05:01:48.424 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+05:01:49.165 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+05:01:54.459 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+05:01:58.376 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+05:02:00.295 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setUserName method  
+05:02:01.471 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setPwd method  
+05:02:01.701 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setStatus method  
+05:02:01.701 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setaType method  
+05:02:04.009 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb cunstructor 
+05:02:05.377 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+05:02:06.074 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+05:02:06.075 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+05:02:06.075 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+05:02:06.075 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+05:02:06.075 [] [main] DEBUG com.revature.models.AccountTb - In AccountTb hashcode method 
+05:02:06.170 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setAid method  
+05:02:06.170 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getUserName method  
+05:02:06.895 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB cunstructor without parameters 
+05:02:06.896 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setUid method  
+05:02:06.896 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setUserName method  
+05:02:06.896 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setPwd method  
+05:02:07.014 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setStatus method  
+05:02:07.014 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setaType method  
+05:02:07.014 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setAid method  

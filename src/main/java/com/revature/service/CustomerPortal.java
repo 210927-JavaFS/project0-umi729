@@ -37,14 +37,13 @@ public class CustomerPortal extends Portal {
 		return balDAO.transfer(amount, oa, getAcc());
 	}
 	public void viewCustomerAccount(int uid) {
+		
 		ListIterator<TransactionTb> lst =td.ListIterator(uid);
 		
 		  System.out.printf("Transaction Date: Amount: Type of Trans: UserID: ToAccount No: FromAccount%n" );
 		
 		while(lst.hasNext()) {
-				
 			  TransactionTb rec=lst.next(); 
-			
 			  System.out.print(rec.getDate());
 			  System.out.print("         ");
 			  System.out.print(rec.getAmount());

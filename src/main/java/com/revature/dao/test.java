@@ -1,8 +1,11 @@
 package com.revature.dao;
 
+import com.revature.models.AccountTb;
+
 public class test {
 	
-	static LoginDAO bd= new LoginDAOImpl();
+	static AccountDAO bd= new AccountDAOImpl();
+	static AccountTb tb=new AccountTb("Um", "zs","sadlkfj@gmai.com",46565,77777 );
 	public static void main(String[] args) {
 		
 		//String str= ae.encrypt("myPassword");
@@ -13,7 +16,7 @@ public class test {
 		 * if(bd.signUp(tb)) { System.out.println("sussc"); }
 		 */
 		 
-		System.out.println(bd.findAll());
+		System.out.println(bd.profile(tb));
 		
 	}
 

@@ -11,7 +11,7 @@ public class EmployeePortal extends Portal {
 	
 	private BalanceDAO balDAO= new BalanceDAOImpl();
 	//Constructor 
-	protected EmployeePortal(String userName, int acc) {
+	 public EmployeePortal(String userName, int acc) {
 		super(userName, acc);
 	}
 	

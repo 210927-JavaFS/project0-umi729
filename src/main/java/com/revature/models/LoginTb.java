@@ -4,7 +4,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 public class LoginTb {
-	private static AES256 ae= new  AES256();
+	private  AES256 ae= new  AES256();
 	private static Logger Log=LoggerFactory.getLogger(LoginTb.class);
 	private int uid;
 	private String userName;

@@ -5,6 +5,7 @@ import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.InputMismatchException;
 import java.util.List;
+import java.util.ListIterator;
 import java.util.Scanner;
 
 import com.revature.models.AccountTb;
@@ -14,10 +15,10 @@ import com.revature.service.ValidationClass;
 
 public class NewProfile {
 
-	public NewProfile() {
-
-	}
-
+	List<AccountTb> la = new ArrayList<>();
+	List<LoginTb> ll = new ArrayList<>();
+	
+	
 	public void createProfile() throws InputMismatchException, IOException {
 		System.out.println("Welcome to our bank");
 		System.out.println("=============================================");
@@ -26,16 +27,15 @@ public class NewProfile {
 		Scanner scan = new Scanner(System.in);
 		boolean validation = false;
 		ValidationClass vc = new ValidationClass();
-		List<AccountTb> la=new ArrayList<>();
-		List<LoginTb> ll=new ArrayList<>();
-	
+		
+		
 		int option = 0;
-		BigDecimal bd=null;
+		BigDecimal bd = null;
 		System.out.println("Enter number of Account Holder(Max 10) or 0 for Exit:");
-
+		
 		do {
-			AccountTb atb = new AccountTb();// = new AccountTb();
-			LoginTb ltb = new LoginTb();
+			
+
 			if (scan.hasNextInt() == true) {
 				option = scan.nextInt();
 
@@ -46,15 +46,16 @@ public class NewProfile {
 			}
 
 			if (vc.validateIntInput(option, 1, 10)) {
-				
+
 				for (int i = 1; i <= option; i++) {
+					AccountTb atb = new AccountTb();// = new AccountTb();
+					LoginTb ltb = new LoginTb();
 					
 					System.out.printf("Person Number: %d%n", i);
 
 					System.out.println("Enter First Name: ");
-					String str=scan.next();
+					String str = scan.next();
 					atb.setfName(str);
-					
 
 					System.out.println("Enter Last Name: ");
 					atb.setlName(scan.next());
@@ -90,58 +91,59 @@ public class NewProfile {
 							atb.setZipCode(pzipCode);
 							validation = true;
 						}
-						
+
 					} while (validation == false);
 					System.out.println("Create User Name ");
 					ltb.setUserName(scan.next().toLowerCase());
+					
 
 					System.out.println("Create password");
 					ltb.setPwd(scan.next().toLowerCase());
-					
 					ltb.setStatus("disable");
 					ltb.setaType("Cus");
-					
+					ll.add(ltb);
+					//System.out.println(ll);
+					la.add(atb);
+						//System.out.println(la);
 					
 				}
-					option=0;
+				option = 0;
+				
 			} else {
 				continue;
 			}
 			System.out.println("Enter the amount you want as initial deposit (100-500) ");
-
+			
 			int bal = 0;
 			validation = false;
 
 			do {
 				if (scan.hasNextInt() == true) {
-					
+
 					bal = scan.nextInt();
 				} else {
 					System.out.println("Please enter in numbers");
-					
+
 					scan.next();
 					continue;
 				}
 
 				if (vc.validateIntInput(bal, 100, 500)) {
-					
+
 					bd = new BigDecimal(bal);
 					validation = true;
-				} else
-				{
-				
+				} else {
+
 					continue;
 				}
-
+			
 			} while (validation == false);
+
 			
-			la.add(atb);
-			ll.add(ltb);
-			
-			//System.out.println(option);
+			// System.out.println(option);
 		} while (option > 0);
-		//System.out.println("6");
-		UserManagement um=new UserManagement();
+		// System.out.println("6");
+		UserManagement um = new UserManagement();
 		
 		um.createAccount(bd, la, ll);
 

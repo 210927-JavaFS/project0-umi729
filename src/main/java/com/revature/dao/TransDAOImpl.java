@@ -159,7 +159,7 @@ try(Connection conn= ConnectionUtil.getConnection()){
 	@Override
 	public java.util.ListIterator<TransactionTb> ListIterator(int uid) {
 		List<TransactionTb> td= findByUserID(uid);
-	//	System.out.println(td.toString());
+	
 		ListIterator<TransactionTb> arItr = td.listIterator();
 		return arItr;
 	}

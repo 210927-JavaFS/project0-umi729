@@ -5,6 +5,7 @@ import java.math.BigDecimal;
 import java.security.SecureRandom;
 import java.util.InputMismatchException;
 import java.util.List;
+import java.util.ListIterator;
 import java.util.Scanner;
 
 import org.slf4j.Logger;
@@ -18,6 +19,7 @@ import com.revature.dao.LoginDAOImpl;
 import com.revature.models.AccBalance;
 import com.revature.models.AccountTb;
 import com.revature.models.LoginTb;
+import com.revature.models.TransactionTb;
 
 public class UserManagement {
 	private static Logger Log = LoggerFactory.getLogger(UserManagement.class);
@@ -44,35 +46,52 @@ public class UserManagement {
 		}
 	}
 
-	public void createAccount(BigDecimal bal, List<AccountTb>  at, List<LoginTb> lt ) {
+	public void createAccount(BigDecimal bal, List<AccountTb> at, List<LoginTb> lt) {
 
 		// Generate random integers in range 0 to 999
 		SecureRandom rand = new SecureRandom();
 		int accountNumber = rand.nextInt(1000000);
-		AccBalance ab=new AccBalance(accountNumber,bal);
-		BalanceDAOImpl bala=new BalanceDAOImpl();
-		AccountDAO adao=new AccountDAOImpl();
-		LoginDAO ldao=new LoginDAOImpl();
+		AccBalance ab = new AccBalance(accountNumber, bal);
+		BalanceDAOImpl bala = new BalanceDAOImpl();
 		
-		/*
-		 * if(bala.addBalance(ab)) { for(int i=0; i<at.length; i++) {
-		 * at[i].setAccNo(accountNumber);
-		 * 
-		 * int aidNo= adao.profile(at[i]);
-		 * 
-		 * if(aidNo>0) {
-		 * 
-		 * lt[i].setAid(aidNo);
-		 * 
-		 * if(ldao.signUp(lt[i])) {
-		 * System.out.println("Profile submitted for approval"); }
-		 * 
-		 * }
-		 * 
-		 * }
-		 * 
-		 * }
-		 */
+		LoginDAO ldao = new LoginDAOImpl();
+		AccountDAO adao = new AccountDAOImpl();
+		ListIterator<AccountTb> lst = at.listIterator();
+		ListIterator<LoginTb> lsLogin = lt.listIterator();
+		// System.out.println(at);
+	
+	int[] aidNo= new int[2];
+	int c=0;
+		if (bala.addBalance(ab)) {
+			while (lst.hasNext()) { //
+
+				AccountTb rec = lst.next();
+				rec.setAccNo(accountNumber);
+				aidNo[c]= adao.profile(rec);
+				c++;
+				
+				
+			}
+		int d=0;	
+		
+			while (lsLogin.hasNext()) {
+				LoginTb ltt = lsLogin.next();
+				
+				if (aidNo[d] > 0) {
+					//System.out.println(ltt.getUserName());
+					ltt.setAid(aidNo[d]);
+					if (ldao.signUp(ltt)) {
+						
+						d++;
+						
+					}
+
+				}
+
+			}
+			System.out.println("Profile submitted for approval");
+		}
+
 	}
 
 	public String getMyUserName(String email, int zipCode) {
