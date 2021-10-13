@@ -99,13 +99,12 @@ public class NewProfile {
 						usr = scan.next().toLowerCase();
 						availibility = ldo.findByUser(usr);
 						if (availibility) {
-							availibility= false;
+							availibility = false;
 							System.out.println("This username has already been taken, please try another!\n>>>");
 							continue;
-						}
-						else {
-							
-							break; 
+						} else {
+
+							break;
 						}
 					}
 					ltb.setUserName(usr);
@@ -156,9 +155,9 @@ public class NewProfile {
 		} while (option > 0);
 		// System.out.println("6");
 		UserManagement um = new UserManagement();
-		
-			um.createAccount(bd, la, ll);
-			// System.out.println("in new profile");
-		
+
+		um.createAccount(bd, la, ll);
+		// System.out.println("in new profile");
+
 	}
 }

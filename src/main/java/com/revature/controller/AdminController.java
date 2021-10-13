@@ -158,8 +158,11 @@ public class AdminController {
 				System.out.println("=======================================================================");
 				break;
 			case "11":
-				System.out.println("Please enter the account number to print statement");
-				cp.viewCustomerAccount(Integer.parseInt(input.next()));
+				
+				//System.out.println("Please enter the account number to print statement");
+				NewProfile np=new NewProfile();
+				np.createProfile();
+				
 				System.out.println("=======================================================================");
 				break;
 			case "12":
