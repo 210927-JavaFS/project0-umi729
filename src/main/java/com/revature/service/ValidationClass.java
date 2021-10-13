@@ -13,11 +13,19 @@ public class ValidationClass {
 		return email.matches(regex);
 	}
 	public static boolean isNumeric(String str) { 
+		  if( str.matches("-?\\d+(\\.\\d+)?")) {  
+			  
+		    return true;
+		  } else{  
+			  System.out.println("Not a numeric value");
+		    return false;  
+		  }  
+		}
+	public static boolean isDouble(String str) { 
 		  try {  
-		    Integer.parseInt(str);  
+		    Double.parseDouble(str);  
 		    return true;
 		  } catch(NumberFormatException e){  
-			  System.out.println("Not a numeric value");
 		    return false;  
 		  }  
 		}

@@ -5,6 +5,7 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 import com.revature.service.EmployeePortal;
+import com.revature.service.ValidationClass;
 
 public class Employee  {
 
@@ -50,18 +51,23 @@ public class Employee  {
 
 			switch (option) {
 
+
 			case "1":
 				System.out.println("Please Enter Customer Account number: ");
-				int acc = Integer.parseInt(input.next());
-				System.out.println("The balence of account is: ");
-				cp.checkBal(acc);
+				String accN = input.next();
+
+				if (ValidationClass.isNumeric(accN)) {
+					int acc = Integer.parseInt(accN);
+					System.out.println("The balence of account is: ");
+					cp.checkBal(acc);
+				}
 				System.out.println("=======================================================================");
 
 				break;
 
 			case "2":
 				System.out.println("Please Enter Customer User Name: ");
-				String str = input.nextLine();
+				String str = input.nextLine().toLowerCase();
 				cp.checkBalByUser(str);
 				System.out.println("The balence of account is: ");
 				System.out.println("=======================================================================");
@@ -74,42 +80,53 @@ public class Employee  {
 				break;
 			case "4":
 				System.out.println("Please Enter Customer Account Number: ");
-				int acc2 = Integer.parseInt(input.next());
-				cp.viewProfile(acc2);
+				accN = input.next();
+				if (ValidationClass.isNumeric(accN)) {
+					int acc = Integer.parseInt(accN);
+					cp.viewProfile(acc);
+				}
 				System.out.println("=======================================================================");
 				break;
 
 			case "5":
 				System.out.println("Please Enter Customer Account Number: ");
-				int acc3 = Integer.parseInt(input.next());
-				System.out.println("Please enter first name of Account Holder");
-				String fname1=input.next();
-				cp.activate(acc3, fname1);;
+				accN = input.next();
+				if (ValidationClass.isNumeric(accN)) {
+					int acc = Integer.parseInt(accN);
+					System.out.println("Please enter first name of Account Holder");
+					String fname1 = input.next();
+					cp.activate(acc, fname1);
+				}
 				System.out.println("=======================================================================");
 				break;
 			case "6":
 				System.out.println("Please Enter Customer Account Number: ");
-				int acc4 = Integer.parseInt(input.next());
-				System.out.println("Please enter first name of Account Holder");
-				String fname2=input.next();
-				cp.deactivate(acc4, fname2);;
-				
-				System.out.println("=======================================================================");
-				break;
-			
-			case "7":
-				System.out.println("Please enter the account number to print statement");
-				cp.viewCustomerAccount(Integer.parseInt(input.next()));
+				accN = input.next();
+				if (ValidationClass.isNumeric(accN)) {
+					int acc = Integer.parseInt(accN);
+					System.out.println("Please enter first name of Account Holder");
+					String fname2 = input.next();
+					cp.deactivate(acc, fname2);
+				}
 				System.out.println("=======================================================================");
 				break;
 
+			case "7":
+				System.out.println("Please enter the account number to print statement");
+				accN = input.next();
+				if (ValidationClass.isNumeric(accN)) {
+					int acc = Integer.parseInt(accN);
+					cp.viewCustomerAccount(acc);
+				}
+				System.out.println("=======================================================================");
+				break;
 			default:
 				System.out.println("Something went wrong!!!");
 				System.out.println("=======================================================================");
 				break;
 			}
 
-		} while (!(option.equals("7")));
+		} while (!(option.equals("8")));
 
 	}
 

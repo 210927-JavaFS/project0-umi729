@@ -79,6 +79,7 @@ public class BalanceDAOImpl implements BalanceDAO {
 		return null;
 
 	}
+
 	public AccBalance findByUserName(String user) {
 		try (Connection conn = ConnectionUtil.getConnection()) {
 
@@ -97,7 +98,7 @@ public class BalanceDAOImpl implements BalanceDAO {
 
 				ab.setBalance(result.getBigDecimal("bal"));
 
-				 ab.setId(result.getInt("acc_no"));
+				ab.setId(result.getInt("acc_no"));
 			}
 			return ab;
 
@@ -271,6 +272,83 @@ public class BalanceDAOImpl implements BalanceDAO {
 		return false;
 	}
 
+	public boolean transfer(BigDecimal amount, int ota, int fta, int uid) {
+
+		if (withdraw(amount, fta, uid)) {
+			if (deposit(ota, amount, uid)) {
+				return true;
+			}
+
+		} else {
+			System.out.println("Something went wrong");
+		}
+
+		return false;
+	}
+
+	
+	
+	
+	public boolean deposit(int acc_no, BigDecimal amount, int uid) {
+		try (Connection conn = ConnectionUtil.getConnection()) {
+
+			String sql = "UPDATE acc_bal SET bal = ((SELECT bal FROM acc_bal ab  " + "WHERE acc_no = ? ) + ?) "
+					+ "WHERE acc_no = ?; ";
+
+			PreparedStatement statement = conn.prepareStatement(sql);
+			int count = 0;
+			statement.setInt(++count, acc_no);
+			statement.setBigDecimal(++count, amount);
+			statement.setInt(++count, acc_no);
+
+			if ((statement.executeUpdate()) == 1) {
+				tb.setUid(uid);
+				tb.setTranType("Deposit");
+				tb.setAmount(amount);
+				tb.setAcc_no(acc_no);
+				TransDAO tdao = new TransDAOImpl();
+				tdao.addTrans(tb);
+			}
+			return true;
+
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	public boolean withdraw( BigDecimal amount, int acc_no, int uid) {
+		try (Connection conn = ConnectionUtil.getConnection()) {
+
+			String sql = "UPDATE acc_bal SET bal = ((SELECT bal FROM acc_bal ab  " + "WHERE acc_no = ? ) - ?) "
+					+ "WHERE acc_no = ?; ";
+
+			PreparedStatement statement = conn.prepareStatement(sql);
+			int count = 0;
+			statement.setInt(++count, acc_no);
+			statement.setBigDecimal(++count, amount);
+			statement.setDouble(++count, acc_no);
+			if ((statement.executeUpdate()) == 1) {
+				tb.setUid(uid);
+				tb.setTranType("Withdraw");
+				tb.setAmount(amount);
+				tb.setToAccount(acc_no);
+				TransDAO tdao = new TransDAOImpl();
+				tdao.addTrans(tb);
+			}
+
+			return true;
+
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	
+	
 	@Override
 	public boolean addBalance(AccBalance ab) {
 		try (Connection conn = ConnectionUtil.getConnection()) {

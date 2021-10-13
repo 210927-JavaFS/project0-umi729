@@ -79,87 +79,117 @@ public class AdminController {
 				break;
 			case "4":
 				System.out.println("Please Enter Customer Account Number: ");
-				int acc2 = Integer.parseInt(input.next());
-				cp.viewProfile(acc2);
+				accN = input.next();
+				if (ValidationClass.isNumeric(accN)) {
+					int acc = Integer.parseInt(accN);
+					cp.viewProfile(acc);
+				}
 				System.out.println("=======================================================================");
 				break;
 
 			case "5":
 				System.out.println("Please Enter Customer Account Number: ");
-				int acc3 = Integer.parseInt(input.next());
-				System.out.println(acc3);
-				System.out.println("Please enter first name of Account Holder");
-				String fname1 = input.next();
-				// cp.activate(acc3, fname1);
-				;
+				accN = input.next();
+				if (ValidationClass.isNumeric(accN)) {
+					int acc = Integer.parseInt(accN);
+					System.out.println("Please enter first name of Account Holder");
+					String fname1 = input.next();
+					cp.activate(acc, fname1);
+				}
 				System.out.println("=======================================================================");
 				break;
 			case "6":
 				System.out.println("Please Enter Customer Account Number: ");
-				int acc4 = Integer.parseInt(input.next());
-				System.out.println("Please enter first name of Account Holder");
-				String fname2 = input.next();
-				cp.deactivate(acc4, fname2);
-				;
+				accN = input.next();
+				if (ValidationClass.isNumeric(accN)) {
+					int acc = Integer.parseInt(accN);
+					System.out.println("Please enter first name of Account Holder");
+					String fname2 = input.next();
+					cp.deactivate(acc, fname2);
+				}
 				System.out.println("=======================================================================");
 				break;
 
 			case "7":
 				System.out.println("Please enter the account number to print statement");
-				cp.viewCustomerAccount(Integer.parseInt(input.next()));
+				accN = input.next();
+				if (ValidationClass.isNumeric(accN)) {
+					int acc = Integer.parseInt(accN);
+					cp.viewCustomerAccount(acc);
+				}
 				System.out.println("=======================================================================");
 				break;
 			case "8":
 				System.out.println("How much money you want to withdraw?");
 				String str2 = input.nextLine();
-				double dnum = Double.parseDouble(str2);
-				BigDecimal bd = new BigDecimal(dnum);
-				System.out.println("Please provide the account from where you want to withdraw money:");
-				String str4 = input.nextLine();
-				int acc_no = Integer.parseInt(str4);
-				if (cp.withdrawCash(bd, acc_no)) {
-					System.out.println("You withdraw the money successfully\n");
-					System.out.println("The current balence your account is now: ");
-					cp.checkBal(uid);
-					System.out.println("Press any key to continue");
-					input.nextLine();
+				double dnum = 0;
+				if (ValidationClass.isDouble(str2)) {
+					dnum = Double.parseDouble(str2);
+					BigDecimal bd = new BigDecimal(dnum);
+					System.out.println("Please provide the account from where you want to withdraw money:");
+					accN = input.next();
+					if (ValidationClass.isNumeric(accN)) {
+						int acc = Integer.parseInt(accN);
+						if (cp.withdrawCash(bd, acc)) {
+							System.out.println("You withdraw the money successfully\n");
+							System.out.println("The current balence your account is now: ");
+							cp.checkBal(acc);
+							System.out.println("Press any key to continue");
+							input.nextLine();
+						}
+					}
 				}
 				System.out.println("=======================================================================");
 				break;
 			case "9":
 				System.out.println("How much money you want to Transfer?");
 				String str3 = input.nextLine();
-				double amo = Double.parseDouble(str3);
-				System.out.println("Please provide the account number **From** you want to transfer:");
-				String str6 = input.nextLine();
-				int fromAcc = Integer.parseInt(str6);
-				System.out.println("Please provide the account number where you want to transfer:");
-				String str7 = input.nextLine();
-				int otherAcc2 = Integer.parseInt(str7);
-				BigDecimal bd3 = new BigDecimal(amo);
-				if (cp.transfer(bd3, otherAcc2, fromAcc)) {
-					System.out.println("Transfer the money successfully\n");
-					System.out.println("The current balence your account is now: ");
-					cp.checkBal(uid);
-					System.out.println("Press any key to continue");
-					input.nextLine();
+				dnum = 0;
+				if (ValidationClass.isDouble(str3)) {
+					dnum = Double.parseDouble(str3);
+					System.out.println("Please provide the account number **From** you want to transfer:");
+					String str6 = input.nextLine();
+					if (ValidationClass.isNumeric(str6)) {
+						int fromAcc = Integer.parseInt(str6);
+						System.out.println("Please provide the account number where you want to transfer:");
+						String str7 = input.nextLine();
+						if (ValidationClass.isNumeric(str7)) {
+							int otherAcc2 = Integer.parseInt(str7);
+							BigDecimal bd3 = new BigDecimal(dnum);
+							if (cp.transfer(bd3, otherAcc2, fromAcc, uid)) {
+								System.out.println("Transfer the money successfully\n");
+								System.out.println("Credited account balance: ");
+								cp.checkBal(fromAcc);
+								System.out.println("Debited account balance: ");
+								cp.checkBal(otherAcc2);
+								System.out.println("Press any key to continue");
+								input.nextLine();
+							}
+						}
+					}
 				}
 				System.out.println("=======================================================================");
 				break;
 			case "10":
 				System.out.println("How much money you want to deposit?");
 				String str1 = input.nextLine();
-				double dep = Double.parseDouble(str1);
-				BigDecimal bd2 = new BigDecimal(dep);
-				System.out.println("Please provide the account number in which you want to deposit money");
-				String str8 = input.nextLine();
-				int depAcc = Integer.parseInt(str8);
-				if (cp.Deposit(bd2, depAcc)) {
-					System.out.println("You deposit the money successfully\n");
-					System.out.println("The current balence your account is now: ");
-					cp.checkBal(uid);
-					System.out.println("Press any key to continue");
-					input.nextLine();
+				dnum = 0;
+				if (ValidationClass.isDouble(str1)) {
+					dnum = Double.parseDouble(str1);
+					BigDecimal bd2 = new BigDecimal(dnum);
+					System.out.println("Please provide the account number in which you want to deposit money");
+					String str8 = input.nextLine();
+
+					if (ValidationClass.isNumeric(str8)) {
+						int depAcc = Integer.parseInt(str8);
+						if (cp.Deposit(bd2, depAcc, uid)) {
+							System.out.println("You deposit the money successfully\n");
+							System.out.println("The current balence your account is now: ");
+							cp.checkBal(depAcc);
+							System.out.println("Press any key to continue");
+							input.nextLine();
+						}
+					}
 				}
 				System.out.println("=======================================================================");
 				break;
@@ -183,7 +213,7 @@ public class AdminController {
 				break;
 
 			default:
-				System.out.println("Something went wrong!!!");
+				System.out.println("Log Out");
 				System.out.println("=======================================================================");
 				break;
 			}

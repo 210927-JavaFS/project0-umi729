@@ -1,11 +1,12 @@
 package com.revature.controller;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
+import java.io.Console;
 import java.io.IOException;
 import java.util.InputMismatchException;
 import java.util.Scanner;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import com.revature.service.UserManagement;
 import com.revature.service.ValidationClass;
@@ -54,11 +55,20 @@ public class LoginPage {
 				}
 
 				System.out.println("Please enter your password");
-				if (input.hasNext()) {
+				Console con = System.console();
 
-					// not stopping here for user input
-					pass = input.next().toLowerCase();
+				// Checking If there is no console available, then exit.
+				if (con == null) {
+					if (input.hasNext()) {
 
+						// not stopping here for user input
+						pass = input.next().toLowerCase();
+
+					}
+				} else {
+					System.out.println("Enter the password: ");
+					char[] ch = con.readPassword();
+					pass = String.valueOf(ch).toLowerCase();
 				}
 
 				if (user != null) {
@@ -106,7 +116,6 @@ public class LoginPage {
 				Log.debug("User, Email and zip code has taken by user in case (2) switch statement");
 				um.resetPassword(user, email, zipCode);
 				break;
-			
 
 			default:
 				System.out.println(" Something went wrong. Please select from following options ");

@@ -25,12 +25,12 @@ public class AdminPortal extends EmployeePortal{
 		return balDAO.withdraw(bd,acc_no);
 	}
 
-	public boolean transfer(BigDecimal bd3, int otherAcc2, int fromAcc) {
-		return balDAO.transfer(bd3, otherAcc2, fromAcc);
+	public boolean transfer(BigDecimal bd3, int otherAcc2, int fromAcc, int uid) {
+		return balDAO.transfer(bd3, otherAcc2, fromAcc, uid);
 	}
 
-	public boolean Deposit(BigDecimal bd2, int depAcc) {
-		return balDAO.deposit(bd2, depAcc);
+	public boolean Deposit(BigDecimal bd2, int depAcc, int uid) {
+		return balDAO.deposit(depAcc, bd2 , uid);
 	}
 	
 }
