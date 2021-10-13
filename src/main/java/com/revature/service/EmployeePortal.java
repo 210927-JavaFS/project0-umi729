@@ -26,11 +26,17 @@ public class EmployeePortal extends Portal {
 		if(logDAO.activate(acc, fname)) {
 			System.out.println("Account Activated");
 		}
+		else {
+			System.out.println("Something went wrong!!1");
+		}
 	}
 
 	public void deactivate(int acc, String fname) {
 		if(logDAO.deactivate(acc, fname)) {
 			System.out.println("Account Deactivated");
+		}
+		else {
+			System.out.println("Something went wrong!!1");
 		}
 	}
 

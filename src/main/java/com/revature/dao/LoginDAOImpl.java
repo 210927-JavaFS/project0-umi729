@@ -138,10 +138,10 @@ public class LoginDAOImpl implements LoginDAO {
 			statement.setInt(1, acc);
 			statement.setString(2, fname);
 			//System.out.println(statement);
-			statement.executeUpdate();
+			if(statement.executeUpdate()==1) {
 		
 			return true;
-
+			}
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
@@ -161,8 +161,10 @@ public class LoginDAOImpl implements LoginDAO {
 
 			statement.setInt(1, acc);
 			statement.setString(2, fname);
-			statement.executeUpdate();
-
+			if(statement.executeUpdate()==1) {
+				
+				return true;
+				}
 			return true;
 
 		} catch (SQLException e) {
@@ -261,7 +263,7 @@ public class LoginDAOImpl implements LoginDAO {
 
 			String sql = "SELECT ab.acc_no AS acc_no, bal, first_name , last_name, email, zipCode, user_name, a_type, status "
 					+ " FROM acc_bal ab  JOIN account a ON ab.acc_no =a.acc_no \r\n" + "JOIN login l ON a.aid = l.aid "
-					+ " WHERE status='disable';";
+					+ " WHERE status='Disable';";
 
 			PreparedStatement statement = conn.prepareStatement(sql);
 //System.out.println(statement);

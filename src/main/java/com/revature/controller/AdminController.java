@@ -6,6 +6,7 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 import com.revature.service.AdminPortal;
+import com.revature.service.ValidationClass;
 
 public class AdminController {
 
@@ -52,9 +53,13 @@ public class AdminController {
 
 			case "1":
 				System.out.println("Please Enter Customer Account number: ");
-				int acc = Integer.parseInt(input.next());
-				System.out.println("The balence of account is: ");
-				cp.checkBal(acc);
+				String accN = input.next();
+
+				if (ValidationClass.isNumeric(accN)) {
+					int acc = Integer.parseInt(accN);
+					System.out.println("The balence of account is: ");
+					cp.checkBal(acc);
+				}
 				System.out.println("=======================================================================");
 
 				break;
@@ -82,9 +87,10 @@ public class AdminController {
 			case "5":
 				System.out.println("Please Enter Customer Account Number: ");
 				int acc3 = Integer.parseInt(input.next());
+				System.out.println(acc3);
 				System.out.println("Please enter first name of Account Holder");
 				String fname1 = input.next();
-				cp.activate(acc3, fname1);
+				// cp.activate(acc3, fname1);
 				;
 				System.out.println("=======================================================================");
 				break;
@@ -131,7 +137,7 @@ public class AdminController {
 				String str7 = input.nextLine();
 				int otherAcc2 = Integer.parseInt(str7);
 				BigDecimal bd3 = new BigDecimal(amo);
-				if (cp.transfer(bd3, otherAcc2, fromAcc )) {
+				if (cp.transfer(bd3, otherAcc2, fromAcc)) {
 					System.out.println("Transfer the money successfully\n");
 					System.out.println("The current balence your account is now: ");
 					cp.checkBal(uid);
@@ -158,11 +164,11 @@ public class AdminController {
 				System.out.println("=======================================================================");
 				break;
 			case "11":
-				
-				//System.out.println("Please enter the account number to print statement");
-				NewProfile np=new NewProfile();
+
+				// System.out.println("Please enter the account number to print statement");
+				NewProfile np = new NewProfile();
 				np.createProfile();
-				
+
 				System.out.println("=======================================================================");
 				break;
 			case "12":

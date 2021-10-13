@@ -12,7 +12,15 @@ public class ValidationClass {
 		String regex = "^[\\w-_\\.+]*[\\w-_\\.]\\@([\\w]+\\.)+[\\w]+[\\w]$";
 		return email.matches(regex);
 	}
-
+	public static boolean isNumeric(String str) { 
+		  try {  
+		    Integer.parseInt(str);  
+		    return true;
+		  } catch(NumberFormatException e){  
+			  System.out.println("Not a numeric value");
+		    return false;  
+		  }  
+		}
 	public boolean validateDoubleInput(double bal, double minVal, double maxVal) {
 		boolean check = true;
 		if ((bal < minVal)) {
