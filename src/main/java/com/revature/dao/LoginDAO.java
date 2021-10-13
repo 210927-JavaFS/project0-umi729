@@ -18,6 +18,6 @@ public interface LoginDAO {
 	public List<ApPen> applications();
 	public ListIterator<ApPen> ListIterator();
 	public ApPen proFileReport(int acc);
-	public boolean activate(int acc);
-	public boolean deactivate(int acc);
+	public boolean activate(int acc, String fname);
+	public boolean deactivate(int acc, String fname);
 }

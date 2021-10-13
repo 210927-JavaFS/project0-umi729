@@ -3,6 +3,7 @@ package com.revature.service;
 import java.io.IOException;
 import java.util.InputMismatchException;
 
+import com.revature.controller.AdminController;
 import com.revature.controller.Employee;
 import com.revature.controller.LoggedIn;
 
@@ -21,6 +22,10 @@ public enum Login {
 		}
 		else if(type.equals("Emp")) {
 			Employee cp= new Employee(userName, uid);
+			cp.viewCP();
+		}
+		else if(type.equals("Admin")) {
+			AdminController cp= new AdminController(userName, uid);
 			cp.viewCP();
 		}
 	}

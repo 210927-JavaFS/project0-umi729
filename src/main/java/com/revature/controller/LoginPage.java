@@ -50,14 +50,14 @@ public class LoginPage {
 			case "1":
 				System.out.println("Please enter your username");
 				if (input.hasNext()) {
-					user = input.next();
+					user = input.next().toLowerCase();
 				}
 
 				System.out.println("Please enter your password");
 				if (input.hasNext()) {
 
 					// not stopping here for user input
-					pass = input.next();
+					pass = input.next().toLowerCase();
 
 				}
 
@@ -90,7 +90,7 @@ public class LoginPage {
 // resetting password after verifying username email and password
 			case "3":
 				System.out.println("Please enter your User name");
-				user = input.next();
+				user = input.next().toLowerCase();
 				System.out.println("Please enter your email registered with your account");
 
 				while (!(vc.isValid(email = input.next()))) {

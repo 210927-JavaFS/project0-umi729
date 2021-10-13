@@ -82,13 +82,18 @@ public class Employee  {
 			case "5":
 				System.out.println("Please Enter Customer Account Number: ");
 				int acc3 = Integer.parseInt(input.next());
-				cp.activate(acc3);;
+				System.out.println("Please enter first name of Account Holder");
+				String fname1=input.next();
+				cp.activate(acc3, fname1);;
 				System.out.println("=======================================================================");
 				break;
 			case "6":
 				System.out.println("Please Enter Customer Account Number: ");
 				int acc4 = Integer.parseInt(input.next());
-				cp.deactivate(acc4);;
+				System.out.println("Please enter first name of Account Holder");
+				String fname2=input.next();
+				cp.deactivate(acc4, fname2);;
+				
 				System.out.println("=======================================================================");
 				break;
 			

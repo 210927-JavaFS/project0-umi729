@@ -53,37 +53,36 @@ public class UserManagement {
 		int accountNumber = rand.nextInt(1000000);
 		AccBalance ab = new AccBalance(accountNumber, bal);
 		BalanceDAOImpl bala = new BalanceDAOImpl();
-		
+
 		LoginDAO ldao = new LoginDAOImpl();
 		AccountDAO adao = new AccountDAOImpl();
 		ListIterator<AccountTb> lst = at.listIterator();
 		ListIterator<LoginTb> lsLogin = lt.listIterator();
 		// System.out.println(at);
-	
-	int[] aidNo= new int[2];
-	int c=0;
+
+		int[] aidNo = new int[2];
+		int c = 0;
 		if (bala.addBalance(ab)) {
 			while (lst.hasNext()) { //
 
 				AccountTb rec = lst.next();
 				rec.setAccNo(accountNumber);
-				aidNo[c]= adao.profile(rec);
+				aidNo[c] = adao.profile(rec);
 				c++;
-				
-				
+
 			}
-		int d=0;	
-		
+			int d = 0;
+
 			while (lsLogin.hasNext()) {
 				LoginTb ltt = lsLogin.next();
-				
+
 				if (aidNo[d] > 0) {
-					//System.out.println(ltt.getUserName());
+					// System.out.println(ltt.getUserName());
 					ltt.setAid(aidNo[d]);
 					if (ldao.signUp(ltt)) {
-						
+
 						d++;
-						
+
 					}
 
 				}

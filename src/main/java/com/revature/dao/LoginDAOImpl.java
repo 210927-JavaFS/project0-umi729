@@ -97,7 +97,7 @@ public class LoginDAOImpl implements LoginDAO {
 			statement.setString(1, userName);
 
 			ResultSet result = statement.executeQuery();
-
+			
 			LoginTb ab = new LoginTb();
 
 			if (result.next()) {
@@ -108,9 +108,9 @@ public class LoginDAOImpl implements LoginDAO {
 				ab.setStatus(result.getString("status"));
 				ab.setaType(result.getString("a_type"));
 				ab.setAid(result.getInt("aid"));
-
+				return true;
 			}
-			return true;
+		//	return true;
 
 		} catch (SQLException e) {
 			e.printStackTrace();
@@ -125,20 +125,21 @@ public class LoginDAOImpl implements LoginDAO {
 	 * account a ON l.aid =a.aid JOIN acc_bal ab ON ab.acc_no = a.acc_no WHERE
 	 * ab.acc_no = 888888 );
 	 */
-	public boolean activate(int acc) {
+	public boolean activate(int acc, String fname) {
 
 		try (Connection conn = ConnectionUtil.getConnection()) {
 
 			String sql = "UPDATE login SET status = 'Active' WHERE uid = ("
 					+ "SELECT uid FROM login l JOIN account a ON l.aid =a.aid "
-					+ "JOIN acc_bal ab ON ab.acc_no = a.acc_no WHERE ab.acc_no = ?" + "); ";
+					+ "JOIN acc_bal ab ON ab.acc_no = a.acc_no WHERE ab.acc_no = ? and first_name = ?" + "); ";
 
 			PreparedStatement statement = conn.prepareStatement(sql);
-
+			
 			statement.setInt(1, acc);
-
+			statement.setString(2, fname);
+			//System.out.println(statement);
 			statement.executeUpdate();
-
+		
 			return true;
 
 		} catch (SQLException e) {
@@ -148,18 +149,18 @@ public class LoginDAOImpl implements LoginDAO {
 		return false;
 
 	}
-	public boolean deactivate(int acc) {
+	public boolean deactivate(int acc, String fname) {
 
 		try (Connection conn = ConnectionUtil.getConnection()) {
 
 			String sql = "UPDATE login SET status = 'Active' WHERE uid = ("
 					+ "SELECT uid FROM login l JOIN account a ON l.aid =a.aid "
-					+ "JOIN acc_bal ab ON ab.acc_no = a.acc_no WHERE ab.acc_no = ?" + "); ";
+					+ "JOIN acc_bal ab ON ab.acc_no = a.acc_no WHERE ab.acc_no = ? and first_name = ?" + "); ";
 
 			PreparedStatement statement = conn.prepareStatement(sql);
 
 			statement.setInt(1, acc);
-
+			statement.setString(2, fname);
 			statement.executeUpdate();
 
 			return true;
@@ -174,7 +175,7 @@ public class LoginDAOImpl implements LoginDAO {
 
 	@Override
 	public boolean signUp(LoginTb tb) {
-		if (!(findByUser(tb.getUserName()))) {
+		
 
 			try (Connection conn = ConnectionUtil.getConnection()) {
 
@@ -200,8 +201,7 @@ public class LoginDAOImpl implements LoginDAO {
 			} catch (SQLException e) {
 				e.printStackTrace();
 			}
-		} else
-			System.out.println("This user is already taken. ");
+		
 		return false;
 
 	}

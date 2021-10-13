@@ -1,28 +1,36 @@
 package com.revature.service;
 
-public class AdminPortal extends EmployeePortal{
+import java.math.BigDecimal;
 
-	protected AdminPortal(String userName, int acc) {
+import com.revature.dao.BalanceDAO;
+import com.revature.dao.BalanceDAOImpl;
+import com.revature.dao.TransDAO;
+import com.revature.dao.TransDAOImpl;
+
+public class AdminPortal extends EmployeePortal{
+	private BalanceDAO balDAO = new BalanceDAOImpl();
+	//private TransDAO td = new TransDAOImpl();
+
+	public AdminPortal(String userName, int acc) {
 		super(userName, acc);
 		// TODO Auto-generated constructor stub
 	}
 	
-	private void createAccount() {
+	public void createAccount() {
 		
 	}
-	protected void withdrawCash(int amount, int accountNumber) {
-		// get from database
-		System.out.println();
+	
+
+	public boolean withdrawCash(BigDecimal bd, int acc_no) {
+		return balDAO.withdraw(bd,acc_no);
 	}
-	protected void Deposit(int amount) {
-		// get from database
-		System.out.println();
-		
+
+	public boolean transfer(BigDecimal bd3, int otherAcc2, int fromAcc) {
+		return balDAO.transfer(bd3, otherAcc2, fromAcc);
 	}
-	protected void transfer(int amount) {
-		// get from database
-		System.out.println();
-		
+
+	public boolean Deposit(BigDecimal bd2, int depAcc) {
+		return balDAO.deposit(bd2, depAcc);
 	}
 	
 }

@@ -18,7 +18,7 @@ public class LoginTb {
 		super();
 		this.uid = uid;
 		this.userName = userName;
-		this.pwd = ae.encrypt(pwd);
+		this.pwd = pwd;
 		this.status = status;
 		this.aType = aType;
 		this.aid = aid;
@@ -28,7 +28,7 @@ public class LoginTb {
 	public LoginTb(String userName, String pwd, String status, String aType, int aid) {
 		super();
 		this.userName = userName;
-		this.pwd = ae.encrypt(pwd) ;
+		this.pwd = pwd;
 		this.status = status;
 		this.aType = aType;
 		this.aid = aid;
@@ -58,11 +58,11 @@ public class LoginTb {
 	}
 	public String getPwd() {
 		Log.debug("In LoginTB getPwd method  ");
-		return ae.decrypt(pwd);
+		return ae.encrypt(pwd);
 	}
 	public void setPwd(String pwd) {
 		Log.debug("In LoginTB setPwd method  ");
-		this.pwd = ae.encrypt(pwd);
+		this.pwd = pwd;
 	}
 	public String getStatus() {
 		Log.debug("In LoginTB getStatus method  ");

@@ -22,14 +22,14 @@ public class EmployeePortal extends Portal {
 		super(userName, acc);
 	}
 
-	public void activate(int acc) {
-		if(logDAO.activate(acc)) {
+	public void activate(int acc, String fname) {
+		if(logDAO.activate(acc, fname)) {
 			System.out.println("Account Activated");
 		}
 	}
 
-	public void deactivate(int acc) {
-		if(logDAO.deactivate(acc)) {
+	public void deactivate(int acc, String fname) {
+		if(logDAO.deactivate(acc, fname)) {
 			System.out.println("Account Deactivated");
 		}
 	}
