@@ -10,10 +10,10 @@ import java.util.ListIterator;
 
 import com.revature.models.ApPen;
 import com.revature.models.LoginTb;
-import com.revature.models.TransactionTb;
 import com.revature.util.ConnectionUtil;
 
 public class LoginDAOImpl implements LoginDAO {
+	AESDecrypt ae = new AESDecrypt();
 
 	@Override
 	public List<LoginTb> findAll() {
@@ -97,7 +97,7 @@ public class LoginDAOImpl implements LoginDAO {
 			statement.setString(1, userName);
 
 			ResultSet result = statement.executeQuery();
-			
+
 			LoginTb ab = new LoginTb();
 
 			if (result.next()) {
@@ -110,7 +110,7 @@ public class LoginDAOImpl implements LoginDAO {
 				ab.setAid(result.getInt("aid"));
 				return true;
 			}
-		//	return true;
+			// return true;
 
 		} catch (SQLException e) {
 			e.printStackTrace();
@@ -134,13 +134,13 @@ public class LoginDAOImpl implements LoginDAO {
 					+ "JOIN acc_bal ab ON ab.acc_no = a.acc_no WHERE ab.acc_no = ? and first_name = ?" + "); ";
 
 			PreparedStatement statement = conn.prepareStatement(sql);
-			
+
 			statement.setInt(1, acc);
 			statement.setString(2, fname);
-			//System.out.println(statement);
-			if(statement.executeUpdate()==1) {
-		
-			return true;
+			// System.out.println(statement);
+			if (statement.executeUpdate() == 1) {
+
+				return true;
 			}
 		} catch (SQLException e) {
 			e.printStackTrace();
@@ -149,6 +149,7 @@ public class LoginDAOImpl implements LoginDAO {
 		return false;
 
 	}
+
 	public boolean deactivate(int acc, String fname) {
 
 		try (Connection conn = ConnectionUtil.getConnection()) {
@@ -161,11 +162,32 @@ public class LoginDAOImpl implements LoginDAO {
 
 			statement.setInt(1, acc);
 			statement.setString(2, fname);
-			if(statement.executeUpdate()==1) {
-				
+			if (statement.executeUpdate() == 1) {
+
 				return true;
-				}
-			return true;
+			}
+
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+
+		return false;
+
+	}
+
+	public boolean upgradeEmp(String user) {
+
+		try (Connection conn = ConnectionUtil.getConnection()) {
+
+			String sql = "UPDATE login SET a_type = 'Active' WHERE user_name = ?";
+			PreparedStatement statement = conn.prepareStatement(sql);
+
+			statement.setString(1, user);
+
+			if (statement.executeUpdate() == 1) {
+
+				return true;
+			}
 
 		} catch (SQLException e) {
 			e.printStackTrace();
@@ -177,33 +199,32 @@ public class LoginDAOImpl implements LoginDAO {
 
 	@Override
 	public boolean signUp(LoginTb tb) {
-		
 
-			try (Connection conn = ConnectionUtil.getConnection()) {
+		try (Connection conn = ConnectionUtil.getConnection()) {
 
-				// String sql = "INSERT INTO account (first_name, last_name, email, zipcode) "
-				// + "VALUES (?, ?, ?, ?)";
-				String sql = "INSERT INTO login (user_name, pwd, status, a_type, aid) " + "VALUES (?, ?, ?,?, ?)";
+			// String sql = "INSERT INTO account (first_name, last_name, email, zipcode) "
+			// + "VALUES (?, ?, ?, ?)";
+			String sql = "INSERT INTO login (user_name, pwd, status, a_type, aid) " + "VALUES (?, ?, ?,?, ?)";
 
-				int count = 0;
+			int count = 0;
 
-				PreparedStatement statement = conn.prepareStatement(sql);
+			PreparedStatement statement = conn.prepareStatement(sql);
 
-				statement.setString(++count, tb.getUserName());
-				statement.setString(++count, tb.getPwd());
-				statement.setString(++count, tb.getStatus());
-				statement.setString(++count, tb.getaType());
-				statement.setInt(++count, tb.getAid());
-				// statement.setString(++count, tb.getPsk());
+			statement.setString(++count, tb.getUserName());
+			statement.setString(++count, tb.getPwd());
+			statement.setString(++count, tb.getStatus());
+			statement.setString(++count, tb.getaType());
+			statement.setInt(++count, tb.getAid());
+			// statement.setString(++count, tb.getPsk());
 
-				statement.execute();
+			statement.execute();
 
-				return true;
+			return true;
 
-			} catch (SQLException e) {
-				e.printStackTrace();
-			}
-		
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+
 		return false;
 
 	}
@@ -224,7 +245,7 @@ public class LoginDAOImpl implements LoginDAO {
 	@Override
 	public LoginTb findByUserPass(String userName, String Pass) {
 		try (Connection conn = ConnectionUtil.getConnection()) {
-			AESDecrypt ae = new AESDecrypt();
+
 			String sql = "Select * from login where user_name= ? and pwd = ? and status = 'Active'";
 
 			PreparedStatement statement = conn.prepareStatement(sql);
@@ -334,6 +355,103 @@ public class LoginDAOImpl implements LoginDAO {
 
 		ListIterator<ApPen> arItr = td.listIterator();
 		return arItr;
+	}
+
+	@Override
+	public void log(int uid) {
+		try (Connection conn = ConnectionUtil.getConnection()) {
+
+			String sql = "SELECT * FROM log_user(?);";
+
+			PreparedStatement statement = conn.prepareStatement(sql);
+
+			statement.setInt(1, uid);
+
+			statement.execute();
+
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+
+	}
+
+	@Override
+	public String getMyUserName(String email, int zipCode) {
+		try (Connection conn = ConnectionUtil.getConnection()) {
+
+			String sql = "SELECT user_name FROM login l JOIN account a ON l.aid = a.aid WHERE email ="
+					+ " ? AND zipcode = ?";
+
+			PreparedStatement statement = conn.prepareStatement(sql);
+			statement.setString(1, email);
+			statement.setInt(2, zipCode);
+
+			ResultSet result = statement.executeQuery();
+
+			if (result.next()) {
+				return result.getString("user_name");
+			}
+
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		// TODO Auto-generated method stub
+		return null;
+
+	}
+
+	@Override
+	public String resetPassword(String userName, String email, int zipCode) {
+		try (Connection conn = ConnectionUtil.getConnection()) {
+
+			String sql = "  SELECT pwd FROM login l JOIN account a ON l.aid = a.aid WHERE email ="
+					+ " ? AND zipcode = ? AND user_name = ?";
+
+			PreparedStatement statement = conn.prepareStatement(sql);
+			statement.setString(1, email);
+			statement.setInt(2, zipCode);
+			statement.setString(3, userName);
+			ResultSet result = statement.executeQuery();
+
+			if (result.next()) {
+				return ae.decrypt(result.getString("pwd"));
+			}
+
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		// TODO Auto-generated method stub
+		return null;
+
+	}
+
+	public boolean updateUser(String fname, String lname, String email, int pzipCode, String user) {
+		try (Connection conn = ConnectionUtil.getConnection()) {
+
+			String sql = "UPDATE account SET first_name =?, last_name = ?, email =?, zipcode = ?"
+					+ " WHERE aid = (SELECT aid FROM login WHERE user_name = ?)";
+
+			int count = 0;
+
+			PreparedStatement statement = conn.prepareStatement(sql);
+
+			statement.setString(++count, fname);
+			statement.setString(++count, lname);
+			statement.setString(++count,email);
+			statement.setInt(++count, pzipCode);
+			statement.setString(++count, user);
+			// statement.setString(++count, tb.getPsk());
+
+			statement.execute();
+
+			return true;
+
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+
+		return false;
+
 	}
 
 }

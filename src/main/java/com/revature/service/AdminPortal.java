@@ -4,11 +4,11 @@ import java.math.BigDecimal;
 
 import com.revature.dao.BalanceDAO;
 import com.revature.dao.BalanceDAOImpl;
-import com.revature.dao.TransDAO;
-import com.revature.dao.TransDAOImpl;
+import com.revature.dao.LoginDAOImpl;
 
 public class AdminPortal extends EmployeePortal{
 	private BalanceDAO balDAO = new BalanceDAOImpl();
+	private LoginDAOImpl logDAO = new LoginDAOImpl();
 	//private TransDAO td = new TransDAOImpl();
 
 	public AdminPortal(String userName, int acc) {
@@ -21,8 +21,8 @@ public class AdminPortal extends EmployeePortal{
 	}
 	
 
-	public boolean withdrawCash(BigDecimal bd, int acc_no) {
-		return balDAO.withdraw(bd,acc_no);
+	public boolean withdrawCash(BigDecimal bd, int acc_no, int uid) {
+		return balDAO.withdraw(bd,acc_no, uid);
 	}
 
 	public boolean transfer(BigDecimal bd3, int otherAcc2, int fromAcc, int uid) {
@@ -32,5 +32,14 @@ public class AdminPortal extends EmployeePortal{
 	public boolean Deposit(BigDecimal bd2, int depAcc, int uid) {
 		return balDAO.deposit(depAcc, bd2 , uid);
 	}
+	public boolean upgrade(String user) {
+		return logDAO.upgradeEmp(user);
+	}
+
+	public boolean viewCustomerAccount(String fname, String lname, String email, int pzipCode, String user) {
+		return logDAO.updateUser(fname, lname, email, pzipCode, user);
+		
+	}
+	
 	
 }

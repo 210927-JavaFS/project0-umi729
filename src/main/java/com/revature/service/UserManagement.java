@@ -37,7 +37,7 @@ public class UserManagement {
 			lg.status = lt.getStatus();// select active
 			lg.type = lt.getaType(); // select type
 			lg.aid = lt.getAid(); // select type
-
+			ld.log(lg.uid);
 			lg.show();
 
 		} else {
@@ -95,45 +95,20 @@ public class UserManagement {
 
 	public String getMyUserName(String email, int zipCode) {
 		Log.info("username searching ");
-		/*
-		 * SELECT user_name FROM login l JOIN account a ON l.aid = a.aid WHERE email =
-		 * 'umi729@gmail.com' AND zipcode = 85008
-		 * 
-		 */
-
-		return "username";
+		ld.getMyUserName(email, zipCode);
+		return ld.getMyUserName(email, zipCode);
 	}
 
-	public void resetPassword(String userName, String email, int zipCode) {
+	public String resetPassword(String userName, String email, int zipCode) {
 
-		/*
-		 * SELECT pwd FROM login l JOIN account a ON l.aid = a.aid WHERE email =
-		 * 'umi729@gmail.com' AND zipcode = 85008 AND user_name = 'Umer1'
-		 */
+		
+		
+		 
 
 		// information matched. Creating new password
 		System.out.println("Information matched please create your password");
 		Log.info("password reseting ");
-		int count = 0;
-		do {
-			System.out.println("Enter new password");
-			Scanner input = new Scanner(System.in);
-			String a = input.next();
-			System.out.println("Re-enter password");
-			String b = input.next();
-			if (a.equals(b)) {
-				/*
-				 * UPDATE login SET pwd = 'abc' WHERE user_name = 'Umer1'
-				 */
-				Log.info("password reset");
-				System.out.println("Password resetted");
-				break;
-			} else {
-				System.out.println("Password mismatched");
-				Log.info("password missmatched ");
-				count++;
-			}
-		} while (count < 3);
+		return ld.resetPassword(userName, email, zipCode);
 
 	}
 }

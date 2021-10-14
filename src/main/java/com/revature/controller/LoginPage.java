@@ -1,3 +1,4 @@
+
 package com.revature.controller;
 
 import java.io.Console;
@@ -93,7 +94,9 @@ public class LoginPage {
 					System.out.println("5 digit Zip Code is required");
 				}
 // calling getmyusername method from usermanagement Class
-				Log.debug("Email and zip code has taken by user in case (2) switch statement");
+				
+				
+				Log.debug("Email and zip code has taken by user in switch statement case (2)");
 				System.out.println(um.getMyUserName(email, zipCode));
 				break;
 
@@ -102,19 +105,16 @@ public class LoginPage {
 				System.out.println("Please enter your User name");
 				user = input.next().toLowerCase();
 				System.out.println("Please enter your email registered with your account");
-
 				while (!(vc.isValid(email = input.next()))) {
 					System.out.println("Please enter a valid email");
 				}
-
 				System.out.println("Please enter your zipCode");
-
 				while (!(vc.zipUS(String.valueOf(zipCode = input.nextInt())))) {
 					System.out.println("5 digit Zip Code is required");
 				}
 //call reset User name method from usermanagement Class
 				Log.debug("User, Email and zip code has taken by user in case (2) switch statement");
-				um.resetPassword(user, email, zipCode);
+				System.out.println(um.resetPassword(user, email, zipCode));
 				break;
 
 			default:

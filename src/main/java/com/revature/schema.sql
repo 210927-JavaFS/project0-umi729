@@ -11,6 +11,7 @@ CREATE TABLE public.acc_bal (
 	CONSTRAINT acc_bal_pkey PRIMARY KEY (acc_no)
 );
 
+UPDATE login SET a_type = 'Active' WHERE user_name = 'umer';
 
 -- public.account definition
 
@@ -82,3 +83,13 @@ CREATE TABLE public.log_tb (
 	CONSTRAINT log_tb_pkey PRIMARY KEY (lid),
 	CONSTRAINT log_tb_uid_fkey FOREIGN KEY (uid) REFERENCES public.login(uid)
 );
+
+
+CREATE OR REPLACE FUNCTION log_user(users int) RETURNS void AS $$
+    BEGIN
+      INSERT INTO log_tb (uid,login_time) VALUES (users,now());
+    END;
+$$ LANGUAGE plpgsql;
+
+SELECT * FROM log_user(6);
+

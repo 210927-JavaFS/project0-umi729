@@ -51,7 +51,7 @@ public class NewProfile {
 					System.out.printf("Person Number: %d%n", i);
 
 					System.out.println("Enter First Name: ");
-					String str = scan.next();
+					String str = scan.next().toLowerCase();
 					atb.setfName(str);
 
 					System.out.println("Enter Last Name: ");

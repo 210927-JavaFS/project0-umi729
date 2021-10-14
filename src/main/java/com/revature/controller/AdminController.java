@@ -33,7 +33,7 @@ public class AdminController {
 					+ "7: Print Customer transactions \n" + "8: Withdraw Money from Customer Account \n"
 					+ "9: Transfer Money between Accounts \n" + "10: Deposit Money in Account \n"
 					+ "11: Create Customer/Employee Account \n" + "12: Update Customer Profile \n"
-					+ "13: Upgrate to Employee account \n" + "0: Logout");
+					+ "13: Upgrade to Employee account \n" + "0: Logout");
 			System.out.print("Press select options from 1-13 \n");
 
 			// validate the input
@@ -130,7 +130,7 @@ public class AdminController {
 					accN = input.next();
 					if (ValidationClass.isNumeric(accN)) {
 						int acc = Integer.parseInt(accN);
-						if (cp.withdrawCash(bd, acc)) {
+						if (cp.withdrawCash(bd, acc, uid)) {
 							System.out.println("You withdraw the money successfully\n");
 							System.out.println("The current balence your account is now: ");
 							cp.checkBal(acc);
@@ -202,13 +202,62 @@ public class AdminController {
 				System.out.println("=======================================================================");
 				break;
 			case "12":
-				System.out.println("Please enter the account number to print statement");
-				cp.viewCustomerAccount(Integer.parseInt(input.next()));
+				ValidationClass vc= new ValidationClass();
+				System.out.println("Please enter the user name of account you want to update");
+				String username = input.next().toLowerCase();
+				System.out.println("Enter First Name: ");
+				String fname = input.next().toLowerCase();
+				
+
+				System.out.println("Enter Last Name: ");
+				String lname=input.next();
+
+				System.out.println("Enter Email Address: ");
+				String eemail;
+
+				while (!(vc.isValid(eemail = input.next()))) {
+					System.out.println("Please enter a valid email");
+				}
+				String email=eemail;
+
+				System.out.println("Enter your ZipCode: ");
+				int pzipCode = 0;
+				validation = false;
+				do {
+					if (input.hasNextInt() == true) {
+						pzipCode = input.nextInt();
+					} else {
+						System.out.println("Please enter 5 digit Zip Code");
+						input.next();
+						continue;
+					}
+					if ((pzipCode < 1)) {
+						System.out.println("Select a positive number");
+						continue;
+
+					} else if (!(vc.zipUS(String.valueOf(pzipCode)))) {
+						System.out.println("5 digit Zip Code is required");
+						continue;
+					} else {
+
+						
+						validation = true;
+					}
+
+				} while (validation == false);
+
+				if(cp.viewCustomerAccount(fname, lname, email, pzipCode,username) ){
+					System.out.println("Update Successfully");
+				}
 				System.out.println("=======================================================================");
 				break;
 			case "13":
-				System.out.println("Please enter the account number to print statement");
-				cp.viewCustomerAccount(Integer.parseInt(input.next()));
+				System.out.println("Please enter username of employee");
+				String user=input.next().toLowerCase();
+				if(cp.upgrade(user)) {
+					System.out.printf("Successful!!! %s can login as Employee", user);
+				}
+				
 				System.out.println("=======================================================================");
 				break;
 
