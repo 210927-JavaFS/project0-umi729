@@ -6865,3 +6865,23 @@
 21:58:29.585 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb getTranType 
 21:58:29.585 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb getUid 
 21:58:29.585 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb getAmount 
+22:19:05.451 [] [main] INFO  com.revature.controller.LoginPage - In controller: login input 
+22:19:11.978 [] [main] DEBUG com.revature.controller.LoginPage - Username and password has taken by user
+22:19:13.512 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB cunstructor without parameters 
+22:19:13.513 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setUid method  
+22:19:13.513 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setUserName method  
+22:19:13.513 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setPwd method  
+22:19:13.513 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setStatus method  
+22:19:13.513 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setaType method  
+22:19:13.513 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB setAid method  
+22:19:13.516 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getUid method  
+22:19:13.516 [] [main] INFO  com.revature.service.UserManagement - login Successfully 
+22:19:13.517 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getUserName method  
+22:19:13.517 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getUid method  
+22:19:13.517 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getStatus method  
+22:19:13.517 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getaType method  
+22:19:13.517 [] [main] DEBUG com.revature.models.LoginTb - In LoginTB getAid method  
+22:19:14.290 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb cunstructor 
+00:27:44.900 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb cunstructor 
+00:35:34.340 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb cunstructor 
+00:38:47.810 [] [main] DEBUG com.revature.models.TransactionTb - In TransactionTb cunstructor 

@@ -17,16 +17,6 @@ class UserManagementTest {
 	}
 
 	@Test
-	void testUserLogin() {
-		fail("Not yet implemented");
-	}
-
-	@Test
-	void testCreateAccount() {
-		fail("Not yet implemented");
-	}
-
-	@Test
 	void testGetMyUserName() {
 		fail("Not yet implemented");
 	}

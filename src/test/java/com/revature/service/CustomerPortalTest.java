@@ -16,20 +16,7 @@ class CustomerPortalTest {
 	void setUp() throws Exception {
 	}
 
-	@Test
-	void testCheckBal() {
-		fail("Not yet implemented");
-	}
-
-	@Test
-	void testViewCustomerAccount() {
-		fail("Not yet implemented");
-	}
-
-	@Test
-	void testCustomerPortal() {
-		fail("Not yet implemented");
-	}
+	
 
 	@Test
 	void testWithdrawCash() {
@@ -46,9 +33,5 @@ class CustomerPortalTest {
 		fail("Not yet implemented");
 	}
 
-	@Test
-	void testUpdateAccount() {
-		fail("Not yet implemented");
-	}
-
+	
 }

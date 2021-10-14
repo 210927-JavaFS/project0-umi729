@@ -100,12 +100,7 @@ public class UserManagement {
 	}
 
 	public String resetPassword(String userName, String email, int zipCode) {
-
-		
-		
-		 
-
-		// information matched. Creating new password
+// information matched. Creating new password
 		System.out.println("Information matched please create your password");
 		Log.info("password reseting ");
 		return ld.resetPassword(userName, email, zipCode);
