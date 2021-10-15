@@ -8491,3 +8491,17 @@
 00:02:04.840 [] [main] INFO  com.revature.controller.LoginPage - In controller: login input 
 00:02:13.907 [] [main] INFO  com.revature.service.UserManagement - login Successfully 
 00:02:14.685 [] [main] INFO  com.revature.controller.LoggedIn - In controller: loggedin input> constructor 
+06:47:48.939 [] [main] INFO  com.revature.BankMS - In main> starting the application 
+06:47:48.961 [] [main] INFO  com.revature.controller.Welcome - In controller: Welcome input 
+06:47:52.955 [] [main] INFO  com.revature.controller.Welcome - In controller: Welcome input> case 1 
+06:47:53.091 [] [main] INFO  com.revature.controller.NewProfile - Creating new profile Method createProfile in new profile class 
+06:48:59.723 [] [main] INFO  com.revature.controller.Welcome - In controller: Welcome input> case 2 
+06:48:59.724 [] [main] INFO  com.revature.controller.LoginPage - In controller: login input 
+06:49:08.841 [] [main] INFO  com.revature.service.UserManagement - login Successfully 
+06:49:09.754 [] [main] INFO  com.revature.controller.LoggedIn - In controller: loggedin input> constructor 
+06:50:07.403 [] [main] WARN  com.revature.service.UserManagement - unsuccessful login attempt 
+06:50:18.035 [] [main] INFO  com.revature.service.UserManagement - login Successfully 
+06:50:18.746 [] [main] INFO  com.revature.service.AdminPortal - In adminportal: constructor 
+06:50:18.746 [] [main] INFO  c.r.controller.AdminController - In controller: AdminController > constructor 
+06:50:18.746 [] [main] INFO  c.r.controller.AdminController - In controller: AdminController > viewCP Method 
+06:56:31.730 [] [main] INFO  com.revature.controller.NewProfile - Creating new profile Method createProfile in new profile class 
