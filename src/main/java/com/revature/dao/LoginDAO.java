@@ -17,10 +17,11 @@ public interface LoginDAO {
 	public ListIterator<LoginTb> ListIterator(int uid);
 	public List<ApPen> applications();
 	public ListIterator<ApPen> ListIterator();
-	public ApPen proFileReport(int acc);
+	public List<ApPen> proFileReport(int acc);
 	public boolean activate(int acc, String fname);
 	public boolean deactivate(int acc, String fname);
 	public void log(int uid);
 	public String getMyUserName(String email, int zipCode);
 	public String resetPassword(String userName, String email, int zipCode);
+	public ListIterator<ApPen> ListIteratorProfile(int acc);
 }

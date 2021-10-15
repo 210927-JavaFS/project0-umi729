@@ -179,7 +179,7 @@ public class LoginDAOImpl implements LoginDAO {
 
 		try (Connection conn = ConnectionUtil.getConnection()) {
 
-			String sql = "UPDATE login SET a_type = 'Active' WHERE user_name = ?";
+			String sql = "UPDATE login SET a_type = 'Emp' WHERE user_name = ?";
 			PreparedStatement statement = conn.prepareStatement(sql);
 
 			statement.setString(1, user);
@@ -317,7 +317,7 @@ public class LoginDAOImpl implements LoginDAO {
 
 	}
 
-	public ApPen proFileReport(int acc) {
+	public List<ApPen> proFileReport(int acc) {
 		try (Connection conn = ConnectionUtil.getConnection()) {
 
 			String sql = "SELECT ab.acc_no AS acc_no, bal, first_name , last_name, email, zipCode, user_name, a_type, status \r\n"
@@ -328,8 +328,9 @@ public class LoginDAOImpl implements LoginDAO {
 			statement.setInt(1, acc);
 			ResultSet result = statement.executeQuery();
 //System.out.println(statement);
-			ApPen ab = new ApPen();
-			if (result.next()) {
+			List<ApPen> list = new ArrayList<>();
+			while (result.next()) {
+				ApPen ab =new ApPen();
 				ab.setAcc_no(result.getInt("acc_no"));
 				ab.setBal(result.getDouble("acc_no"));
 				ab.setFName(result.getString("first_name"));
@@ -339,8 +340,9 @@ public class LoginDAOImpl implements LoginDAO {
 				ab.setUser_name(result.getString("user_name"));
 				ab.setStatus(result.getString("status"));
 				ab.setAtype(result.getString("a_type"));
+				list.add(ab);
 			}
-			return ab;
+			return list;
 
 		} catch (SQLException e) {
 			e.printStackTrace();
@@ -352,6 +354,12 @@ public class LoginDAOImpl implements LoginDAO {
 
 	public ListIterator<ApPen> ListIterator() {
 		List<ApPen> td = applications();
+
+		ListIterator<ApPen> arItr = td.listIterator();
+		return arItr;
+	}
+	public ListIterator<ApPen> ListIteratorProfile(int acc) {
+		List<ApPen> td = proFileReport(acc);
 
 		ListIterator<ApPen> arItr = td.listIterator();
 		return arItr;

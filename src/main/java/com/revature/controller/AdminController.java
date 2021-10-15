@@ -28,7 +28,7 @@ public class AdminController {
 		Scanner input = new Scanner(System.in);
 		do {
 			System.out.println("1: Check balance by Account Number \n" + "2: Check Balance by User Name \n"
-					+ "3: Pending applications for approval \n" + "4: Check Customer Profile \n"
+					+ "3: Pending applications for approval \n" + "4: Check Account Profile \n"
 					+ "5: Activate Custormer Account \n" + "6: Deactivate Custormer Account \n"
 					+ "7: Print Customer transactions \n" + "8: Withdraw Money from Customer Account \n"
 					+ "9: Transfer Money between Accounts \n" + "10: Deposit Money in Account \n"

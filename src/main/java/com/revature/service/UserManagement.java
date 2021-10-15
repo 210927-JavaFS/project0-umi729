@@ -50,7 +50,7 @@ public class UserManagement {
 
 		// Generate random integers in range 0 to 999
 		SecureRandom rand = new SecureRandom();
-		int accountNumber = rand.nextInt(1000000);
+		int accountNumber = rand.nextInt(100);
 		AccBalance ab = new AccBalance(accountNumber, bal);
 		BalanceDAOImpl bala = new BalanceDAOImpl();
 

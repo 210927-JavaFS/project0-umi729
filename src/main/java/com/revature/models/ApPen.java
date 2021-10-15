@@ -102,12 +102,12 @@ public class ApPen {
 
 	@Override
 	public String toString() {
-		
-		return " Applicant: " +" [ "+ Acc_no + " " + FName + " " + lName + " " + status + " "
-				+ atype + " " + bal + " " + email + " " + zipCode + " " + user_name
-				+ " ]";
+		return " Account no= " + Acc_no + ", First Name= " + FName + ", Last Name= " + lName + ", Status= " + status + ", Account Type= "
+				+ atype + ", Balance = " + bal + ", Email= " + email + ", Zip Code= " + zipCode + ", User name = " + user_name
+				+ "";
 	}
 
+	
 	
 	
 

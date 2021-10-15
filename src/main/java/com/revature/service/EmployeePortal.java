@@ -94,10 +94,14 @@ public class EmployeePortal extends Portal {
 
 		public void viewProfile(int acc) {
 		
-		System.out.println(logDAO.proFileReport(acc));
+			ListIterator<ApPen> lst = logDAO.ListIteratorProfile(acc);
 
-		//System.out.printf("Transaction Date: Amount: Type of Trans: UserID: ToAccount No: FromAccount%n");
+			//System.out.printf("Transaction Date: Amount: Type of Trans: UserID: ToAccount No: FromAccount%n");
 
-		
+			while (lst.hasNext()) {
+				ApPen rec = lst.next();
+				System.out.println(rec.toString());
+				
+			}
 	}
 }
