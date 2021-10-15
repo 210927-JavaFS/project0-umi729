@@ -8335,3 +8335,33 @@
 22:24:19.774 [] [main] INFO  com.revature.controller.Welcome - In controller: Welcome input> case 2 
 22:24:19.774 [] [main] INFO  com.revature.controller.LoginPage - In controller: login input 
 22:35:17.136 [] [main] INFO  com.revature.controller.Welcome - In controller: Welcome input> case 3 
+22:46:22.987 [] [main] INFO  com.revature.service.AdminPortalTest - In test: Admin Portal Setup MOck 
+22:46:23.916 [] [main] INFO  com.revature.service.AdminPortalTest - In test: Admin Portal testUpgrade 
+22:46:23.953 [] [main] INFO  com.revature.service.AdminPortalTest - In test: Admin Portal testWithdrawCash 
+22:46:23.953 [] [main] INFO  com.revature.service.AdminPortalTest - in AdminPotalTest class: test withdrawCash
+22:46:23.958 [] [main] INFO  com.revature.service.AdminPortalTest - In test: Admin Portal testUpgrade 
+22:46:23.961 [] [main] INFO  com.revature.service.AdminPortalTest - In test: Admin Portal testMockCreation 
+22:46:23.965 [] [main] INFO  com.revature.service.AdminPortalTest - In test: Admin Portal testDeposit 
+22:46:23.967 [] [main] INFO  com.revature.service.AdminPortalTest - In test: Admin Portal testTransfer 
+22:54:03.565 [] [main] INFO  com.revature.service.AdminPortalTest - In test: Admin Portal Setup MOck 
+22:54:04.180 [] [main] INFO  com.revature.service.AdminPortalTest - In test: Admin Portal testUpgrade 
+22:54:04.215 [] [main] INFO  com.revature.service.AdminPortalTest - In test: Admin Portal testWithdrawCash 
+22:54:04.219 [] [main] INFO  com.revature.service.AdminPortalTest - In test: Admin Portal testMockCreation 
+22:54:04.223 [] [main] INFO  com.revature.service.AdminPortalTest - In test: Admin Portal testUpgrade 
+22:54:04.228 [] [main] INFO  com.revature.service.AdminPortalTest - In test: Admin Portal testTransfer 
+22:54:04.233 [] [main] INFO  com.revature.service.AdminPortalTest - In test: Customer Portal setUpAfterAllClass 
+22:54:13.137 [] [main] INFO  c.r.service.CustomerPortalTest - In test: Customer Portal SetupMOck 
+22:54:13.711 [] [main] INFO  c.r.service.CustomerPortalTest - In test: Customer Portal testWithdrawCash 
+22:54:13.740 [] [main] INFO  c.r.service.CustomerPortalTest - In test: Customer Portal testWithdrawCash 
+22:54:13.740 [] [main] INFO  c.r.service.CustomerPortalTest - In test: Admin Portal testUpgrade 
+22:54:13.743 [] [main] INFO  c.r.service.CustomerPortalTest - In test: Customer Portal testWithdrawCash 
+22:54:13.743 [] [main] INFO  c.r.service.CustomerPortalTest - In test: Admin Portal testTransfer 
+22:54:13.747 [] [main] INFO  c.r.service.CustomerPortalTest - In test: Customer Portal setUpAfterAllClass 
+23:00:35.966 [] [main] INFO  c.r.service.UserManagementTest - In test: UserManagement Setup Mock 
+23:00:36.483 [] [main] INFO  c.r.service.UserManagementTest - In test: UserManagement testGetMyUserName 
+23:01:43.020 [] [main] INFO  c.r.service.UserManagementTest - In test: UserManagement Setup Mock 
+23:01:43.533 [] [main] INFO  c.r.service.UserManagementTest - In test: UserManagement testGetMyUserName 
+23:01:43.562 [] [main] INFO  c.r.service.UserManagementTest - In test: UserManagement testGetMyUserName 
+23:01:58.236 [] [main] INFO  c.r.service.UserManagementTest - In test: UserManagement Setup Mock 
+23:01:58.766 [] [main] INFO  c.r.service.UserManagementTest - In test: UserManagement testGetMyUserName 
+23:01:58.793 [] [main] INFO  c.r.service.UserManagementTest - In test: UserManagement testResetPassword 

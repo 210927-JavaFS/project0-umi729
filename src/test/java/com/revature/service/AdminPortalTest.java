@@ -6,6 +6,7 @@ import static org.mockito.Mockito.when;
 
 import java.math.BigDecimal;
 
+import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -28,19 +29,22 @@ class AdminPortalTest {
 
 	@BeforeAll
 	public static void setupMock() {
+		log.info("In test: Admin Portal Setup MOck ");
 		ap = Mockito.mock(AdminPortal.class);
 		balDaoI = Mockito.mock(BalanceDAOImpl.class);
 	}
 
 	@Test
 	public void testMockCreation() {
+		log.info("In test: Admin Portal testMockCreation ");
 		assertNotNull(ap);
 		assertNotNull(balDaoI);
 	}
 
 	@Test
 	void testWithdrawCash() {
-		log.info("in AdminPotalTest class: test withdrawCash");
+		log.info("In test: Admin Portal testWithdrawCash ");
+		
 		when(ap.withdrawCash(bg, 10, 10)).thenReturn(true);
 		assertEquals(true, ap.withdrawCash(bg, 10, 10));
 	}
@@ -48,6 +52,7 @@ class AdminPortalTest {
 	
 	@Test
 	void testTransfer() {
+		log.info("In test: Admin Portal testTransfer ");
 		when(ap.transfer(bg, 8, 8, 8)).thenReturn(true);
 		assertEquals(true, ap.transfer(bg, 8, 8, 8));
 		
@@ -55,20 +60,24 @@ class AdminPortalTest {
 
 	@Test
 	void testDeposit() {
-		when(ap.transfer(bg, 8, 8, 8)).thenReturn(true);
-		assertEquals(true, ap.transfer(bg, 8, 8, 8));
-	}
-
-	@Test
-	void testUpgrade() {
+		log.info("In test: Admin Portal testUpgrade ");
 		when(ap.Deposit(bg, 150, 299)).thenReturn(true);
 		assertEquals(true, ap.Deposit(bg, 150, 299));
 	}
 
+	
+
 	@Test
 	void testViewCustomerAccount() {
+		log.info("In test: Admin Portal testUpgrade ");
 		when(ap.viewCustomerAccount("Umer", "Zahid", "umi729@gmail.com", 58585, "test")).thenReturn(true);
 		assertEquals(true, ap.viewCustomerAccount("Umer", "Zahid", "umi729@gmail.com", 58585, "test"));
+	}
+	@AfterAll
+	static void setUpAllClass() throws Exception {
+		log.info("In test: Customer Portal setUpAfterAllClass ");
+		ap = null;
+		balDaoI = null;
 	}
 
 }
