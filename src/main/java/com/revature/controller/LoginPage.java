@@ -35,7 +35,7 @@ public class LoginPage {
 
 		do {
 			System.out.println(
-					"1: Enter user credentials \n" + "2: Forget User Name \n" + "3: Forget password \n" + "4: Exit ");
+					"1: Login \n" + "2: Forget User Name \n" + "3: Forget password \n" + "4: Back ");
 
 			// validate the input
 			if (input.hasNext() == true) {
@@ -50,12 +50,12 @@ public class LoginPage {
 			switch (option) {
 
 			case "1":
-				System.out.println("Please enter your username");
+				System.out.println("Username: ");
 				if (input.hasNext()) {
 					user = input.next().toLowerCase();
 				}
 
-				System.out.println("Please enter your password");
+				System.out.println("Password: ");
 				Console con = System.console();
 
 				// Checking If there is no console available, then exit.
@@ -67,7 +67,7 @@ public class LoginPage {
 
 					}
 				} else {
-					System.out.println("Enter the password: ");
+					System.out.println("Password: ");
 					char[] ch = con.readPassword();
 					pass = String.valueOf(ch).toLowerCase();
 				}
@@ -79,11 +79,11 @@ public class LoginPage {
 						um.userLogin(user, pass);
 					}
 				}
-
+				System.out.println("==========================================================");
 				break;
 // trying to find username by using email and zip code						
 			case "2":
-				System.out.println("Please enter your email registered with your account");
+				System.out.println("Please enter your email: ");
 
 				while (!(vc.isValid(email = input.next()))) {
 					System.out.println("Please enter a valid email");
@@ -98,13 +98,14 @@ public class LoginPage {
 				
 				Log.debug("Email and zip code has taken by user in switch statement case (2)");
 				System.out.println(um.getMyUserName(email, zipCode));
+				System.out.println("==========================================================");
 				break;
 
 // resetting password after verifying username email and password
 			case "3":
-				System.out.println("Please enter your User name");
+				System.out.println("Please enter your user name: ");
 				user = input.next().toLowerCase();
-				System.out.println("Please enter your email registered with your account");
+				System.out.println("Please enter your email: ");
 				while (!(vc.isValid(email = input.next()))) {
 					System.out.println("Please enter a valid email");
 				}
@@ -115,10 +116,13 @@ public class LoginPage {
 //call reset User name method from usermanagement Class
 				Log.debug("User, Email and zip code has taken by user in case (2) switch statement");
 				System.out.println(um.resetPassword(user, email, zipCode));
+				System.out.println("==========================================================");
 				break;
-
+			case "4":
+				System.out.println("==========================================================");
+				break; 
 			default:
-				System.out.println(" Something went wrong. Please select from following options ");
+				System.out.println("==========================================================");
 				break;
 			}
 

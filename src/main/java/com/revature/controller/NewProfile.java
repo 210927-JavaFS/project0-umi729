@@ -111,7 +111,7 @@ public class NewProfile {
 
 					System.out.println("Create password");
 					ltb.setPwd(scan.next().toLowerCase());
-					ltb.setStatus("Disable");
+					ltb.setStatus("Active");
 					ltb.setaType("Cus");
 					ll.add(ltb);
 					// System.out.println(ll);

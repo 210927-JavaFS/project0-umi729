@@ -187,7 +187,7 @@ public class BalanceDAOImpl implements BalanceDAO {
 			if ((statement.executeUpdate()) == 1) {
 				tb.setTranType("Deposit");
 				tb.setAmount(amount);
-				tb.setAcc_no(acc_no);
+				tb.setToAccount(acc_no);
 				TransDAO tdao = new TransDAOImpl();
 				tdao.addTrans(tb);
 			}

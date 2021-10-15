@@ -50,7 +50,7 @@ public class UserManagement {
 
 		// Generate random integers in range 0 to 999
 		SecureRandom rand = new SecureRandom();
-		int accountNumber = rand.nextInt(100);
+		int accountNumber = rand.nextInt(1000);
 		AccBalance ab = new AccBalance(accountNumber, bal);
 		BalanceDAOImpl bala = new BalanceDAOImpl();
 
@@ -101,7 +101,7 @@ public class UserManagement {
 
 	public String resetPassword(String userName, String email, int zipCode) {
 // information matched. Creating new password
-		System.out.println("Information matched please create your password");
+		System.out.println("Your password is: ");
 		Log.info("password reseting ");
 		return ld.resetPassword(userName, email, zipCode);
 
