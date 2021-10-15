@@ -5,11 +5,14 @@ import java.math.BigDecimal;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import com.revature.service.AdminPortal;
 import com.revature.service.ValidationClass;
 
 public class AdminController {
-
+	private static Logger Log = LoggerFactory.getLogger(AdminController.class);
 	private String userName;
 	private int uid;
 	private AdminPortal cp;
@@ -18,23 +21,38 @@ public class AdminController {
 		this.userName = user;
 		this.uid = uid;
 		cp = new AdminPortal(user, uid);
+		Log.info("In controller: AdminController > constructor ");
 	}
 
 	public void viewCP() throws InputMismatchException, IOException {
-		System.out.println("Admin Management Service ");
-		System.out.println(" Please select from following options: ");
+		
+		Log.info("In controller: AdminController > viewCP Method ");
+		System.out.println("Admin Management Portal ");
+		System.out.println();
 		boolean validation = false;
 		String option = "0";
 		Scanner input = new Scanner(System.in);
 		do {
-			System.out.println("1: Check balance by Account Number \n" + "2: Check Balance by User Name \n"
-					+ "3: Pending applications for approval \n" + "4: Check Account Profile \n"
-					+ "5: Activate Custormer Account \n" + "6: Deactivate Custormer Account \n"
-					+ "7: Print Customer transactions \n" + "8: Withdraw Money from Customer Account \n"
-					+ "9: Transfer Money between Accounts \n" + "10: Deposit Money in Account \n"
-					+ "11: Create Customer/Employee Account \n" + "12: Update Customer Profile \n"
-					+ "13: Upgrade to Employee account \n" + "0: Logout");
-			System.out.print("Press select options from 1-13 \n");
+			System.out.println("****Account Balance**** \n"
+					+ "1: Check balance by Account Number \n"
+					+ "2: Check Balance by Username \n\n"
+					+ "******Account Management****** \n"
+					+ "3: Pending applications for approval \n"
+					+ "4: Check Account Profile \n"
+					+ "5: Activate Custormer Account \n"
+					+ "6: Deactivate Custormer Account \n\n"
+					+ "****Account Transaction Management**** \n"
+					+ "7: Print Customer transactions \n"
+					+ "8: Withdraw Money from Customer Account \n"
+					+ "9: Transfer Money between Accounts \n"
+					+ "10: Deposit Money in Account \n\n"
+					+ "****Customer Profile Management**** \n"
+					+ "11: Create Customer/Employee Account \n"
+					+ "12: Update Customer Profile \n"
+					+ "13: Upgrade to Employee Account \n"
+					+ "14: View all Customers Account \n"
+					+ "0: Logout");
+			System.out.print("Press select options from 1-14 \n");
 
 			// validate the input
 			do {
@@ -42,7 +60,7 @@ public class AdminController {
 					option = input.nextLine();
 					validation = true;
 				} else {
-					System.out.println("Please enter number from (1-8)");
+					System.out.println("Please enter number from (1-14)");
 					input.next();
 					continue;
 				}
@@ -134,8 +152,7 @@ public class AdminController {
 							System.out.println("You withdraw the money successfully\n");
 							System.out.println("The current balence your account is now: ");
 							cp.checkBal(acc);
-							System.out.println("Press any key to continue");
-							input.nextLine();
+							
 						}
 					}
 				}
@@ -158,12 +175,11 @@ public class AdminController {
 							BigDecimal bd3 = new BigDecimal(dnum);
 							if (cp.transfer(bd3, otherAcc2, fromAcc, uid)) {
 								System.out.println("Transfer the money successfully\n");
-								System.out.println("Credited account balance: ");
+								System.out.println("Credited account balance now: ");
 								cp.checkBal(fromAcc);
-								System.out.println("Debited account balance: ");
+								System.out.println("Debited account balance now: ");
 								cp.checkBal(otherAcc2);
-								System.out.println("Press any key to continue");
-								input.nextLine();
+							
 							}
 						}
 					}
@@ -186,8 +202,7 @@ public class AdminController {
 							System.out.println("You deposit the money successfully\n");
 							System.out.println("The current balence your account is now: ");
 							cp.checkBal(depAcc);
-							System.out.println("Press any key to continue");
-							input.nextLine();
+							
 						}
 					}
 				}
@@ -260,9 +275,18 @@ public class AdminController {
 				
 				System.out.println("=======================================================================");
 				break;
-
+			case "14":
+				cp.viewCustomerAccount();
+				
+				System.out.println("=======================================================================");
+				break;
+			case "0":
+				System.out.println("Log out....");
+				
+				System.out.println("=======================================================================");
+				break;
 			default:
-				System.out.println("Log Out");
+				System.out.println("Something went wrong");
 				System.out.println("=======================================================================");
 				break;
 			}

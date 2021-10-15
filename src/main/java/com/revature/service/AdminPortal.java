@@ -1,6 +1,7 @@
 package com.revature.service;
 
 import java.math.BigDecimal;
+import java.util.ListIterator;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -8,6 +9,7 @@ import org.slf4j.LoggerFactory;
 import com.revature.dao.BalanceDAO;
 import com.revature.dao.BalanceDAOImpl;
 import com.revature.dao.LoginDAOImpl;
+import com.revature.models.ApPen;
 
 public class AdminPortal extends EmployeePortal{
 	private static Logger Log = LoggerFactory.getLogger(AdminPortal.class);
@@ -47,6 +49,15 @@ public class AdminPortal extends EmployeePortal{
 	public boolean viewCustomerAccount(String fname, String lname, String email, int pzipCode, String user) {
 		Log.debug("In adminportal: viewCustomerAccount ");
 		return logDAO.updateUser(fname, lname, email, pzipCode, user);
+		
+	}
+
+	public void viewCustomerAccount() {
+		ListIterator<ApPen> lst = logDAO.ListIteratorAllProfile();
+		while (lst.hasNext()) {
+			ApPen rec = lst.next();
+			System.out.println(rec.toString());
+		}
 		
 	}
 	

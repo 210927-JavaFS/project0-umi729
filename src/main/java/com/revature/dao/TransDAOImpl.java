@@ -54,7 +54,7 @@ public class TransDAOImpl implements TransDAO {
 	public  List<TransactionTb>  findByAccNumber(int acc) {
 		try(Connection conn= ConnectionUtil.getConnection()){
 			
-			String sql ="Select * from transction_tb where acc_no =?";	
+			String sql ="Select * from transction_tb where acc_no = ?";	
 			
 			PreparedStatement statement= conn.prepareStatement(sql);
 			statement.setInt(1, acc);

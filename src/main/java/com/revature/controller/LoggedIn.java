@@ -21,6 +21,7 @@ public class LoggedIn {
 		this.userName = user;
 		this.uid = uid;
 		cp = new CustomerPortal(user, uid);
+		Log.info("In controller: loggedin input> constructor ");
 	}
 
 	public LoggedIn() {

@@ -4,11 +4,14 @@ import java.io.IOException;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import com.revature.service.EmployeePortal;
 import com.revature.service.ValidationClass;
 
 public class Employee  {
-
+	private static Logger Log = LoggerFactory.getLogger(AdminController.class);
 	private String userName;
 	private int uid;
 	private EmployeePortal cp;
@@ -17,9 +20,11 @@ public class Employee  {
 		this.userName = user;
 		this.uid = uid;
 		cp = new EmployeePortal(user, uid);
+		Log.info("In controller: Employee constructor ");
 	}
 
 	public void viewCP() throws InputMismatchException, IOException {
+		Log.info("In controller: Employee viewCP ");
 		System.out.println("Employee Management Service ");
 		System.out.println(" Please select from following options: ");
 		boolean validation = false;
@@ -118,6 +123,10 @@ public class Employee  {
 					int acc = Integer.parseInt(accN);
 					cp.viewCustomerAccount(acc);
 				}
+				System.out.println("=======================================================================");
+				break;
+			case "8":
+				
 				System.out.println("=======================================================================");
 				break;
 			default:
