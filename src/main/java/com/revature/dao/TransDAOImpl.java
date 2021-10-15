@@ -163,10 +163,11 @@ public class TransDAOImpl implements TransDAO {
 					+ "JOIN login l ON t.uid = l.uid "
 					+ "JOIN account a ON a.aid =l.aid "
 					+ "JOIN acc_bal ab ON ab.acc_no = a.acc_no "
-					+ "WHERE ab.acc_no = ?;";	
+					+ "WHERE ab.acc_no = ? or to_accountno = ?;";	
 			
 			PreparedStatement statement= conn.prepareStatement(sql);
 			statement.setInt(1, acc_no);
+			statement.setInt(2, acc_no);
 			//System.out.println(statement);
 			ResultSet result = statement.executeQuery();
 			

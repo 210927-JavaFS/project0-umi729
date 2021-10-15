@@ -1,7 +1,6 @@
 package com.revature.dao;
 
 import java.math.BigDecimal;
-import java.math.MathContext;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -10,16 +9,20 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import com.revature.models.AccBalance;
 import com.revature.models.TransactionTb;
 import com.revature.util.ConnectionUtil;
 
 public class BalanceDAOImpl implements BalanceDAO {
+	private static Logger Log = LoggerFactory.getLogger(BalanceDAOImpl.class);
 	private static TransactionTb tb = new TransactionTb();
 
 	@Override
 	public List<AccBalance> findAll() {
-
+		Log.debug("BalanceDAOImpl >  findAll()");
 		try (Connection conn = ConnectionUtil.getConnection()) {
 
 			String sql = "Select * from acc_bal";
@@ -52,6 +55,7 @@ public class BalanceDAOImpl implements BalanceDAO {
 
 	@Override
 	public AccBalance findByAccNumber(int acc) {
+		Log.debug("BalanceDAOImpl >  findByAccNumber()");
 		try (Connection conn = ConnectionUtil.getConnection()) {
 
 			String sql = "SELECT bal FROM acc_bal ab " + "JOIN account a ON ab.acc_no =a.acc_no "
@@ -82,6 +86,7 @@ public class BalanceDAOImpl implements BalanceDAO {
 	}
 
 	public AccBalance findByUserName(String user) {
+		Log.debug("BalanceDAOImpl >  findByUserName()");
 		try (Connection conn = ConnectionUtil.getConnection()) {
 
 			String sql = "SELECT * FROM acc_bal ab " + "JOIN account a ON ab.acc_no =a.acc_no "
@@ -112,6 +117,7 @@ public class BalanceDAOImpl implements BalanceDAO {
 	}
 
 	public AccBalance findByAcc(int acc) {
+		Log.debug("BalanceDAOImpl >  findByAcc()");
 		try (Connection conn = ConnectionUtil.getConnection()) {
 
 			String sql = "SELECT bal FROM acc_bal WHERE acc_no = ?;";
@@ -142,6 +148,7 @@ public class BalanceDAOImpl implements BalanceDAO {
 
 	@Override
 	public boolean deposit(BigDecimal amount, int uid) {
+		Log.debug("BalanceDAOImpl >  deposit()");
 		try (Connection conn = ConnectionUtil.getConnection()) {
 
 			String sql = "UPDATE acc_bal SET bal = ((SELECT bal FROM acc_bal ab  "
@@ -173,6 +180,7 @@ public class BalanceDAOImpl implements BalanceDAO {
 	}
 
 	public boolean deposit(int acc_no, BigDecimal amount) {
+		Log.debug("BalanceDAOImpl >  deposit()");
 		try (Connection conn = ConnectionUtil.getConnection()) {
 
 			String sql = "UPDATE acc_bal SET bal = ((SELECT bal FROM acc_bal ab  " + "WHERE acc_no = ? ) + ?) "
@@ -201,6 +209,7 @@ public class BalanceDAOImpl implements BalanceDAO {
 	}
 
 	public boolean withdraw(int acc_no, BigDecimal amount) {
+		Log.debug("BalanceDAOImpl >  withdraw()");
 		AccBalance ac = findByAcc(acc_no);
 		BigDecimal bg2 = amount;
 		BigDecimal bg4 = new BigDecimal(0);
@@ -238,6 +247,7 @@ public class BalanceDAOImpl implements BalanceDAO {
 	}
 
 	public boolean withdraw(BigDecimal amount, int uid) {
+		Log.debug("BalanceDAOImpl >  withdraw()");
 		AccBalance ac = findByAccNumber(uid);
 
 		BigDecimal bg2 = amount;
@@ -278,6 +288,7 @@ public class BalanceDAOImpl implements BalanceDAO {
 	}
 
 	public boolean transfer(BigDecimal amount, int ota, int uid) {
+		Log.debug("BalanceDAOImpl >  transfer()");
 
 		if (withdraw(amount, uid)) {
 			if (deposit(ota, amount)) {
@@ -292,6 +303,7 @@ public class BalanceDAOImpl implements BalanceDAO {
 	}
 
 	public boolean transfer(BigDecimal amount, int ota, int fta, int uid) {
+		Log.debug("BalanceDAOImpl >  transfer()");
 
 		if (withdraw(amount, fta, uid)) {
 			if (deposit(ota, amount, uid)) {
@@ -306,6 +318,7 @@ public class BalanceDAOImpl implements BalanceDAO {
 	}
 
 	public boolean deposit(int acc_no, BigDecimal amount, int uid) {
+		Log.debug("BalanceDAOImpl >  deposit()");
 		try (Connection conn = ConnectionUtil.getConnection()) {
 
 			String sql = "UPDATE acc_bal SET bal = ((SELECT bal FROM acc_bal ab  " + "WHERE acc_no = ? ) + ?) "
@@ -321,7 +334,7 @@ public class BalanceDAOImpl implements BalanceDAO {
 				tb.setUid(uid);
 				tb.setTranType("Deposit");
 				tb.setAmount(amount);
-				tb.setAcc_no(acc_no);
+				tb.setToAccount(acc_no);
 				TransDAO tdao = new TransDAOImpl();
 				tdao.addTrans(tb);
 			}
@@ -335,6 +348,7 @@ public class BalanceDAOImpl implements BalanceDAO {
 	}
 
 	public boolean withdraw(BigDecimal amount, int acc_no, int uid) {
+		Log.debug("BalanceDAOImpl >  withdraw()");
 
 		BigDecimal bg1 = findByA(acc_no);
 		BigDecimal bg2 = amount;
@@ -356,7 +370,7 @@ public class BalanceDAOImpl implements BalanceDAO {
 					tb.setUid(uid);
 					tb.setTranType("Withdraw");
 					tb.setAmount(amount);
-					tb.setToAccount(acc_no);
+					tb.setAcc_no(acc_no);
 					TransDAO tdao = new TransDAOImpl();
 					tdao.addTrans(tb);
 				}
@@ -373,6 +387,7 @@ public class BalanceDAOImpl implements BalanceDAO {
 
 	@Override
 	public boolean addBalance(AccBalance ab) {
+		Log.debug("BalanceDAOImpl >  addBalance()");
 		try (Connection conn = ConnectionUtil.getConnection()) {
 
 			String sql = "INSERT INTO acc_bal (acc_no, bal) " + "VALUES (?,?);";
@@ -396,6 +411,7 @@ public class BalanceDAOImpl implements BalanceDAO {
 	}
 
 	public BigDecimal findByA(int acc) {
+		Log.debug("BalanceDAOImpl >  findByA()");
 		try (Connection conn = ConnectionUtil.getConnection()) {
 
 			String sql = "SELECT bal FROM acc_bal WHERE acc_no = ?;";

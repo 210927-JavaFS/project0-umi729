@@ -44,15 +44,20 @@ public class CustomerPortal extends Portal {
 
 		ListIterator<TransactionTb> lst = td.ListIterator(uid);
 
-		System.out.printf("Transaction Date: Amount: Type of Trans: UserID: ToAccount No: FromAccount%n");
+		System.out.printf("Transaction Date: Type of Trans: Amount:%n");
 
 		while (lst.hasNext()) {
 			TransactionTb rec = lst.next();
 			System.out.print(rec.getDate());
 			System.out.print("         ");
+//			System.out.printf("%8s%8d%15d%10d", rec.getTranType(), rec.getUid(), rec.getToAccount(),
+//					rec.getAcc_no());
+			System.out.printf("%8s", rec.getTranType());	
+			System.out.print("       ");
 			System.out.print(rec.getAmount());
-			System.out.printf("  %8s  %8d %15d %10d %n", rec.getTranType(), rec.getUid(), rec.getToAccount(),
-					rec.getAcc_no());
+			System.out.println();
+			
+			
 
 		}
 	}

@@ -8,15 +8,20 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.ListIterator;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import com.revature.models.ApPen;
 import com.revature.models.LoginTb;
 import com.revature.util.ConnectionUtil;
 
 public class LoginDAOImpl implements LoginDAO {
 	AESDecrypt ae = new AESDecrypt();
+	private static Logger Log = LoggerFactory.getLogger(LoginDAOImpl.class);
 
 	@Override
 	public List<LoginTb> findAll() {
+		Log.debug("LoginDAOImpl >  findAll()");
 		try (Connection conn = ConnectionUtil.getConnection()) {
 
 			String sql = "Select * from login";
@@ -55,6 +60,7 @@ public class LoginDAOImpl implements LoginDAO {
 	}
 
 	public LoginTb findByUserName(String userName) {
+		Log.debug("LoginDAOImpl >  findByUserName()");
 		try (Connection conn = ConnectionUtil.getConnection()) {
 
 			String sql = "Select * from login where user_name= ?";
@@ -88,6 +94,7 @@ public class LoginDAOImpl implements LoginDAO {
 	}
 
 	public boolean findByUser(String userName) {
+		Log.debug("LoginDAOImpl >  findByUser()");
 		try (Connection conn = ConnectionUtil.getConnection()) {
 
 			String sql = "Select * from login where user_name= ?";
@@ -126,7 +133,7 @@ public class LoginDAOImpl implements LoginDAO {
 	 * ab.acc_no = 888888 );
 	 */
 	public boolean activate(int acc, String fname) {
-
+		Log.debug("LoginDAOImpl >  activate()");
 		try (Connection conn = ConnectionUtil.getConnection()) {
 
 			String sql = "UPDATE login SET status = 'Active' WHERE uid = ("
@@ -151,7 +158,7 @@ public class LoginDAOImpl implements LoginDAO {
 	}
 
 	public boolean deactivate(int acc, String fname) {
-
+		Log.debug("LoginDAOImpl >  deactivate()");
 		try (Connection conn = ConnectionUtil.getConnection()) {
 
 			String sql = "UPDATE login SET status = 'Disable' WHERE uid = ("
@@ -176,7 +183,7 @@ public class LoginDAOImpl implements LoginDAO {
 	}
 
 	public boolean upgradeEmp(String user) {
-
+		Log.debug("LoginDAOImpl >  upgradeEmp()");
 		try (Connection conn = ConnectionUtil.getConnection()) {
 
 			String sql = "UPDATE login SET a_type = 'Emp' WHERE user_name = ?";
@@ -199,7 +206,7 @@ public class LoginDAOImpl implements LoginDAO {
 
 	@Override
 	public boolean signUp(LoginTb tb) {
-
+		Log.debug("LoginDAOImpl >  signUp()");
 		try (Connection conn = ConnectionUtil.getConnection()) {
 
 			// String sql = "INSERT INTO account (first_name, last_name, email, zipcode) "
@@ -244,6 +251,7 @@ public class LoginDAOImpl implements LoginDAO {
 // User verifications
 	@Override
 	public LoginTb findByUserPass(String userName, String Pass) {
+		Log.debug("LoginDAOImpl >  findByUserPass()");
 		try (Connection conn = ConnectionUtil.getConnection()) {
 
 			String sql = "Select * from login where user_name= ? and pwd = ? and status = 'Active'";
@@ -280,6 +288,7 @@ public class LoginDAOImpl implements LoginDAO {
 	}
 
 	public List<ApPen> applications() {
+		Log.debug("LoginDAOImpl >  applications()");
 		try (Connection conn = ConnectionUtil.getConnection()) {
 
 			String sql = "SELECT ab.acc_no AS acc_no, bal, first_name , last_name, email, zipCode, user_name, a_type, status "
@@ -318,6 +327,7 @@ public class LoginDAOImpl implements LoginDAO {
 	}
 
 	public List<ApPen> proFileReport(int acc) {
+		Log.debug("LoginDAOImpl >  proFileReport()");
 		try (Connection conn = ConnectionUtil.getConnection()) {
 
 			String sql = "SELECT ab.acc_no AS acc_no, bal, first_name , last_name, email, zipCode, user_name, a_type, status \r\n"
@@ -353,24 +363,28 @@ public class LoginDAOImpl implements LoginDAO {
 	}
 
 	public ListIterator<ApPen> ListIterator() {
+		Log.debug("LoginDAOImpl >  ListIterator()");
 		List<ApPen> td = applications();
 
 		ListIterator<ApPen> arItr = td.listIterator();
 		return arItr;
 	}
 	public ListIterator<ApPen> ListIteratorProfile(int acc) {
+		Log.debug("LoginDAOImpl >  ListIteratorProfile()");
 		List<ApPen> td = proFileReport(acc);
 
 		ListIterator<ApPen> arItr = td.listIterator();
 		return arItr;
 	}
 	public ListIterator<ApPen> ListIteratorAllProfile() {
+		Log.debug("LoginDAOImpl >  ListIteratorAllProfile()");
 		List<ApPen> td = AllProfileReport();
 		ListIterator<ApPen> arItr = td.listIterator();
 		return arItr;
 	}
 
 	private List<ApPen> AllProfileReport() {
+		Log.debug("LoginDAOImpl >  AllProfileReport()");
 		try (Connection conn = ConnectionUtil.getConnection()) {
 
 			String sql = "SELECT ab.acc_no AS acc_no, bal, first_name , last_name, email, zipCode, user_name, a_type, status \r\n"
@@ -407,6 +421,7 @@ public class LoginDAOImpl implements LoginDAO {
 
 	@Override
 	public void log(int uid) {
+		Log.debug("LoginDAOImpl >  log()");
 		try (Connection conn = ConnectionUtil.getConnection()) {
 
 			String sql = "SELECT * FROM log_user(?);";
@@ -425,6 +440,7 @@ public class LoginDAOImpl implements LoginDAO {
 
 	@Override
 	public String getMyUserName(String email, int zipCode) {
+		Log.debug("LoginDAOImpl >  getMyUserName()");
 		try (Connection conn = ConnectionUtil.getConnection()) {
 
 			String sql = "SELECT user_name FROM login l JOIN account a ON l.aid = a.aid WHERE email ="
@@ -450,6 +466,7 @@ public class LoginDAOImpl implements LoginDAO {
 
 	@Override
 	public String resetPassword(String userName, String email, int zipCode) {
+		Log.debug("LoginDAOImpl >  resetPassword()");
 		try (Connection conn = ConnectionUtil.getConnection()) {
 
 			String sql = "  SELECT pwd FROM login l JOIN account a ON l.aid = a.aid WHERE email ="
@@ -474,6 +491,7 @@ public class LoginDAOImpl implements LoginDAO {
 	}
 
 	public boolean updateUser(String fname, String lname, String email, int pzipCode, String user) {
+		Log.debug("LoginDAOImpl >  updateUser()");
 		try (Connection conn = ConnectionUtil.getConnection()) {
 
 			String sql = "UPDATE account SET first_name =?, last_name = ?, email =?, zipcode = ?"

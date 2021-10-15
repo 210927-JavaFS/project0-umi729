@@ -9,14 +9,17 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.postgresql.util.PSQLException;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import com.revature.models.AccountTb;
 import com.revature.util.ConnectionUtil;
 
 public class AccountDAOImpl implements AccountDAO {
-
+	private static Logger Log = LoggerFactory.getLogger(AccountDAOImpl.class);
 	@Override
 	public List<AccountTb> findAll() {
+		Log.debug("AccountDAOImpl >  findAll()");
 		try (Connection conn = ConnectionUtil.getConnection()) {
 
 			String sql = "Select * from account";
@@ -49,6 +52,7 @@ public class AccountDAOImpl implements AccountDAO {
 
 	@Override
 	public List<AccountTb> findByAccNumber(int acc) {
+		Log.debug("AccountDAOImpl >  findByAccNumber");
 		try (Connection conn = ConnectionUtil.getConnection()) {
 
 			String sql = "Select * from account where acc_no = ?";
@@ -82,6 +86,7 @@ public class AccountDAOImpl implements AccountDAO {
 
 	@Override
 	public List<AccountTb> findByUserID(int uid) {
+		Log.debug("AccountDAOImpl >  findByUserID");
 		try (Connection conn = ConnectionUtil.getConnection()) {
 
 			String sql = "SELECT * FROM account WHERE aid = (SELECT aid FROM login WHERE uid= ?); ";
@@ -114,6 +119,7 @@ public class AccountDAOImpl implements AccountDAO {
 	}
 	
 	public List<AccountTb> findByUserID(String user) {
+		Log.debug("AccountDAOImpl >  findByUserID");
 		try (Connection conn = ConnectionUtil.getConnection()) {
 
 			String sql = "SELECT * FROM account WHERE aid = (SELECT aid FROM login WHERE user_name= ?); ";
@@ -148,6 +154,7 @@ public class AccountDAOImpl implements AccountDAO {
 
 	@Override
 	public int profile(AccountTb tb) {
+		Log.debug("AccountDAOImpl >  profile");
 		try (Connection conn = ConnectionUtil.getConnection()) {
 
 			String sql = "INSERT INTO account (first_name, last_name, email, zipcode, acc_no) "
@@ -186,6 +193,7 @@ public class AccountDAOImpl implements AccountDAO {
 
 	@Override
 	public java.util.ListIterator<AccountTb> ListIterator(int uid) {
+		Log.debug("AccountDAOImpl >  ListIterator");
 		// TODO Auto-generated method stub
 		return null;
 	}

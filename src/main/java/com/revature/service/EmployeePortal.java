@@ -65,15 +65,18 @@ public class EmployeePortal extends Portal {
 		TransDAO td = new TransDAOImpl();
 		ListIterator<TransactionTb> lst = td.ListIterat(AccNo);
 
-		System.out.printf("Transaction Date: Amount: Type of Trans: UserID: ToAccount No: FromAccount%n");
+		System.out.printf("Transaction Date: Type of Trans: UserID: ToAccount No: FromAccount:  Amount: %n");
 
 		while (lst.hasNext()) {
 			TransactionTb rec = lst.next();
 			System.out.print(rec.getDate());
 			System.out.print("         ");
-			System.out.print(rec.getAmount());
-			System.out.printf("  %8s  %8d %15d %10d %n", rec.getTranType(), rec.getUid(), rec.getToAccount(),
+			System.out.printf("%8s%8d%15d%10d", rec.getTranType(), rec.getUid(), rec.getToAccount(),
 					rec.getAcc_no());
+			System.out.print("          ");
+			System.out.print(rec.getAmount());
+			System.out.println();
+			
 
 		}
 

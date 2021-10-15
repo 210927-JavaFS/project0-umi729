@@ -8365,3 +8365,129 @@
 23:01:58.236 [] [main] INFO  c.r.service.UserManagementTest - In test: UserManagement Setup Mock 
 23:01:58.766 [] [main] INFO  c.r.service.UserManagementTest - In test: UserManagement testGetMyUserName 
 23:01:58.793 [] [main] INFO  c.r.service.UserManagementTest - In test: UserManagement testResetPassword 
+23:26:02.649 [] [main] INFO  c.r.service.UserManagementTest - In test Before All: UserManagement Setup Mock 
+23:26:03.187 [] [main] INFO  c.r.service.UserManagementTest - In test: UserManagement testGetMyUserName 
+23:26:03.220 [] [main] INFO  c.r.service.UserManagementTest - In test: UserManagement testResetPassword 
+23:26:13.819 [] [main] INFO  c.r.service.UserManagementTest - In test Before All: UserManagement Setup Mock 
+23:26:14.331 [] [main] INFO  c.r.service.UserManagementTest - In test: UserManagement testGetMyUserName 
+23:26:14.362 [] [main] INFO  c.r.service.UserManagementTest - In test: UserManagement testResetPassword 
+23:26:23.340 [] [main] INFO  com.revature.BankMS - In main> starting the application 
+23:26:23.343 [] [main] INFO  com.revature.controller.Welcome - In controller: Welcome input 
+23:26:28.593 [] [main] INFO  com.revature.controller.Welcome - In controller: Welcome input> case 2 
+23:26:28.594 [] [main] INFO  com.revature.controller.LoginPage - In controller: login input 
+23:26:37.538 [] [main] INFO  com.revature.service.UserManagement - login Successfully 
+23:26:38.288 [] [main] INFO  com.revature.service.AdminPortal - In adminportal: constructor 
+23:26:38.288 [] [main] INFO  c.r.controller.AdminController - In controller: AdminController > constructor 
+23:26:38.288 [] [main] INFO  c.r.controller.AdminController - In controller: AdminController > viewCP Method 
+23:35:59.407 [] [main] INFO  com.revature.BankMS - In main> starting the application 
+23:35:59.411 [] [main] INFO  com.revature.controller.Welcome - In controller: Welcome input 
+23:36:04.073 [] [main] INFO  com.revature.controller.Welcome - In controller: Welcome input> case 2 
+23:36:04.074 [] [main] INFO  com.revature.controller.LoginPage - In controller: login input 
+23:36:15.121 [] [main] INFO  com.revature.service.UserManagement - login Successfully 
+23:36:15.896 [] [main] INFO  com.revature.service.AdminPortal - In adminportal: constructor 
+23:36:15.896 [] [main] INFO  c.r.controller.AdminController - In controller: AdminController > constructor 
+23:36:15.897 [] [main] INFO  c.r.controller.AdminController - In controller: AdminController > viewCP Method 
+23:37:39.048 [] [main] INFO  com.revature.BankMS - In main> starting the application 
+23:37:39.052 [] [main] INFO  com.revature.controller.Welcome - In controller: Welcome input 
+23:37:43.384 [] [main] INFO  com.revature.controller.Welcome - In controller: Welcome input> case 2 
+23:37:43.385 [] [main] INFO  com.revature.controller.LoginPage - In controller: login input 
+23:37:49.027 [] [main] INFO  com.revature.service.UserManagement - login Successfully 
+23:37:49.831 [] [main] INFO  com.revature.service.AdminPortal - In adminportal: constructor 
+23:37:49.831 [] [main] INFO  c.r.controller.AdminController - In controller: AdminController > constructor 
+23:37:49.831 [] [main] INFO  c.r.controller.AdminController - In controller: AdminController > viewCP Method 
+23:39:50.326 [] [main] INFO  com.revature.BankMS - In main> starting the application 
+23:39:50.330 [] [main] INFO  com.revature.controller.Welcome - In controller: Welcome input 
+23:39:52.569 [] [main] INFO  com.revature.controller.Welcome - In controller: Welcome input> case 2 
+23:39:52.570 [] [main] INFO  com.revature.controller.LoginPage - In controller: login input 
+23:39:58.730 [] [main] INFO  com.revature.service.UserManagement - login Successfully 
+23:39:59.674 [] [main] INFO  com.revature.service.AdminPortal - In adminportal: constructor 
+23:39:59.675 [] [main] INFO  c.r.controller.AdminController - In controller: AdminController > constructor 
+23:39:59.676 [] [main] INFO  c.r.controller.AdminController - In controller: AdminController > viewCP Method 
+23:40:59.379 [] [main] INFO  com.revature.BankMS - In main> starting the application 
+23:40:59.382 [] [main] INFO  com.revature.controller.Welcome - In controller: Welcome input 
+23:41:01.154 [] [main] INFO  com.revature.controller.Welcome - In controller: Welcome input> case 2 
+23:41:01.155 [] [main] INFO  com.revature.controller.LoginPage - In controller: login input 
+23:41:07.615 [] [main] INFO  com.revature.service.UserManagement - login Successfully 
+23:41:08.363 [] [main] INFO  com.revature.service.AdminPortal - In adminportal: constructor 
+23:41:08.364 [] [main] INFO  c.r.controller.AdminController - In controller: AdminController > constructor 
+23:41:08.365 [] [main] INFO  c.r.controller.AdminController - In controller: AdminController > viewCP Method 
+23:42:09.106 [] [main] INFO  com.revature.BankMS - In main> starting the application 
+23:42:09.109 [] [main] INFO  com.revature.controller.Welcome - In controller: Welcome input 
+23:42:11.939 [] [main] INFO  com.revature.controller.Welcome - In controller: Welcome input> case 2 
+23:42:11.939 [] [main] INFO  com.revature.controller.LoginPage - In controller: login input 
+23:42:19.778 [] [main] INFO  com.revature.service.UserManagement - login Successfully 
+23:42:20.566 [] [main] INFO  com.revature.service.AdminPortal - In adminportal: constructor 
+23:42:20.567 [] [main] INFO  c.r.controller.AdminController - In controller: AdminController > constructor 
+23:42:20.568 [] [main] INFO  c.r.controller.AdminController - In controller: AdminController > viewCP Method 
+23:45:08.539 [] [main] INFO  com.revature.BankMS - In main> starting the application 
+23:45:08.544 [] [main] INFO  com.revature.controller.Welcome - In controller: Welcome input 
+23:45:10.699 [] [main] INFO  com.revature.controller.Welcome - In controller: Welcome input> case 2 
+23:45:10.700 [] [main] INFO  com.revature.controller.LoginPage - In controller: login input 
+23:45:16.390 [] [main] INFO  com.revature.service.UserManagement - login Successfully 
+23:45:17.143 [] [main] INFO  com.revature.service.AdminPortal - In adminportal: constructor 
+23:45:17.143 [] [main] INFO  c.r.controller.AdminController - In controller: AdminController > constructor 
+23:45:17.143 [] [main] INFO  c.r.controller.AdminController - In controller: AdminController > viewCP Method 
+23:46:03.034 [] [main] INFO  com.revature.BankMS - In main> starting the application 
+23:46:03.037 [] [main] INFO  com.revature.controller.Welcome - In controller: Welcome input 
+23:46:05.924 [] [main] INFO  com.revature.controller.Welcome - In controller: Welcome input> case 2 
+23:46:05.924 [] [main] INFO  com.revature.controller.LoginPage - In controller: login input 
+23:46:11.944 [] [main] INFO  com.revature.service.UserManagement - login Successfully 
+23:46:12.740 [] [main] INFO  com.revature.service.AdminPortal - In adminportal: constructor 
+23:46:12.740 [] [main] INFO  c.r.controller.AdminController - In controller: AdminController > constructor 
+23:46:12.741 [] [main] INFO  c.r.controller.AdminController - In controller: AdminController > viewCP Method 
+23:47:01.515 [] [main] INFO  com.revature.BankMS - In main> starting the application 
+23:47:01.518 [] [main] INFO  com.revature.controller.Welcome - In controller: Welcome input 
+23:47:06.050 [] [main] INFO  com.revature.controller.Welcome - In controller: Welcome input> case 2 
+23:47:06.051 [] [main] INFO  com.revature.controller.LoginPage - In controller: login input 
+23:47:12.916 [] [main] INFO  com.revature.service.UserManagement - login Successfully 
+23:47:13.718 [] [main] INFO  com.revature.service.AdminPortal - In adminportal: constructor 
+23:47:13.718 [] [main] INFO  c.r.controller.AdminController - In controller: AdminController > constructor 
+23:47:13.719 [] [main] INFO  c.r.controller.AdminController - In controller: AdminController > viewCP Method 
+23:47:38.433 [] [main] INFO  com.revature.BankMS - In main> starting the application 
+23:47:38.436 [] [main] INFO  com.revature.controller.Welcome - In controller: Welcome input 
+23:47:40.167 [] [main] INFO  com.revature.controller.Welcome - In controller: Welcome input> case 2 
+23:47:40.168 [] [main] INFO  com.revature.controller.LoginPage - In controller: login input 
+23:47:46.055 [] [main] INFO  com.revature.service.UserManagement - login Successfully 
+23:47:46.815 [] [main] INFO  com.revature.service.AdminPortal - In adminportal: constructor 
+23:47:46.816 [] [main] INFO  c.r.controller.AdminController - In controller: AdminController > constructor 
+23:47:46.816 [] [main] INFO  c.r.controller.AdminController - In controller: AdminController > viewCP Method 
+23:48:12.442 [] [main] INFO  com.revature.BankMS - In main> starting the application 
+23:48:12.445 [] [main] INFO  com.revature.controller.Welcome - In controller: Welcome input 
+23:48:16.788 [] [main] INFO  com.revature.controller.Welcome - In controller: Welcome input> case 2 
+23:48:16.789 [] [main] INFO  com.revature.controller.LoginPage - In controller: login input 
+23:48:23.142 [] [main] INFO  com.revature.service.UserManagement - login Successfully 
+23:48:23.915 [] [main] INFO  com.revature.service.AdminPortal - In adminportal: constructor 
+23:48:23.915 [] [main] INFO  c.r.controller.AdminController - In controller: AdminController > constructor 
+23:48:23.916 [] [main] INFO  c.r.controller.AdminController - In controller: AdminController > viewCP Method 
+23:53:53.620 [] [main] INFO  com.revature.BankMS - In main> starting the application 
+23:53:53.624 [] [main] INFO  com.revature.controller.Welcome - In controller: Welcome input 
+23:53:59.790 [] [main] INFO  com.revature.controller.Welcome - In controller: Welcome input> case 2 
+23:53:59.791 [] [main] INFO  com.revature.controller.LoginPage - In controller: login input 
+23:54:07.225 [] [main] INFO  com.revature.service.UserManagement - login Successfully 
+23:54:08.000 [] [main] INFO  com.revature.service.AdminPortal - In adminportal: constructor 
+23:54:08.000 [] [main] INFO  c.r.controller.AdminController - In controller: AdminController > constructor 
+23:54:08.000 [] [main] INFO  c.r.controller.AdminController - In controller: AdminController > viewCP Method 
+23:56:01.625 [] [main] INFO  com.revature.BankMS - In main> starting the application 
+23:56:01.628 [] [main] INFO  com.revature.controller.Welcome - In controller: Welcome input 
+23:56:04.133 [] [main] INFO  com.revature.controller.Welcome - In controller: Welcome input> case 2 
+23:56:04.134 [] [main] INFO  com.revature.controller.LoginPage - In controller: login input 
+23:56:12.753 [] [main] INFO  com.revature.service.UserManagement - login Successfully 
+23:56:15.620 [] [main] INFO  com.revature.controller.LoggedIn - In controller: loggedin input> constructor 
+23:59:03.076 [] [main] INFO  com.revature.BankMS - In main> starting the application 
+23:59:03.078 [] [main] INFO  com.revature.controller.Welcome - In controller: Welcome input 
+23:59:05.495 [] [main] INFO  com.revature.controller.Welcome - In controller: Welcome input> case 2 
+23:59:05.496 [] [main] INFO  com.revature.controller.LoginPage - In controller: login input 
+23:59:12.768 [] [main] INFO  com.revature.service.UserManagement - login Successfully 
+23:59:13.531 [] [main] INFO  com.revature.controller.LoggedIn - In controller: loggedin input> constructor 
+00:01:29.730 [] [main] INFO  com.revature.BankMS - In main> starting the application 
+00:01:29.733 [] [main] INFO  com.revature.controller.Welcome - In controller: Welcome input 
+00:01:32.445 [] [main] INFO  com.revature.controller.Welcome - In controller: Welcome input> case 2 
+00:01:32.445 [] [main] INFO  com.revature.controller.LoginPage - In controller: login input 
+00:01:40.126 [] [main] INFO  com.revature.service.UserManagement - login Successfully 
+00:01:40.895 [] [main] INFO  com.revature.controller.LoggedIn - In controller: loggedin input> constructor 
+00:02:02.728 [] [main] INFO  com.revature.BankMS - In main> starting the application 
+00:02:02.731 [] [main] INFO  com.revature.controller.Welcome - In controller: Welcome input 
+00:02:04.839 [] [main] INFO  com.revature.controller.Welcome - In controller: Welcome input> case 2 
+00:02:04.840 [] [main] INFO  com.revature.controller.LoginPage - In controller: login input 
+00:02:13.907 [] [main] INFO  com.revature.service.UserManagement - login Successfully 
+00:02:14.685 [] [main] INFO  com.revature.controller.LoggedIn - In controller: loggedin input> constructor 

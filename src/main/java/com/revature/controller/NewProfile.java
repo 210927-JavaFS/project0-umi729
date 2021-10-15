@@ -7,6 +7,10 @@ import java.util.InputMismatchException;
 import java.util.List;
 import java.util.Scanner;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import com.revature.BankMS;
 import com.revature.dao.LoginDAOImpl;
 import com.revature.models.AccountTb;
 import com.revature.models.LoginTb;
@@ -14,11 +18,12 @@ import com.revature.service.UserManagement;
 import com.revature.service.ValidationClass;
 
 public class NewProfile {
-
+	private static Logger Log = LoggerFactory.getLogger(NewProfile.class);
 	List<AccountTb> la = new ArrayList<>();
 	List<LoginTb> ll = new ArrayList<>();
 
 	public void createProfile() throws InputMismatchException, IOException {
+		Log.info("Creating new profile Method createProfile in new profile class ");
 		System.out.println("Welcome to our bank");
 		System.out.println("=============================================");
 		System.out.println("Please provide the following information\n");
@@ -155,7 +160,7 @@ public class NewProfile {
 		} while (option > 0);
 		// System.out.println("6");
 		UserManagement um = new UserManagement();
-
+		Log.debug("calling usermanagement object to register ");
 		um.createAccount(bd, la, ll);
 		// System.out.println("in new profile");
 
